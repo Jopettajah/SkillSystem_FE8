@@ -2,14 +2,15 @@
 #define MODULAR_GETTER_AID_EVENT
 
 #include "_Common.event"
+#include "../MSG/Extensions/SkillSystem.event"
 
 pAidModifiers: // Aid
-	POIN prAddUnitFinalConstitution prSubstractOne prAdjustAidIfMounted
+	POIN prAddUnitFinalConstitution /*prSubstractOne*/ prAdjustAidIfMounted
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
 WORD 0
-
+/*
 prAddUnitFinalConstitution:
 	rAdd(rCallExternal(prConGetter))
 
@@ -30,5 +31,12 @@ _prAddBaseMountedAidBonus:
 _prAddMoreIfNotFemale: // Stupid mechanic imo, but we're going vanilla so :shrug:
 	rIfUnitHasNotAttribute(CA_FEMALE, rAddConst(5))
 }
+*/
+prAddUnitFinalConstitution:
+	rAddConst(5)
+	
+prAdjustAidIfMounted:	
+	rIfUnitHasAttribute(CA_MOUNTEDAID)
+		rAddConst(5)
 
 #endif // MODULAR_GETTER_AID_EVENT

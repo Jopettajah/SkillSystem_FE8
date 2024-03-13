@@ -95,7 +95,7 @@ lop:
 	add  r5, #1
 
 continue:
-	cmp r2, #3
+	cmp r2, #9
 	bge lop_end
 
 	add r2, #1

@@ -120,7 +120,7 @@ POIN (GetInitialSkillList|1)
 #define AuraSkillBufferLimit 480
 
 //Determines the max number of skills generics get from learned skills
-#define MaxGenericLearnedSkills 4
+#define MaxGenericLearnedSkills 10
 
 //SkillTester configs
 ALIGN 4
@@ -375,3 +375,6 @@ BYTE BattleBufferWidth
 
 #include "SkillPopups.event"
 #include "HPHealing.event"
+
+ALIGN 4
+#include "asm/C_Code.lyn.event"

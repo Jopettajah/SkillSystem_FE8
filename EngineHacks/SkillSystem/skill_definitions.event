@@ -428,7 +428,7 @@
 #define CertainBlowID 238
 #define ArmoredBlowID 237
 //By Darrman
-#define HeroesDeathBlowID 255
+#define HeroesDeathBlowID 167
 
 //Breaker Skills:  +50 Hit/Avo when enemy has the specified weapon type equipped.
 //By Rossendale
@@ -440,7 +440,7 @@
 
 //Charge: Gain +1 damage for every two squares moved.
 //By Datagne
-#define ChargeID 167
+#define ChargeID 255
 
 //Charge+: Charge+: If unit has used up all movement, gain brave effect.
 //By Sme

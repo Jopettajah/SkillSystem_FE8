@@ -41,6 +41,13 @@ HookUnitLoading:
 	strb r1, [r0, #1]
 	strb r1, [r0, #2]
 	strb r1, [r0, #3]
+	@strb r1, [r0, #4]
+	@strb r1, [r0, #5]
+	@strb r1, [r0, #6]
+	@strb r1, [r0, #7]
+	@strb r1, [r0, #8]
+	@strb r1, [r0, #9]
+	
 
 	ldr r3, lAutoloadSkills
 

@@ -28,7 +28,7 @@ strb r5, [r0, r2]
 b True
 
 NextLoop:
-cmp r2, #3
+cmp r2, #9
 bge SetForForgetting
 add r2, #1
 b LoopStart
