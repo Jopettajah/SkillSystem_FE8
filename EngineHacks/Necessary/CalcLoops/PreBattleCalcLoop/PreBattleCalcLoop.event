@@ -43,6 +43,7 @@ POIN UpWithArch
 POIN AxefaithHit
 POIN StancesASM
 POIN AirRaidSkillCheck
+POIN HaveAPlan DarnWhippersnapper MeOldBones BePolite
 #ifdef ENABLE_GBA_LETHALITY
 POIN LethalitySkill 
 #else
@@ -104,6 +105,7 @@ AuraSkillEntry(DriveResID)
 AuraSkillEntry(BloodTideID)
 AuraSkillEntry(WhitePoolID)
 AuraSkillEntry(NightTideID)
+AuraSkillEntry(BePoliteID)
 
 PUSH
 ORG 0x2a3f8

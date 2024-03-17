@@ -1,0 +1,14 @@
+#define Loordi 0x1
+#define RedMyrm 0x2
+#define GreenMyrm 0x3
+#define Gorilla 0x4
+#define Pega 0x5
+#define Cav 0x6
+#define Snoiper 0x7
+#define Jagen 0x8
+#define Armor 0x9
+#define Maagi 0xA
+#define Helari 0xB
+#define Druidi 0xC
+
+#define EnemyGuy 0x2d

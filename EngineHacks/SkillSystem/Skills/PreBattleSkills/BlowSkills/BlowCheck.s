@@ -20,7 +20,7 @@ cmp r0, #0          @Check if unit has the corresponding Faire skill.
 bne SkillChecks
 SkillReturn:
 add     r4, #0x01
-cmp     r4, #0x0A
+cmp     r4, #0x0D
 bne     CheckLoop
 b       EndProgram
 SkillChecks:
@@ -44,6 +44,12 @@ cmp     r4, #0x08
 beq     PragmaticSkill
 cmp		r4, #0x09
 beq		HeroesDeathSkill
+cmp		r4, #0x0A
+beq		SwiftStrikeSkill
+cmp		r4, #0x0B
+beq		SwiftSparrowSkill
+cmp 	r4, #0x0C
+beq		SturdyImpactLink
 b SkillReturn
 EndProgram:		@I had to move this to stop out of range errors. - Darrman
 pop {r4-r7}
@@ -134,6 +140,11 @@ add     r3,#4    @Add 4 to the attacker's dmg.
 strh    r3,[r0]     @Store attacker dmg.
 b       SkillReturn
 
+SturdyImpactLink:	@had to put this here cause of out of range error
+b SturdyImpactSkill @pragmatic/chivarly should be moved out of blow/defender loops tbh
+SkillReturnLink:
+b SkillReturn
+
 ChivalrySkill:
 ldr r0, =0x203a56c @defender
 ldrb r1, [r0, #0x12] @maxhp
@@ -175,6 +186,50 @@ ldrh    r3,[r0]     @Load the attacker's attack into r3.
 add     r3,#0x6    @Add 6 to the attacker's attack.
 strh    r3,[r0]     @Store attacker attack.
 b       SkillReturn	@Attacker's attack. Redundancy? Nah.
+
+SwiftStrikeSkill:
+ldr r0, =0x203a4ec
+add     r0,#0x5E    @Move to the attacker's AS.
+ldrh    r3,[r0]     @Load the attacker's AS into r3.
+add     r3,#0x4    @Add 4 to the attacker's AS.
+strh    r3,[r0]     @Store attacker AS.
+
+ldr     r0,=0x203A56C       @Move defender data into r1.
+mov r1, #0x4c    @Move to the defender's weapon ability
+ldr r1, [r0,r1]
+mov r2, #0x42
+tst r1, r2
+beq SkillReturnLink @do not add def if magic bit not set
+mov r2, #0x2
+lsl r2, #0x10 @0x20000 negate def/res
+tst r1, r2
+bne SkillReturnLink
+ldr r0, =0x203a4ec
+add r0, #0x5c @attacker defense
+ldrh r3, [r0]
+add r3, #10
+strh r3, [r0]
+b SkillReturnLink
+
+SwiftSparrowSkill:
+ldr     r0,=0x203A4EC       @Move attacker data into r0.
+add     r0,#0x5A    @Move to the attacker's attack.
+ldrh    r3,[r0]     @Load the attacker's attack into r3.
+add     r3,#0x6    @Add 6 to the attacker's attack.
+strh    r3,[r0]     @Store attacker attack.
+add     r0,#0x4    @Move to the attacker's AS. (5A + 4 = 5E)
+ldrh    r3,[r0]     @Load the attacker's AS into r3.
+add     r3,#0x4    @Add 4 to the attacker's AS.
+strh    r3,[r0]     @Store attacker AS.
+b       SkillReturnLink
+
+SturdyImpactSkill:
+ldr     r0,=0x203A4EC       @Move attacker data into r0.
+add     r0,#0x5A    @Move to the attacker's attack.
+ldrh    r3,[r0]     @Load the attacker's attack into r3.
+add     r3,#0x6    @Add 6 to the attacker's attack.
+strh    r3,[r0]     @Store attacker attack.
+b 		ArmoredSkill @ The lazy way...
 
 .align
 .ltorg

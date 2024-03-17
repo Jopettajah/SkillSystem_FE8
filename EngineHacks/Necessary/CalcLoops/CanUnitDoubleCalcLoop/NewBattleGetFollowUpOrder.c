@@ -32,7 +32,9 @@ extern int QuickLearnerID_Link;
 extern int PassionsFlowID_Link; 
 extern int QuickRiposteID_Link; 
 extern int BidingBlowID_Link; 
-extern int AdvantageChaserID_Link; 
+extern int AdvantageChaserID_Link;
+extern int AlacrityID_Link;
+extern int SturdyImpactID_Link;
 
 struct UnitDoubleCalcLoop_Struct { 
 	int(*function)(struct BattleUnit* attacker, struct BattleUnit* defender);
@@ -166,12 +168,24 @@ int AdvantageChaser(struct BattleUnit* bunitA, struct BattleUnit* bunitB) {
 	return NoChange;
 }
 
+int SturdyImpact(struct BattleUnit* bunitA, struct BattleUnit* bunitB) {
+	if (SkillTester(&bunitB->unit, SturdyImpactID_Link)) {
+		if (bunitA == &gBattleTarget) {
+			return CannotDouble;
+		}
+	}
+	return NoChange;
+}
+
+
+
 int DoesUnitImmediatelyFollowUp(struct BattleUnit* bunitA, struct BattleUnit* bunitB) { 
 	int result = false; 
     int dist = gBattleStats.range; 
 	int hasDesperation = (SkillTester(&bunitA->unit, DesperationID_Link) && (bunitA->hpInitial < (bunitA->unit.maxHP/2)));
-	int hasAssassinate = (SkillTester(&bunitA->unit, AssassinateID_Link) && (dist == 1) && (bunitA == &gBattleActor)); // assassinate only works while attacking 
-	if (hasDesperation || hasAssassinate) { 
+	int hasAssassinate = (SkillTester(&bunitA->unit, AssassinateID_Link) && (dist == 1) && (bunitA == &gBattleActor)); // assassinate only works while attacking
+	int hasAlacrity    = (SkillTester(&bunitA->unit, AlacrityID_Link) && (bunitA->battleSpeed >= (bunitB->battleSpeed + 8)));
+	if (hasDesperation || hasAssassinate || hasAlacrity) {
 		result = true; } 
 	return result; 
 } 

@@ -1,0 +1,18 @@
+ALIGN 4
+HaveAPlanID_Link:
+WORD HaveAPlanID
+DarnWhippersnapperID_Link:
+WORD DarnWhippersnapperID
+MeOldBonesID_Link:
+WORD MeOldBonesID
+BePoliteID_Link:
+WORD BePoliteID
+
+#include "C_Code.lyn.event"
+
+ALIGN 4
+BeEfficient:
+#incbin "KillingIntentProc.dmp"
+POIN SkillTester
+WORD BeEfficientID
+

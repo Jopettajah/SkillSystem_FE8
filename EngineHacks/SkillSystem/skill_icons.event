@@ -1099,5 +1099,14 @@ ORG SkillIcon(ReciprocalAidID)
 ORG SkillIcon(FailGaleID)
 #incbin "SkillIcons/FailGale.dmp"
 
+ORG SkillIcon(AlacrityID)
+#incbin "SkillIcons/Desperation.dmp"
+ORG SkillIcon(SwiftStrikeID)
+#incbin "SkillIcons/SwiftStrike.dmp"
+ORG SkillIcon(SwiftSparrowID)
+#incbin "SkillIcons/SwiftSparrow.dmp"
+ORG SkillIcon(SturdyImpactID)
+#incbin "SkillIcons/SturdyBlow.dmp"
+
 ORG SkillIcons+0x8000
 

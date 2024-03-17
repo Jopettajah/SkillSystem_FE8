@@ -27,6 +27,9 @@ BYTE 00 00
 ALIGN 4
 
 KnightSkillList:
+BYTE 1 SteadyStanceID
+BYTE 2 SturdyStanceID
+BYTE 3 SturdyImpactID
 BYTE 00 00
 ALIGN 4
 
@@ -48,6 +51,14 @@ BYTE 00 00
 ALIGN 4
 
 MyrmidonSkillList:
+BYTE 1	DartingStanceID
+BYTE 2 PivotID
+BYTE 00 00
+ALIGN 4
+
+MyrmidonFSkillList:
+BYTE 1 DartingBlowID
+BYTE 2 SwiftSparrowID
 BYTE 00 00
 ALIGN 4
 
@@ -66,6 +77,10 @@ BYTE 00 00
 ALIGN 4
 
 SniperSkillList:
+BYTE 1 BePoliteID
+BYTE 2 BeEfficientID
+BYTE 3 HaveAPlanID
+//BYTE 4 KillEveryoneYouMeet
 BYTE 00 00
 ALIGN 4
 
@@ -121,6 +136,8 @@ BYTE 00 00
 ALIGN 4
 
 GreatKnightSkillList:
+BYTE 1 DarnWhippersnapperID
+BYTE 2 MeOldBonesID
 BYTE 00 00
 ALIGN 4
 
@@ -129,16 +146,6 @@ BYTE 00 00
 ALIGN 4
 
 FighterSkillList:
-BYTE 1	CharmID
-BYTE 2	LocktouchID
-BYTE 3	LethalityID
-BYTE 4	LunaID
-BYTE 5	NiceThighsID
-BYTE 6  CritBoostID
-BYTE 7	CharismaID
-BYTE 8	DartingBlowID
-//BYTE 9	ElbowRoomID
-//BYTE 10 QuickDrawID
 BYTE 00 00
 ALIGN 4
 
@@ -167,6 +174,10 @@ BYTE 00 00
 ALIGN 4
 
 PegKnightSkillList:
+BYTE 1	NiceThighsID
+BYTE 2	AlacrityID
+BYTE 3	SwiftStrikeID
+BYTE 4	SwiftSparrowID
 BYTE 00 00
 ALIGN 4
 

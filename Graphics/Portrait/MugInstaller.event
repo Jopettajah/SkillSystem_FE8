@@ -1,0 +1,33 @@
+#include "Tools/Tool Helpers.txt"
+//this file defines the macro:
+//setMugEntry(number, data, mouth_x, mouth_y, eye_x, eye_y)
+
+/*
+ALIGN 4
+_Mug:
+#incbin "dmp/_mug.dmp"
+#incbin "dmp/_frames.dmp"
+#incbin "dmp/_palette.dmp"
+#incbin "dmp/_minimug.dmp"
+setMugEntry(MugID,,3,5,3,3)
+*/
+
+#define LordMugID 0x1
+#define RedMyrmMugID 0x2
+#define GreenMyrmMugID 0x3
+#define GorillaMugID 0x4
+#define PegaMugID 0x5
+#define CavMugID 0x6
+#define SniperMugID 0x7
+#define JagenMugID 0x8
+#define ArmorMugID 0x9
+#define MageMugID 0xA
+#define ClericMugID 0xB
+#define DruidMugID 0xC
+
+Pega_Mug:
+#incbin "dmp/Pega_mug.dmp"
+#incbin "dmp/Pega_frames.dmp"
+#incbin "dmp/Pega_palette.dmp"
+#incbin "dmp/Pega_minimug.dmp"
+setMugEntry(PegaMugID,Pega_Mug,3,4,3,2)
