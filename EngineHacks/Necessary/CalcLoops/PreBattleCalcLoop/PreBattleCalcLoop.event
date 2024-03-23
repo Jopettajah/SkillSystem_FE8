@@ -43,7 +43,7 @@ POIN UpWithArch
 POIN AxefaithHit
 POIN StancesASM
 POIN AirRaidSkillCheck
-POIN HaveAPlan DarnWhippersnapper MeOldBones BePolite
+POIN HaveAPlan DarnWhippersnapper MeOldBones BePolite Ungrounded CaringColdShoulder
 #ifdef ENABLE_GBA_LETHALITY
 POIN LethalitySkill 
 #else

@@ -53,6 +53,9 @@ POP
 
 ////////////////////////////////FREE SPACE OUT OF BL RANGE
 
+  #include "ExternalHacks/PortraitShift/Portrait Shift Table.event"
+
+  #include "ExternalHacks/ModularMinimugBox/Installers/MMBInstallerDefault.event"
 
   // Expand unit promotion list
   #include "ExternalHacks/ClassChgExpansion/ClassChgExpansion.event"

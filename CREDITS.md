@@ -31,7 +31,7 @@ adding yourself!
 - 7743: various bugfixes
 - RobertFPY, Pikmin1211, and Snakey1: Str/Mag Split Finalization
 
-# Graphics
+# SkillSys Graphics
 
 - Monkeybard, Black Mage
 - Blaze: Stances
@@ -45,4 +45,9 @@ adding yourself!
 - Reds: Quick Riposte
 - Dragz: Divinely Inspiring
 - circleseverywhere: Skill Animations
+
+
+# External & Inline hacks
+- Zane: MMB
+- 2WB: Portrait Height Fix
 

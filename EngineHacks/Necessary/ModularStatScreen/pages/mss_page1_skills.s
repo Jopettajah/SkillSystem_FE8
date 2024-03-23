@@ -178,27 +178,27 @@ draw_skill_icon_at 13, 5
 ldrb r0,[r6,#1]
 cmp r0,#0
 beq SkillsEnd
-draw_skill_icon_at 13, 7
+draw_skill_icon_at 17, 5
 
 ldrb r0,[r6,#2]
 cmp r0,#0
 beq SkillsEnd
-draw_skill_icon_at 13, 9
+draw_skill_icon_at 13, 7
 
 ldrb r0,[r6,#3]
 cmp r0,#0
 beq SkillsEnd
-draw_skill_icon_at 13, 11
+draw_skill_icon_at 17, 7
 
 ldrb r0,[r6,#4]
 cmp r0,#0
 beq SkillsEnd
-draw_skill_icon_at 13, 13
+draw_skill_icon_at 13, 9
 
 ldrb r0,[r6,#5]
 cmp r0,#0
 beq SkillsEnd
-draw_skill_icon_at 17, 5
+draw_skill_icon_at 17, 9
 
 SkillsEnd:
 cmp r0,#0
@@ -212,17 +212,17 @@ Skills2:
 ldrb r0,[r6, #6]
 cmp r0,#0
 beq SkillsEnd2
-draw_skill_icon_at 17, 7
+draw_skill_icon_at 13, 11
 
 ldrb r0,[r6,#7]
 cmp r0,#0
 beq SkillsEnd2
-draw_skill_icon_at 17, 9
+draw_skill_icon_at 17, 11
 
 ldrb r0,[r6,#8]
 cmp r0,#0
 beq SkillsEnd2
-draw_skill_icon_at 17, 11
+draw_skill_icon_at 13, 13
 
 ldrb r0,[r6,#9]
 cmp r0,#0

@@ -1,0 +1,44 @@
+## LoordiName
+[X]
+
+## RedMyrmName
+[X]
+
+## FireSwordDesc
+only. Magic damage at range.[X]
+
+## GreenMyrmName
+Radley[X]
+
+## GorillaName
+Remus[X]
+
+## PegaName
+Katrinne[X]
+
+## CavName
+Tanner[X]
+
+## SnoiperName
+[X]
+
+## JagenName
+Barik[X]
+
+## ArmorName
+[X]
+
+## MaagiName
+[X]
+
+## HelariName
+Hillary[X]
+
+## DruidiName
+[X]
+
+## EnemyName
+[X]
+
+## BossName
+[X]

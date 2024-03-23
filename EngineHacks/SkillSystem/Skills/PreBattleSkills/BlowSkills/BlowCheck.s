@@ -215,7 +215,7 @@ SwiftSparrowSkill:
 ldr     r0,=0x203A4EC       @Move attacker data into r0.
 add     r0,#0x5A    @Move to the attacker's attack.
 ldrh    r3,[r0]     @Load the attacker's attack into r3.
-add     r3,#0x6    @Add 6 to the attacker's attack.
+add     r3,#0x4    @Add 4 to the attacker's attack.
 strh    r3,[r0]     @Store attacker attack.
 add     r0,#0x4    @Move to the attacker's AS. (5A + 4 = 5E)
 ldrh    r3,[r0]     @Load the attacker's AS into r3.

@@ -214,8 +214,8 @@
 
 // Even/Odd Footed: +1 Mov on Even/Odd turns
 // By Jopettajah
-#define OddFootedID 255
-#define EvenFootedID 255
+#define OddFootedID 18
+#define EvenFootedID 19
 
 //Debuff Skills
 
@@ -699,7 +699,7 @@
 
 //Earth Boost: Grants +6 Defense if unit's current HP is at least 3 higher than the enemy's.
 //By Mikey Seregon
-#define EarthBoostID 255
+#define EarthBoostID 29
 
 //Water Boost: Grants +6 Resistance if unit's current HP is at least 3 higher than the enemy's.
 //By Mikey Seregon
@@ -742,6 +742,9 @@
 #define BePoliteID 13
 #define BeEfficientID 20
 #define MeOldBonesID 23
+#define GorillaTacticsID 39
+#define UngroundedID 32
+#define KillEveryoneYouMeetID 30
 
 //Proc Skills
 
@@ -847,7 +850,7 @@
 
 //Luna: Negates enemy defenses. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define LunaID 255
+#define LunaID 42
 
 //Miracle: Survive a lethal attack if HP > 50%.
 //Author Unknown (Initial Commit)
@@ -867,7 +870,7 @@
 
 //Sol: Restore damage dealt as HP. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define SolID 255
+#define SolID 35
 
 //Sure Shot: A precision attack that always hits and does 1.5x damage. (Skill % activation)
 //Author Unknown (Initial Commit)
@@ -938,7 +941,7 @@
 
 // Reckless Fighter: Both units in combat always double. 
 // By Vesly 
-#define RecklessFighterID 255
+#define RecklessFighterID 24
 
 
 //Wary Fighter: Unit cannot double or be doubled.

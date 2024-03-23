@@ -9,7 +9,7 @@ _Mug:
 #incbin "dmp/_frames.dmp"
 #incbin "dmp/_palette.dmp"
 #incbin "dmp/_minimug.dmp"
-setMugEntry(MugID,,3,5,3,3)
+setMugEntry(MugID,_Mug,3,5,3,3)
 */
 
 #define LordMugID 0x1
@@ -25,9 +25,26 @@ setMugEntry(MugID,,3,5,3,3)
 #define ClericMugID 0xB
 #define DruidMugID 0xC
 
+ALIGN 4
 Pega_Mug:
 #incbin "dmp/Pega_mug.dmp"
 #incbin "dmp/Pega_frames.dmp"
 #incbin "dmp/Pega_palette.dmp"
 #incbin "dmp/Pega_minimug.dmp"
 setMugEntry(PegaMugID,Pega_Mug,3,4,3,2)
+
+ALIGN 4
+Gorilla_Mug:
+#incbin "dmp/Gorilla_mug.dmp"
+#incbin "dmp/Gorilla_frames.dmp"
+#incbin "dmp/Gorilla_palette.dmp"
+#incbin "dmp/Gorilla_minimug.dmp"
+setMugEntry(GorillaMugID,Gorilla_Mug,4,6,3,3)
+
+ALIGN 4
+Helari_Mug:
+#incbin "dmp/Helari_mug.dmp"
+#incbin "dmp/Helari_frames.dmp"
+#incbin "dmp/Helari_palette.dmp"
+#incbin "dmp/Helari_minimug.dmp"
+setMugEntry(ClericMugID,Helari_Mug,3,6,3,5)

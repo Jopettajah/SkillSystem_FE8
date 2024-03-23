@@ -1,3 +1,4 @@
+//Char defs
 #define Loordi 0x1
 #define RedMyrm 0x2
 #define GreenMyrm 0x3
@@ -12,3 +13,6 @@
 #define Druidi 0xC
 
 #define EnemyGuy 0x2d
+
+//Item defs
+#define FireSword 0xbd //WindSword 

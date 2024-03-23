@@ -152,8 +152,11 @@ int PridefulWarrior(struct BattleUnit* bunitA, struct BattleUnit* bunitB) {
 
 
 int RecklessFighter(struct BattleUnit* bunitA, struct BattleUnit* bunitB) { 
-	if (SkillTester(&bunitA->unit, RecklessFighterID_Link) || SkillTester(&bunitB->unit, RecklessFighterID_Link)) { 
-		return ForceDouble; } 
+	if (SkillTester(&bunitA->unit, RecklessFighterID_Link) || SkillTester(&bunitB->unit, RecklessFighterID_Link)) {
+		if ((bunitA == &gBattleActor && bunitB->canCounter) || (bunitB == &gBattleActor && bunitA->canCounter)) {
+			return ForceDouble;
+		}
+	}
 	return NoChange; 
 } 
 

@@ -1107,6 +1107,8 @@ ORG SkillIcon(SwiftSparrowID)
 #incbin "SkillIcons/SwiftSparrow.dmp"
 ORG SkillIcon(SturdyImpactID)
 #incbin "SkillIcons/SturdyBlow.dmp"
+ORG SkillIcon(UngroundedID)
+#incbin "SkillIcons/OutdoorFighter.dmp"
 
 ORG SkillIcons+0x8000
 

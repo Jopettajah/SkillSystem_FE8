@@ -20,6 +20,8 @@ BYTE 00 00
 ALIGN 4
 
 CavalierSkillList:
+BYTE 1 ThighdeologyID
+BYTE 2 TrampleID
 BYTE 00 00
 
 PaladinSkillList:
@@ -30,6 +32,7 @@ KnightSkillList:
 BYTE 1 SteadyStanceID
 BYTE 2 SturdyStanceID
 BYTE 3 SturdyImpactID
+BYTE 4 EarthBoostID
 BYTE 00 00
 ALIGN 4
 
@@ -53,12 +56,16 @@ ALIGN 4
 MyrmidonSkillList:
 BYTE 1	DartingStanceID
 BYTE 2 PivotID
+BYTE 3 EvenFootedID
+BYTE 4 LunaID
 BYTE 00 00
 ALIGN 4
 
 MyrmidonFSkillList:
 BYTE 1 DartingBlowID
 BYTE 2 SwiftSparrowID
+BYTE 3 OddFootedID
+BYTE 4 SolID
 BYTE 00 00
 ALIGN 4
 
@@ -80,7 +87,7 @@ SniperSkillList:
 BYTE 1 BePoliteID
 BYTE 2 BeEfficientID
 BYTE 3 HaveAPlanID
-//BYTE 4 KillEveryoneYouMeet
+BYTE 4 KillEveryoneYouMeetID
 BYTE 00 00
 ALIGN 4
 
@@ -122,6 +129,7 @@ BYTE 00 00
 ALIGN 4
 
 DruidSkillList:
+BYTE 1 MoonlightID
 BYTE 00 00
 ALIGN 4
 
@@ -138,6 +146,7 @@ ALIGN 4
 GreatKnightSkillList:
 BYTE 1 DarnWhippersnapperID
 BYTE 2 MeOldBonesID
+BYTE 3 LoyaltyID
 BYTE 00 00
 ALIGN 4
 
@@ -150,6 +159,11 @@ BYTE 00 00
 ALIGN 4
 
 WarriorSkillList:
+BYTE 1 GorillaTacticsID
+BYTE 2 RecklessFighterID
+BYTE 3 SavageBlowID
+BYTE 4 ForagerID
+BYTE 5 AmaterasuID
 BYTE 00 00
 ALIGN 4
 
@@ -178,6 +192,8 @@ BYTE 1	NiceThighsID
 BYTE 2	AlacrityID
 BYTE 3	SwiftStrikeID
 BYTE 4	SwiftSparrowID
+BYTE 5	UngroundedID
+//BYTE 6	HorseguardID
 BYTE 00 00
 ALIGN 4
 
@@ -186,6 +202,8 @@ BYTE 00 00
 ALIGN 4
 
 ClericSkillList:
+BYTE 1 VoiceOfPeaceID
+BYTE 2 LiveToServeID
 BYTE 00 00
 ALIGN 4
 

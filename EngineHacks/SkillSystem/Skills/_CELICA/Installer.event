@@ -7,6 +7,10 @@ MeOldBonesID_Link:
 WORD MeOldBonesID
 BePoliteID_Link:
 WORD BePoliteID
+UngroundedID_Link:
+WORD UngroundedID
+CaringColdShoulderID_Link:
+WORD UngroundedID
 
 #include "C_Code.lyn.event"
 
