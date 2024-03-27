@@ -42,8 +42,8 @@ POIN Frenzy // This was moved here because Str/Mag Split conflict, and... I'm no
 POIN UpWithArch
 POIN AxefaithHit
 POIN StancesASM
-POIN AirRaidSkillCheck
-POIN HaveAPlan DarnWhippersnapper MeOldBones BePolite Ungrounded CaringColdShoulder
+POIN AirRaidSkillCheck ElementBoostCheck
+POIN HaveAPlan DarnWhippersnapper MeOldBones BePolite Ungrounded SpearheadForm
 #ifdef ENABLE_GBA_LETHALITY
 POIN LethalitySkill 
 #else

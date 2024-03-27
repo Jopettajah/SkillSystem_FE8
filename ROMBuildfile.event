@@ -25,6 +25,9 @@
 	//#include "Maps/TilesetInstaller.event"
 	MESSAGE Used graphics space ends at currentOffset
 
+	//Music
+	#include "Music/MasterMusicInstaller.event"
+	MESSAGE Used music space end at currentOffset
 
     //Events
     #include "Events/SkillBloat.event"

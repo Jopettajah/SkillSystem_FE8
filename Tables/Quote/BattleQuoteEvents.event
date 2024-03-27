@@ -1,0 +1,6 @@
+ALIGN 4
+Ch1BossEvent:
+ENUT 0x4
+MUSC 0x1b
+Text(BossBattle)
+ENDA

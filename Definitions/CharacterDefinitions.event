@@ -12,7 +12,15 @@
 #define Helari 0xB
 #define Druidi 0xC
 
-#define EnemyGuy 0x2d
+#define EnemySoldier 0x2d // All enemy classes need charID for learned skills
+#define EnemyKnight 0x2e
+#define EnemyMerc 0x2f
+#define EnemyFighter 0x30
+#define EnemyArcher 0x31
+#define EnemyWyvern 0x32
+#define EnemyCav 0x33
+#define EnemyMonk 0x34
+#define EnemyMage 0x35
 
 //Item defs
 #define FireSword 0xbd //WindSword 

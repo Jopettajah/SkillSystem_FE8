@@ -53,6 +53,10 @@ POP
 
 ////////////////////////////////FREE SPACE OUT OF BL RANGE
 
+  #include "ExternalHacks/ChangeChapterSong/Installer.event"
+  
+  #include "ExternalHacks/ContinueBattleBGM/Installer.event"
+
   #include "ExternalHacks/PortraitShift/Portrait Shift Table.event"
 
   #include "ExternalHacks/ModularMinimugBox/Installers/MMBInstallerDefault.event"

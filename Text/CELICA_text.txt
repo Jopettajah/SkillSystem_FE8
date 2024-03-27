@@ -1,38 +1,107 @@
 ## LoordiName
 [X]
 
+## LoordiDesc
+[X]
+
+## LoordiDeath
+[X]
+
 ## RedMyrmName
+Fujiko[X]
+
+## RedMyrmDesc
+Myrmidon whose only interested[N]
+in mastering the blade.[X]
+
+## RedMyrmDeath
 [X]
 
 ## FireSwordDesc
-only. Magic damage at range.[X]
+Fujiko only. Magic damage at range.[X]
 
 ## GreenMyrmName
 Radley[X]
 
+## GreenMyrmDesc
+[X]
+
+## GreenMyrmDeath
+[X]
+
 ## GorillaName
 Remus[X]
+
+## GorillaDesc
+Ferocious, but big-hearted warrior.[N]
+An avid reader of mystery novels.[X]
+
+## GorillaDeath
+[X]
 
 ## PegaName
 Katrinne[X]
 
+## PegaDesc
+[X]
+
+## PegaDeath
+[X]
+
 ## CavName
 Tanner[X]
 
+## CavDesc
+[X]
+
+## CavDeath
+[X]
+
 ## SnoiperName
+[X]
+
+## SnoiperDesc
+[X]
+
+## SnoiperDeath
 [X]
 
 ## JagenName
 Barik[X]
 
+## JagenDesc
+A Great Knight past his prime.[N]
+Excitedly awaiting for retirement.[X]
+
+## JagenDeath
+[X]
+
 ## ArmorName
+Farran[X]
+
+## ArmorDesc
+[X]
+
+## ArmorDeath
 [X]
 
 ## MaagiName
+Nestor[X]
+
+## MaagiDesc
+[X]
+
+## MaagiDeath
 [X]
 
 ## HelariName
 Hillary[X]
+
+## HelariDesc
+[X]
+
+## HelariDeath
+[X]
 
 ## DruidiName
 [X]
@@ -40,5 +109,17 @@ Hillary[X]
 ## EnemyName
 [X]
 
+## EnemyDesc
+[X]
+
 ## BossName
+[X]
+
+## BossDesc
+[X]
+
+## BossBattle
+[X]
+
+## BossDeath
 [X]

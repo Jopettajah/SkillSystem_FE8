@@ -50,4 +50,8 @@ adding yourself!
 # External & Inline hacks
 - Zane: MMB
 - 2WB: Portrait Height Fix
+- 7743: Flag-based map bgm change, continue map bgm to battle
+
+# Music Related
+- Alusq: Custom instrument samples, NIMAP2 w/ keysplits, advanced music suite
 

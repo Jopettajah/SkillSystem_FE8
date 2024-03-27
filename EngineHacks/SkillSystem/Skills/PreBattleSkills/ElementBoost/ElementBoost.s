@@ -65,16 +65,11 @@ strh	r0, [r4,r1]
 b       SkillReturn
 
 EarthBoost:
-mov		r1, #0x4C
-ldr		r0, [r5, r1]
-ldr 	r1, =#0x00000002
-and 	r0, r1
-cmp		r0, r1
-beq 	SkillReturn
-ldr 	r1, =#0x00000040
-and 	r0, r1
-cmp		r0, r1
-beq 	SkillReturn
+ldr 	r0, [ r5, #0x4C ]
+mov 	r1, #0x42
+tst 	r0, r1
+bne 	SkillReturn
+
 ProcBonus:
 mov		r1, #0x5C
 ldrh	r0, [r4, r1]	@Def

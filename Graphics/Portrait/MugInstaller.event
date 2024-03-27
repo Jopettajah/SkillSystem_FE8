@@ -24,6 +24,7 @@ setMugEntry(MugID,_Mug,3,5,3,3)
 #define MageMugID 0xA
 #define ClericMugID 0xB
 #define DruidMugID 0xC
+#define BossMugID 0x30
 
 ALIGN 4
 Pega_Mug:
@@ -48,3 +49,27 @@ Helari_Mug:
 #incbin "dmp/Helari_palette.dmp"
 #incbin "dmp/Helari_minimug.dmp"
 setMugEntry(ClericMugID,Helari_Mug,3,6,3,5)
+
+ALIGN 4
+Snoiper_Mug:
+#incbin "dmp/Snoiper_mug.dmp"
+#incbin "dmp/Snoiper_frames.dmp"
+#incbin "dmp/Snoiper_palette.dmp"
+#incbin "dmp/Snoiper_minimug.dmp"
+setMugEntry(SniperMugID,Snoiper_Mug,3,5,3,3)
+
+ALIGN 4
+Loordi_Mug:
+#incbin "dmp/Loordi_mug.dmp"
+#incbin "dmp/Loordi_frames.dmp"
+#incbin "dmp/Loordi_palette.dmp"
+#incbin "dmp/Loordi_minimug.dmp"
+setMugEntry(LordMugID,Loordi_Mug,3,5,3,3)
+
+ALIGN 4
+RedMyrm_Mug:
+#incbin "dmp/RedMyrm_mug.dmp"
+#incbin "dmp/RedMyrm_frames.dmp"
+#incbin "dmp/RedMyrm_palette.dmp"
+#incbin "dmp/RedMyrm_minimug.dmp"
+setMugEntry(RedMyrmMugID,RedMyrm_Mug,4,6,4,4)

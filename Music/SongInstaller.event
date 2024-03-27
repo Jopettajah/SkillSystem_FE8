@@ -1,0 +1,18 @@
+//defs
+#define PPMID 	0x09
+#define EPMID 	0x13
+#define BOSSMID 0x1b
+#define PrepsID 0x34
+
+//songs
+SongTable(PPMID, BATTLE_WIRELESS_0000, MapMusicGroup)
+#include "event/BATTLE_WIRELESS_0000.event"
+
+SongTable(EPMID, EP, MapMusicGroup)
+#include "event/EP.event"
+
+SongTable(BOSSMID, BOSS, MapMusicGroup)
+#include "event/BOSS.event"
+
+SongTable(PrepsID, SEQ_032_00, MapMusicGroup)
+#include "event/SEQ_032_00.event"

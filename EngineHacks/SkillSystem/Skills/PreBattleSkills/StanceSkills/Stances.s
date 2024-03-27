@@ -23,7 +23,7 @@ cmp r0, r4
 bne End2
 @ Cool it's defending. I need to check if the enemy's weapon is magic.
 ldr r0, [ r5, #0x4C ]
-mov r1, #0x02
+mov r1, #0x42
 tst r0, r1
 beq NotMagic
 @ So it is a magic thing.
