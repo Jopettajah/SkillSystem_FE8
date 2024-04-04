@@ -33,18 +33,19 @@ str r0,[sp,#0x14]
   cmp     r0,#0x0       
   beq     NotMag        
     @draw Mag at 13, 3. colour defaults to yellow.
-    draw_textID_at 13, 3, textID=0x4ff, growth_func=2
+    @draw_textID_at 13, 3, textID=0x4ff, growth_func=2
     b       MagStrDone    
   NotMag:
     @draw Str at 13, 3
-    draw_textID_at 13, 3, textID=0x4fe, growth_func=2
+    @draw_textID_at 13, 3, textID=0x4fe, growth_func=2
+	nop
   MagStrDone:
 
-draw_textID_at 13, 5, textID=0x4EC, growth_func=3 @skl
-draw_textID_at 13, 7, textID=0x4ED, growth_func=4 @spd
-draw_textID_at 13, 9, textID=0x4ee, growth_func=5 @luck
-draw_textID_at 13, 11, textID=0x4ef, growth_func=6 @def
-draw_textID_at 13, 13, textID=0x4f0, growth_func=7 @res
+@draw_textID_at 13, 5, textID=0x4EC, growth_func=3 @skl
+@draw_textID_at 13, 7, textID=0x4ED, growth_func=4 @spd
+@draw_textID_at 13, 9, textID=0x4ee, growth_func=5 @luck
+@draw_textID_at 13, 11, textID=0x4ef, growth_func=6 @def
+@draw_textID_at 13, 13, textID=0x4f0, growth_func=7 @res
 
 b 	LiteralJump1
 .ltorg 
@@ -105,15 +106,15 @@ b		literalJump2
 ShowStats2: @things in this section are only drawn when not in growths mode
 
 
-draw_str_bar_at 16, 3
-draw_skl_bar_at 16, 5
-draw_spd_bar_at 16, 7
-draw_luck_bar_at 16, 9
-draw_def_bar_at 16, 11
-draw_res_bar_at 16, 13
+@draw_str_bar_at 16, 3
+@draw_skl_bar_at 16, 5
+@draw_spd_bar_at 16, 7
+@draw_luck_bar_at 16, 9
+@draw_def_bar_at 16, 11
+@draw_res_bar_at 16, 13
 
-draw_textID_at 13, 15, 0x4f6 @move
-draw_move_bar_with_getter_at 16, 15
+draw_textID_at 21, 3, 0x4f6 @move
+draw_move_bar_with_getter_at 25, 3
 
 b literalJump2
 
@@ -124,19 +125,19 @@ literalJump2:
 
 
 
-draw_textID_at 13, 17, textID=0x4f7 @con
-draw_con_bar_with_getter_at 16, 17
+@draw_textID_at 13, 17, textID=0x4f7 @con
+@draw_con_bar_with_getter_at 16, 17
 
-draw_textID_at 21, 3, textID=0x4f8 @aid
-draw_number_at 25, 3, 0x80189B8, 2 @aid getter
-draw_aid_icon_at 26, 3
+draw_textID_at 21, 5, textID=0x4f8 @aid
+draw_number_at 25, 5, 0x80189B8, 2 @aid getter
+draw_aid_icon_at 26, 5
 
-draw_trv_text_at 21, 5
+draw_trv_text_at 21, 7
 
-draw_textID_at 21, 7, textID=0x4f1 @affin
-draw_affinity_icon_at 24, 7
+draw_textID_at 21, 9, textID=0x4f1 @affin
+draw_affinity_icon_at 24, 9
 
-draw_status_text_at 21, 9
+draw_status_text_at 21, 11
 
 b exitVanillaStatStuff
 
@@ -147,7 +148,7 @@ exitVanillaStatStuff:
 
 ldr r0,=TalkTextIDLink
 ldrh r0,[r0]
-draw_talk_text_at 21, 11
+draw_talk_text_at 21, 13
 
 b startSkills
 
@@ -160,7 +161,7 @@ startSkills:
 
 ldr r0,=SkillsTextIDLink
 ldrh r0, [r0]
-draw_textID_at 21, 13, colour=White @skills
+draw_textID_at 15, 3, colour=White @skills
 
 
 mov r0,r8
@@ -172,38 +173,77 @@ mov r6,r0
 ldrb r0,[r6]
 cmp r0,#0
 beq SkillsEnd
-draw_skill_icon_at 21, 15
+draw_skill_icon_at 13, 5
 
 ldrb r0,[r6,#1]
 cmp r0,#0
 beq SkillsEnd
-draw_skill_icon_at 24, 15
+draw_skill_icon_at 17, 5
 
 ldrb r0,[r6,#2]
 cmp r0,#0
 beq SkillsEnd
-draw_skill_icon_at 27, 15
+draw_skill_icon_at 13, 7
 
 ldrb r0,[r6,#3]
 cmp r0,#0
 beq SkillsEnd
-draw_skill_icon_at 21, 17
+draw_skill_icon_at 17, 7
 
 ldrb r0,[r6,#4]
 cmp r0,#0
 beq SkillsEnd
-draw_skill_icon_at 24, 17
+draw_skill_icon_at 13, 9
 
 ldrb r0,[r6,#5]
 cmp r0,#0
 beq SkillsEnd
-draw_skill_icon_at 27, 17
+draw_skill_icon_at 17, 9
+
+SkillsEnd:
+cmp r0,#0
+beq SkillsEnd2
+b Skills2
+
+.ltorg
+.align
+
+Skills2:
+ldrb r0,[r6, #6]
+cmp r0,#0
+beq SkillsEnd2
+draw_skill_icon_at 13, 11
+
+ldrb r0,[r6,#7]
+cmp r0,#0
+beq SkillsEnd2
+draw_skill_icon_at 17, 11
+
+ldrb r0,[r6,#8]
+cmp r0,#0
+beq SkillsEnd2
+draw_skill_icon_at 13, 13
+
+ldrb r0,[r6,#9]
+cmp r0,#0
+beq SkillsEnd2
+draw_skill_icon_at 17, 13
+
+ldrb r0,[r6,#10]
+cmp r0,#0
+beq SkillsEnd2
+draw_skill_icon_at 13, 15
+
+ldrb r0,[r6,#11]
+cmp r0,#0
+beq SkillsEnd2
+draw_skill_icon_at 17, 15
 b SkillsEnd
 
 .ltorg
 .align
 
-SkillsEnd:
+SkillsEnd2:
 
 @ draw_textID_at 13, 15, textID=0x4f6 @move
 @ draw_move_bar_at 16, 15
@@ -261,5 +301,5 @@ bx		r14
 
 .ltorg
 
-.include "GetTalkee.asm"
+.include "GetTalkee.s"
 

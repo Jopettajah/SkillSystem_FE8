@@ -4,14 +4,12 @@
 
 ProcLoopParent:
 #incbin "ProcLoop/proc_loop.dmp"
-POIN Proc_Start	//start
+POIN ProcLoop_Start	//start
 
 POIN Proc_Devil	//devil effect
 
-
-
 #ifndef COMBAT_ARTS
-	POIN Proc_Sureshot Proc_Luna 
+	POIN Proc_Sureshot Proc_Luna BeEfficient
 #else //COMBAT_ARTS
 	POIN CombatArt_SureShot CombatArt_Luna
 #endif // COMBAT_ARTS

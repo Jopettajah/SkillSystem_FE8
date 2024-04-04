@@ -212,6 +212,10 @@
 #define NimbleInitID 255 // Mov 
 #define SpectrumInitID 255 // All stats  
 
+// Even/Odd Footed: +1 Mov on Even/Odd turns
+// By Jopettajah
+#define OddFootedID 18
+#define EvenFootedID 19
 
 //Debuff Skills
 
@@ -367,6 +371,10 @@
 //Author Unknown (Initial Commit)
 #define GaleforceID 117
 
+//Fail 'n Gale: Move again after attacking but failing to harm an enemy. 
+//By Vesly 
+#define FailGaleID 255 
+
 //Lifetaker: Restore up to 25% HP after attacking and defeating an enemy.
 //Author Unknown (Initial Commit)
 #define LifetakerID 124
@@ -420,7 +428,11 @@
 #define CertainBlowID 238
 #define ArmoredBlowID 237
 //By Darrman
-#define HeroesDeathBlowID 255
+#define HeroesDeathBlowID 167
+
+#define SwiftStrikeID 213
+#define SwiftSparrowID 223
+#define	SturdyImpactID 15
 
 //Breaker Skills:  +50 Hit/Avo when enemy has the specified weapon type equipped.
 //By Rossendale
@@ -432,7 +444,7 @@
 
 //Charge: Gain +1 damage for every two squares moved.
 //By Datagne
-#define ChargeID 167
+#define ChargeID 255
 
 //Charge+: Charge+: If unit has used up all movement, gain brave effect.
 //By Sme
@@ -440,7 +452,7 @@
 
 //Critical Force: Base critical is Skl * 1.5.
 //Author Unknown (Initial Commit)
-#define CriticalForceID 213
+#define CriticalForceID 255
 
 //Killing Machine: Total critical rate is doubled.
 //Author Unknown (Initial Commit)
@@ -548,7 +560,7 @@
 
 //Lucky Seven: +20 Hit and Avoid until the 7th turn.
 //Author Unknown (Initial Commit)
-#define LuckySevenID 223
+#define LuckySevenID 255
 
 //Mage Slayer: Gain +2 damage and +10% crit when facing magical enemies.
 //By Datagne
@@ -687,7 +699,7 @@
 
 //Earth Boost: Grants +6 Defense if unit's current HP is at least 3 higher than the enemy's.
 //By Mikey Seregon
-#define EarthBoostID 255
+#define EarthBoostID 29
 
 //Water Boost: Grants +6 Resistance if unit's current HP is at least 3 higher than the enemy's.
 //By Mikey Seregon
@@ -716,152 +728,170 @@
 //By Jopettajah
 #define StunningSmileID 255
 
+// Keen Fighter: Unit takes 75% damage if the opponent can double. 
+// By Vesly 
+#define KeenFighterID 255
+
+// Steady Brawler: This unit deals 25% less damage while doubling, but 25% more when not. 
+// By Vesly 
+#define SteadyBrawlerID 255
+
+// _CELICA
+#define HaveAPlanID 14
+#define DarnWhippersnapperID 17
+#define BePoliteID 13
+#define BeEfficientID 20
+#define MeOldBonesID 23
+#define GorillaTacticsID 39
+#define UngroundedID 32
+#define KillEveryoneYouMeetID 30
+#define SpearheadFormID 31
 
 //Proc Skills
 
 //Adept: Gain a consecutive attack. (Speed % activation)
 //Author Unknown (Initial Commit)
-#define AdeptID 14
+#define AdeptID 255
 
 //Aegis: Nullify a magic attack. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define AegisID 17
+#define AegisID 255
 
 //Aether: First strike absorbs HP, second strike negates defenses. (Skill/2 % activation)
 //Author Unknown (Initial Commit)
-#define AetherID 13
+#define AetherID 255
 
 //Astra: 5 attacks at half damage. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define AstraID 15
+#define AstraID 255
 
 //Bane: Leave the opponent at 1 HP if the attack would kill. (Skill/2 % activation)
 //Author Unknown (Initial Commit)
-#define BaneID 20
+#define BaneID 255
 
 //Barricade: Damage taken is halved after first being struck.
 //By Snakey1
-#define BarricadeID 23
+#define BarricadeID 255
 
 //Barricade+: In combat, damage recieved equals half of the damage when struck last.
 //By Snakey1
-#define BarricadePlusID 24
+#define BarricadePlusID 255
 
 //Black Magic: Skill% chance to inflict a random status.
 //By Tequila
-#define BlackMagicID 39
+#define BlackMagicID 255
 
 //Colossus: Triples Strength. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define ColossusID 32
+#define ColossusID 255
 
 //Corona: Negate enemy resistance. (Skill% activation)
 //By Sme
-#define CoronaID 35
+#define CoronaID 255
 
 //Counter: Reflect physical damage when attacked at 1-2 range.
 //Author Unknown (Initial Commit)
-#define CounterID 18
+#define CounterID 255
 
 //Countermagic: Reflect magic damage when attacked at 1-2 range.
 //Author Unknown (Initial Commit)
-#define CounterMagicID 19
+#define CounterMagicID 255
 #define CountermagicID CounterMagicID //Alias
 
 //Deadeye: Doubles hit rate. Skill% chance to inflict sleep.
 //By Sme
-#define DeadeyeID 42
+#define DeadeyeID 255
 
 //Devil's Luck: Immune to Devil Reversal. Gives unit's Devil Reversal to the enemy. (31-Luck % chance of Devil Reversal).
 //By Leonarth
-#define DevilsLuckID 29
+#define DevilsLuckID 255
 
 //Devil's Pact: Immune to Devil Reversal. Curses the enemy with Devil Reversal. (31-Luck % chance of Devil Reversal).
 //By Leonarth
-#define DevilsPactID 30
+#define DevilsPactID 255
 
 //Devil's Whim: This unit is cursed, but the curse spreads to the enemy as well. (31-Luck % chance of Devil Reversal).
 //By Leonarth
-#define DevilsWhimID 31
+#define DevilsWhimID 255
 
 //Down With Arch: If the hit lands, instantly kill the enemy unit. (Only if name starts with "Arch")
 #define DownWithArchID 255
 
 //Dragon Fang: 1.5x damage. (Skill% activation)
 //By Sme
-#define DragonFangID 33
+#define DragonFangID 255
 
 //Eclipse: Leave opponent with 1 HP. (Skill % activation)
 //By Sme
-#define EclipseID 21
+#define EclipseID 255
 
 //Enrage: Inflict berserk status. (Skill% activation)
 //By Sme
-#define EnrageID 40
+#define EnrageID 255
 
 //Flare: Halve enemy resistance. (Skill% activation)
 //By Sme
-#define FlareID 34
+#define FlareID 255
 
 //Foresight: Avoid the damage from enemy Critical Hits and Skill Activations.
 //By Leonarth
-#define ForesightID 26
+#define ForesightID 255
 
 //Ignis: Add Def/2 and Res/2 to damage dealt. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define IgnisID 27
+#define IgnisID 255
 
 //Impale: Deal 4x damage. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define ImpaleID 36
+#define ImpaleID 255
 
 //Lethality: Instantly kill opponent. (Skill/2 % activation)
 //Author Unknown (Initial Commit)
-#define LethalityID 9
+#define LethalityID 255
 
 //Luna: Negates enemy defenses. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define LunaID 11
+#define LunaID 42
 
 //Miracle: Survive a lethal attack if HP > 50%.
 //Author Unknown (Initial Commit)
-#define MiracleID 25
+#define MiracleID 255
 
 //Moonbow: Enemy Def/Res is reduced by 25%. Charge: 2
 //Author Unknown (Initial Commit)
-#define MoonbowID 37
+#define MoonbowID 255
 
 //Pavise: Nullify a physical attack. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define PaviseID 16
+#define PaviseID 255
 
 //Petrify: Inflict stone status. (Skill% activation)
 //By Sme
-#define PetrifyID 41
+#define PetrifyID 255
 
 //Sol: Restore damage dealt as HP. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define SolID 12
+#define SolID 35
 
 //Sure Shot: A precision attack that always hits and does 1.5x damage. (Skill % activation)
 //Author Unknown (Initial Commit)
-#define SureShotID 10
+#define SureShotID 255
 
 //Corrosion: Decrease durability of enemy's weapon by User's level (Skill/2 % activation)
 //By Sme
-#define CorrosionID 22
+#define CorrosionID 255
 
 //Glacies: Add unit's Resistance to damage dealt. (Skill % activation)
 //By Sme
-#define GlaciesID 28
+#define GlaciesID 255
 
 //Great Shield: Negate all damage. (Defense % activation)
 //By Sme
-#define GreatShieldID 8
+#define GreatShieldID 255
 
 //Vengeance: Add half of damage taken to damage dealt. (Skill % activation)
 //By Sme
-#define VengeanceID 38
+#define VengeanceID 255
 
 //Range Skills
 
@@ -900,11 +930,54 @@
 //By Zeta
 #define AssassinateID 139
 
+// Prideful Warrior: This unit always attacks after the enemy, but always doubles.
+// By Vesly 
+#define PridefulWarriorID 255
+
+// Doubling Skills 
+
 //Moonlight: Cannot double but opponent cannot counterattack.
 //By Sme
 #define MoonlightID 142
 
+// Reckless Fighter: Both units in combat always double. 
+// By Vesly 
+#define RecklessFighterID 24
 
+
+//Wary Fighter: Unit cannot double or be doubled.
+//By Tequila
+#define WaryFighterID 111
+
+// Last Word: When doubled, this unit also doubles.
+// By Vesly 
+#define LastWordID 255
+
+// Bold Fighter: When attacking, this unit always doubles. 
+// By Vesly 
+#define BoldFighterID 255 
+
+// Vengeful Fighter: When defending, this unit always doubles. 
+// By Vesly 
+#define VengefulFighterID 255
+
+// Quick Learner: When attacking a higher leveled enemy, this unit doubles.
+// By Vesly 
+#define QuickLearnerID 255
+
+// Passion's Flow: If gaining support bonuses, this unit always doubles while attacking.
+// by Vesly 
+#define PassionsFlowID 255
+
+// Biding Blow: If the opponent cannot counterattack, this unit doubles. 
+// By Vesly 
+#define BidingBlowID 255
+
+// Advantage Chaser: Unit always doubles when attacking with WTA.
+// By Jopettajah
+#define AdvantageChaserID 255
+
+#define AlacrityID 153
 
 //Stat Modifier Skills
 
@@ -920,7 +993,7 @@
 
 //Resolve: When HP < 50%, gain 1.5x Str, Skl, & Spd.
 //By Sme
-#define ResolveID 153
+#define ResolveID 255
 
 //Fortress Defense: +5 Def, -3 Str/Mag
 //By Leonarth
@@ -1026,22 +1099,36 @@
 
 //Swarp: Allows unit to swap positions with a distant ally.
 //Be Sme
-#define SwarpID 69
+#define SwarpID 69 
 
 //Steal: Unit can steal items.
 //By Tequila
-#define StealID 56
+#define StealID 56 
 
 //Steal+: Unit can steal unequipped weapons and staves if con>weight.
 //By Tequila
-#define StealPlusID 57
+#define StealPlusID 57 
+
+//Draw Back: Unit moves 1 space away from target ally. Ally moves to unit’s previous space. 
+//By Vesly 
+#define DrawBackID 255
+
+//Sacrifice: Drains the user’s HP to restore the HP of another allied unit. It also cures status effects, with no HP cost to the user.
+//By Vesly 
+#define SacrificeID 255
+
+//Ardent Sacrifice: Restores 10 HP to target, but drops user’s HP by 10. 
+//By Vesly 
+#define ArdentSacrificeID 255
+
+//Reciprocal Aid: User and target ally switch their current HP totals. 
+//By Vesly 
+#define ReciprocalAidID 255
+
+
 
 
 //Miscellaneous Skills
-
-//Wary Fighter: Unit cannot double or be doubled.
-//By Tequila
-#define WaryFighterID 111
 
 //Savior: Can rescue without penalties.
 //Author Unknown (Initial Commit)

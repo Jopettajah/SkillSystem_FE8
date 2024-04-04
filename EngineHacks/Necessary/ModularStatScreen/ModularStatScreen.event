@@ -8,12 +8,23 @@
 
 #ifdef _FE8_
 
-  #define Skl_Arrow_X 0x78
-  #define Skl_Arrow_Y 0x28
-  #define Spd_Arrow_X 0x78
-  #define Spd_Arrow_Y 0x38
-  #define Trv_Icon_X 0xB8
-  #define Trv_Icon_Y 0x2E
+  #ifndef USE_STRMAG_SPLIT
+	//normal positions
+    #define Skl_Arrow_X 0x78
+    #define Skl_Arrow_Y 0x28
+    #define Spd_Arrow_X 0x78
+    #define Spd_Arrow_Y 0x38
+    #define Trv_Icon_X 0xB8
+    #define Trv_Icon_Y 0x2E
+  #else // USE_STRMAG_SPLIT
+	//strmag positions
+	#define Skl_Arrow_X 0x78
+    #define Skl_Arrow_Y 0x38
+    #define Spd_Arrow_X 0x78
+    #define Spd_Arrow_Y 0x48
+    #define Trv_Icon_X 0xB8
+    #define Trv_Icon_Y 0x2E 
+  #endif // USE_STRMAG_SPLIT
   
   #include "DisplayGrowthsOptions/DisplayGrowthsOptions.event"
   #include "WeaponRankStatScreen/WeaponRankStatScreen.event"
@@ -24,7 +35,7 @@
       POIN MSS_page1|1 MSS_page2|1 MSS_page3|1 MSS_page4|1
 
     ORG $88690
-      BYTE 4 //make 4 pages
+      BYTE 3 //make 4 pages
 	  
     ORG $88650
       POIN NewPageNameGraphic
@@ -37,13 +48,6 @@
 
     ORG $87f40
       POIN NewPageNamePalette
-
-    ORG $889d0
-      SHORT $e010 //Temporary r-text fix to prevent freezing
-
-    ORG $889f2  
-      SHORT $BD30
-      BL(RText_Page4_ladder) //this has to be in bl range somewhere
 
     // Make all the arrows line up with the stats and stuff
 
@@ -77,26 +81,6 @@
 
     ORG $888BC //Stores byte to store 1 before stat screen struct
       callHack_r3(Store_Page)
-
-    // Display an R-button text about pressing Select, since I can't seem to fit it nicely, and make that the default
-
-    ORG $889D8
-      POIN PersonalDataRText
-
-    // HP name color
-	// This now gets called from within the left stat screen page
-    //ORG $86ED4
-    //  callHack_r3(HP_Name_Color)
-
-    ORG $2BA28
-      jumpToHack(Write_Growths_To_Battle_Struct)
-
-    ORG $2B9C4
-      jumpToHack(Enemy_Autolevel)
-
-    ORG $17E98
-      callHack_r3(New_Unit_Exp)
-      SHORT 0xE005
 	  
 	#ifdef ENABLE_PERSONAL_INFO
 	
@@ -152,7 +136,7 @@
   #ifdef LEADERSHIP_STARS
 	#include "pages/strmag/mss_page1_skills_leadership.lyn.event"
   #else // LEADERSHIP_STARS
-	#include "pages/strmag/mss_page1_skills.lyn.event"
+	#include "pages/mss_page1_skills.lyn.event"
   #endif // LEADERSHIP_STARS  
   
   #endif // USE_STRMAG_SPLIT
@@ -255,34 +239,6 @@
     WORD Growth_Options
     POIN Get_Hp_Growth
     POIN Get_Palette_Index
-
-  ALIGN 4
-  Write_Growths_To_Battle_Struct:
-    #incbin "asm/Write_Growths_To_Battle_Struct.dmp"
-        POIN Class_Level_Cap_Table Get_Hp_Growth Get_Str_Growth
-	#ifdef USE_STRMAG_SPLIT
-		POIN Get_Mag_Growth
-	#else
-		WORD 0 // Code in this function treats 0 here as strmag not installed and does nothing.
-	#endif // USE_STRMAG_SPLIT
-	POIN Get_Skl_Growth Get_Spd_Growth Get_Def_Growth Get_Res_Growth Get_Luk_Growth
-    WORD Growth_Options
-
-  ALIGN 4
-/*
-  This has been moved to a CSV
-  Class_Level_Cap_Table:
-    #incbin "Display Growths Options/Class_Level_Cap_Table.dmp"
-*/
-  ALIGN 4
-  Enemy_Autolevel:
-    #incbin "asm/Enemy_Autolevel.dmp"
-    WORD Growth_Options
-
-  ALIGN 4
-  New_Unit_Exp:
-    #incbin "asm/New_Unit_Exp.dmp"
-    POIN Class_Level_Cap_Table
 
   ALIGN 4
   Growth_Color_Table:

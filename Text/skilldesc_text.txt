@@ -58,12 +58,12 @@ Bane: Leave the opponent at[N]
 (Skill/2 % activation)[X]
 
 ## SD_Luna
-Luna: Negates enemy defenses.[N]
-(Skill % activation)[X]
+Lunar Lashout: Negates half of[N]
+enemy defenses when defending.[X]
 
 ## SD_Sol
-Sol: Restore damage dealt as HP.[N]
-(Skill % activation)[X]
+Solar Strike: Restore  half of[N]
+damage dealt as HP when attacking.[X]
 
 ## SD_Aether
 Aether: First strike absorbs HP,[N]
@@ -239,7 +239,7 @@ Voice of Peace: Enemies within[N]
 2 tiles deal -2 damage.[X]
 
 ## SD_Amaterasu
-Amaterasu: Allies within 2 tiles[N]
+Banana Sharing: Allies within 2 tiles[N]
 recover 20% HP each turn.[X]
 
 ## SD_SpurStr
@@ -279,7 +279,7 @@ Impale: Deal 4x damage.[N]
 (Skill % activation)[X]
 
 ## SD_Colossus
-Colossus: Triples Strength.[N]
+Colossus: Triples Attack.[N]
 (Skill % activation)[X]
 
 ## SD_RallyStr
@@ -397,8 +397,8 @@ Lily's Poise: Adjacent allies gain[N]
 +1/-3 damage dealt/received.[X]
 
 ## SD_Expertise
-Expertise: Reduce bonus damage[N]
-from critical hits by 50%.[X]
+Expertise: Receive double damage[N]
+from crits instead of triple.[X]
 
 ## SD_Celerity
 Celerity: Movement +2.[X]
@@ -716,8 +716,9 @@ from enemy Critical Hits and[N]
 Skill Activations.[X]
 
 ## SD_Axefaith
-Axefaith: Axes can't lose durability, and[N]
-grants +Luck*1.5 Hit when wielding axes.[X]
+Axefaith: Axes can't lose durability,[N]
+and grants (Luck x 1.5) Hit when[N]
+wielding axes.[X]
 
 ## SD_ArmorMarch
 Armor March: At start of turn, if unit[N]
@@ -778,13 +779,13 @@ Hex: -15 avoid to all[N]
 adjacent enemies.[X]
 
 ## SD_Barricade
-Barricade: Damage taken is[N]
-halved after first being struck.[X]
+Barricade: Take half damage from[N]
+all hits except the first one.[X]
 
 ## SD_BarricadePlus
-Barricade+: In combat, damage[N]
-recieved equals half of the[N]
-damage when struck last.[X]
+Barricade+: Receive 1/2 damage[N]
+from the 2nd hit, 1/4 from the[N]
+3rd, and 1/8 from the 4th.[X]
 
 ## SD_PointBlank
 Point Blank: Minimum range of[N]
@@ -820,7 +821,8 @@ W. Weight, +2 dmg, +15% hit, +5% crit.[X]
 
 ## SD_Outrider
 Outrider: Take -1 damage and[N]
-gain +3% crit per space moved.[X]
+gain +3% crit per space moved.[N]
+Bonuses disappear on enemy phase.[X]
 
 ## SD_HeavyStrikes
 Heavy Strikes: Add weapon[N]
@@ -828,7 +830,8 @@ weight to critical chance.[X]
 
 ## SD_Charge
 Charge: Gain +1 damage for[N]
-every two squares moved.[X]
+every two squares moved.[N]
+Bonus disappears on enemy phase.[X]
 
 ## SD_Infiltrator
 Infiltrator: If within 2 spaces[N]
@@ -900,13 +903,13 @@ Blossom: 2x growth rates,[N]
 but 1/2 exp gain.[X]
 
 ## SD_Aptitude
-Aptitude: +20% to[N]
+Aptitude: +20 to[N]
 all growth rates.[X]
 
 ## SD_QuickRiposte
 Quick Riposte: If defending and[N]
 HP is 50% or higher, unit doubles[N]
-and attacker does not double.[X]
+and attacker cannot double.[X]
 
 ## SD_Resolve
 Resolve: When HP < 50%,[N]
@@ -1552,3 +1555,132 @@ Dragonskin: Halves damage taken.[X]
 ## SD_StunningSmile
 Stunning Smile: If foe is male, inflicts[N]
 Avo -20 on that foe during combat.[X]
+
+## SD_RecklessFighter
+Reckless Fighter: If a counter is possible,[N]
+this unit and the opponent always double.[X]
+
+## SD_KeenFighter
+Keen Fighter: This unit takes 25%[N]
+less damage if the opponent doubles.[X]
+
+## SD_PridefulWarrior 
+Prideful Warrior: This unit always[N]
+attacks after the enemy, but[N]
+always doubles.[X]
+
+
+
+## SD_LastWord
+Last Word: When doubled, this unit[N]
+also doubles.[X]
+
+
+## SD_BoldFighter
+Bold Fighter: When attacking,[N]
+this unit always doubles.[X]
+
+## SD_VengefulFighter
+Vengeful Fighter: When defending,[N]
+this unit always doubles.[X]
+
+
+## SD_SteadyBrawler
+Steady Brawler: This unit deals[N]
+25% less damage while doubling,[N]
+but 25% more when not.[X]
+
+## SD_QuickLearner
+Quick Learner: When attacking a[N]
+higher leveled enemy, this unit doubles.[X]
+
+## SD_PassionsFlow
+Passion's Flow: If gaining support[N]
+bonuses, this unit always doubles[N]
+while attacking.[X]
+
+
+## SD_BidingBlow
+Biding Blow: If the opponent[N]
+cannot counter, this unit doubles.[X]
+
+## SD_OddFooted
+Odd Footed: Unit gains +1 mov at[N]
+the start of odd numbered turns.[X]
+
+## SD_EvenFooted
+Even Footed: Unit gains +1 mov at[N]
+the start of even numbered turns.[X]
+
+## SD_AdvantageChaser
+Advantage Chaser: When attacking[N]
+with weapon triangle advantage,[N]
+unit makes a guaranteed follow-up.[X]
+
+
+
+## SD_DrawBack
+Draw Back: Unit moves 1 space away[N]
+from target ally. Ally moves to[N]
+unit's previous space.[X]
+
+## SD_Sacrifice
+Sacrifice: Drains HP from the[N]
+user to restore the HP and cure[N]
+status of another allied unit.[X]
+
+## SD_ArdentSacrifice
+Ardent Sacrifice: Restores 10[N]
+HP to target, but drops user's[N]
+HP by 10.[X]
+
+## SD_ReciprocalAid
+Reciprocal Aid: User and target[N]
+ally switch their current HP totals.[X]
+
+## SD_FailGale
+Fail 'n Gale: Move again[N]
+after attacking but failing[N]
+to harm an enemy.[X]
+
+## SD_Alacrity
+Alacrity: If unit initiates with an AS[N]
+advantage of 8 or more, unit's follow-up[N]
+occurs before enemy's counterattack.[X]
+
+## SD_SwiftStrike
+Swift Strike: +4 Attack Speed and[N]
+Resistance when initiating battle.[X]
+
+## SD_SwiftSparrow
+Swift Sparrow: +4 Attack Speed and[N]
+Attack when initiating battle.[X]
+
+## SD_SturdyImpact
+Sturdy Impact: +6 Attack and[N]
++10 Defense when initiating battle.[N]
+Foe cannot make a follow-up attack.[X]
+
+## SD_DarnWhippersnapper
+Darn Whippersnappers!: -4 damage[N]
+from unpromoted enemies.[X]
+
+## SD_MeOldBones
+Me Old Bones!: Effective weapons[N]
+have 5x modifier against this unit.[X]
+
+## SD_BePolite
+Be Polite: Adjacent allies[N]
+receive +15 hit.[X]
+
+## SD_BeEfficient
+Be Efficient: Would be lethal[N]
+blows gain +15 hit.[X]
+
+## SD_HaveAPlan
+Have a Plan: +20 Avo[N]
+when under attack.[X]
+
+## SD_Ungrounded
+Ungrounded: Gains +20 Avo[N]
+against non-flying melee attacks.[X]

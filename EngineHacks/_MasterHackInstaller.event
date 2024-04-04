@@ -53,6 +53,17 @@ POP
 
 ////////////////////////////////FREE SPACE OUT OF BL RANGE
 
+  #include "ExternalHacks/ChangeChapterSong/Installer.event"
+  
+  #include "ExternalHacks/ContinueBattleBGM/Installer.event"
+
+  #include "ExternalHacks/PortraitShift/Portrait Shift Table.event"
+
+  #include "ExternalHacks/ModularMinimugBox/Installers/MMBInstallerDefault.event"
+
+  // Expand unit promotion list
+  #include "ExternalHacks/ClassChgExpansion/ClassChgExpansion.event"
+
   // Display damage numbers in battle animations.
   #include "ExternalHacks/AnimNumbers/AnimNumbers.event"
 
@@ -123,6 +134,9 @@ POP
   //Stat Screens palette by allegiance
   #include "ExternalHacks/StatScreenAllegiance/StatScreenAllegiance.event"
 
+  //StealGfxFix
+  #include "QualityOfLife/StealGfxFix.event"
+
   //Menu Semitransparency
   #include "QualityOfLife/SemitransparencyChanges.event"
 
@@ -171,6 +185,10 @@ POP
   //Narrow Fonts by Scraiza
   ALIGN 4
   #include "ExternalHacks/NarrowFont/NarrowFontInstaller.event"
+  
+  //UTF8 Fonts by Vesly, 7743, Mokha, Colorz, Scraiza, MintX, and Bly
+  ALIGN 4 
+  #include "ExternalHacks/Fonts/Installer.event" 
   
   //Crit Cap
   #ifdef CRIT_CAP

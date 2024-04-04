@@ -1,0 +1,75 @@
+#include "Tools/Tool Helpers.txt"
+//this file defines the macro:
+//setMugEntry(number, data, mouth_x, mouth_y, eye_x, eye_y)
+
+/*
+ALIGN 4
+_Mug:
+#incbin "dmp/_mug.dmp"
+#incbin "dmp/_frames.dmp"
+#incbin "dmp/_palette.dmp"
+#incbin "dmp/_minimug.dmp"
+setMugEntry(MugID,_Mug,3,5,3,3)
+*/
+
+#define LordMugID 0x1
+#define RedMyrmMugID 0x2
+#define GreenMyrmMugID 0x3
+#define GorillaMugID 0x4
+#define PegaMugID 0x5
+#define CavMugID 0x6
+#define SniperMugID 0x7
+#define JagenMugID 0x8
+#define ArmorMugID 0x9
+#define MageMugID 0xA
+#define ClericMugID 0xB
+#define DruidMugID 0xC
+#define BossMugID 0x30
+
+ALIGN 4
+Pega_Mug:
+#incbin "dmp/Pega_mug.dmp"
+#incbin "dmp/Pega_frames.dmp"
+#incbin "dmp/Pega_palette.dmp"
+#incbin "dmp/Pega_minimug.dmp"
+setMugEntry(PegaMugID,Pega_Mug,3,4,3,2)
+
+ALIGN 4
+Gorilla_Mug:
+#incbin "dmp/Gorilla_mug.dmp"
+#incbin "dmp/Gorilla_frames.dmp"
+#incbin "dmp/Gorilla_palette.dmp"
+#incbin "dmp/Gorilla_minimug.dmp"
+setMugEntry(GorillaMugID,Gorilla_Mug,4,6,3,3)
+
+ALIGN 4
+Helari_Mug:
+#incbin "dmp/Helari_mug.dmp"
+#incbin "dmp/Helari_frames.dmp"
+#incbin "dmp/Helari_palette.dmp"
+#incbin "dmp/Helari_minimug.dmp"
+setMugEntry(ClericMugID,Helari_Mug,3,6,3,5)
+
+ALIGN 4
+Snoiper_Mug:
+#incbin "dmp/Snoiper_mug.dmp"
+#incbin "dmp/Snoiper_frames.dmp"
+#incbin "dmp/Snoiper_palette.dmp"
+#incbin "dmp/Snoiper_minimug.dmp"
+setMugEntry(SniperMugID,Snoiper_Mug,3,5,3,3)
+
+ALIGN 4
+Loordi_Mug:
+#incbin "dmp/Loordi_mug.dmp"
+#incbin "dmp/Loordi_frames.dmp"
+#incbin "dmp/Loordi_palette.dmp"
+#incbin "dmp/Loordi_minimug.dmp"
+setMugEntry(LordMugID,Loordi_Mug,3,5,3,3)
+
+ALIGN 4
+RedMyrm_Mug:
+#incbin "dmp/RedMyrm_mug.dmp"
+#incbin "dmp/RedMyrm_frames.dmp"
+#incbin "dmp/RedMyrm_palette.dmp"
+#incbin "dmp/RedMyrm_minimug.dmp"
+setMugEntry(RedMyrmMugID,RedMyrm_Mug,4,6,4,4)

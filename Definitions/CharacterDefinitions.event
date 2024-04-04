@@ -1,0 +1,30 @@
+//Char defs
+#define Loordi 0x1
+#define RedMyrm 0x2
+#define GreenMyrm 0x3
+#define Gorilla 0x4
+#define Pega 0x5
+#define Cav 0x6
+#define Snoiper 0x7
+#define Jagen 0x8
+#define Armor 0x9
+#define Maagi 0xA
+#define Helari 0xB
+#define Druidi 0xC
+
+#define EnemySoldier 0x2d // All enemy classes need charID for learned skills
+#define EnemyKnight 0x2e
+#define EnemyMerc 0x2f
+#define EnemyFighter 0x30
+#define EnemyArcher 0x31
+#define EnemyWyvern 0x32
+#define EnemyCav 0x33
+#define EnemyMonk 0x34
+#define EnemyMage 0x35
+
+//Item defs
+#define FireSword 0xbd
+
+// Ai defs
+#define HalfRangeAI [0x0C,0x03,0x03]
+#define TwoActionAI ChaseOnceApproachedAI

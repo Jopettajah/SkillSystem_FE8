@@ -1,0 +1,9 @@
+/*#include "BattleAnim/AnimDefinitions.event"
+#include "BattleAnim/Master Animation Installer.event"*/
+#include "Portrait/MugInstaller.event"
+/*#include "MapSprite/MapSpriteInstaller.event"
+#include "CSA_Creator/Master Spell Animation Installer.event"
+#include "BG/BGInstaller.event"
+#include "ClassCard/ClassCardInstaller.event"
+#include "ItemIcon/ItemIconInstaller.event"
+#include "Palette/Palette Setup.event"*/

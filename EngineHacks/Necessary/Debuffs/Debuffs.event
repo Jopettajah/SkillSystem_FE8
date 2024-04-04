@@ -155,6 +155,13 @@ ArmorMarchBitOffset_Link:
 WORD MiscOffset+3
 VigorDanceBitOffset_Link:
 WORD MiscOffset+4 
+//Used with Dragz's Effectiveness Items
+/*
+FlammableBitOffset_Link:
+WORD MiscOffset+5
+DousedBitOffset_Link:
+WORD MiscOffset+6
+*/
 
 
 ALIGN 4 
@@ -292,6 +299,7 @@ TeamDebuffTables:
     #include "asm/GetUnitDebuffEntry.lyn.event"
 	#include "asm/ProcessDebuffs.lyn.event"
 	#include "asm/SetUnitDebuffASMC.lyn.event" 
+	#include "asm/DebuffGivenTableEntry.lyn.event" 
 
 
 ALIGN 4 

@@ -1057,6 +1057,58 @@ ORG SkillIcon(DragonskinID)
 #incbin "SkillIcons/DragonSkin.dmp"
 ORG SkillIcon(StunningSmileID)
 #incbin "SkillIcons/StunningSmile.dmp"
+ORG SkillIcon(RecklessFighterID)
+#incbin "SkillIcons/RecklessFighter.dmp"
+ORG SkillIcon(KeenFighterID)
+#incbin "SkillIcons/KeenFighter.dmp"
+ORG SkillIcon(PridefulWarriorID)
+#incbin "SkillIcons/PridefulWarrior.dmp"
+
+ORG SkillIcon(LastWordID)
+#incbin "SkillIcons/LastWord.dmp"
+ORG SkillIcon(BoldFighterID)
+#incbin "SkillIcons/BoldFighter.dmp"
+ORG SkillIcon(VengefulFighterID)
+#incbin "SkillIcons/VengefulFighter.dmp"
+ORG SkillIcon(SteadyBrawlerID)
+#incbin "SkillIcons/SteadyBrawler.dmp"
+ORG SkillIcon(QuickLearnerID)
+#incbin "SkillIcons/QuickLearner.dmp"
+ORG SkillIcon(PassionsFlowID)
+#incbin "SkillIcons/PassionsFlow.dmp"
+ORG SkillIcon(BidingBlowID)
+#incbin "SkillIcons/BidingBlow.dmp"
+
+ORG SkillIcon(OddFootedID)
+#incbin "SkillIcons/OddFooted.dmp"
+
+ORG SkillIcon(EvenFootedID)
+#incbin "SkillIcons/EvenFooted.dmp"
+
+ORG SkillIcon(AdvantageChaserID)
+#incbin "SkillIcons/AdvantageChaser.dmp"
+
+ORG SkillIcon(DrawBackID)
+#incbin "SkillIcons/Acrobat.dmp"
+ORG SkillIcon(SacrificeID)
+#incbin "SkillIcons/Acrobat.dmp"
+ORG SkillIcon(ArdentSacrificeID)
+#incbin "SkillIcons/Acrobat.dmp"
+ORG SkillIcon(ReciprocalAidID)
+#incbin "SkillIcons/Acrobat.dmp"
+ORG SkillIcon(FailGaleID)
+#incbin "SkillIcons/FailGale.dmp"
+
+ORG SkillIcon(AlacrityID)
+#incbin "SkillIcons/Desperation.dmp"
+ORG SkillIcon(SwiftStrikeID)
+#incbin "SkillIcons/SwiftStrike.dmp"
+ORG SkillIcon(SwiftSparrowID)
+#incbin "SkillIcons/SwiftSparrow.dmp"
+ORG SkillIcon(SturdyImpactID)
+#incbin "SkillIcons/SturdyBlow.dmp"
+ORG SkillIcon(UngroundedID)
+#incbin "SkillIcons/OutdoorFighter.dmp"
 
 ORG SkillIcons+0x8000
 

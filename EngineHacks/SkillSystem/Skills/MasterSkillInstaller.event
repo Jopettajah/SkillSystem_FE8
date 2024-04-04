@@ -39,4 +39,6 @@ POP
 #include "WTASkills/WTASkills.event"
 #include "GrowthSkills/GrowthSkills.event"
 
+#include "_CELICA/Installer.event"
+
 #include "charge_table.event"

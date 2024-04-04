@@ -1,0 +1,46 @@
+//#include "EAstdlib.event"
+
+
+PUSH
+ORG $8472C
+POIN DeathQuoteTable
+
+ORG $846AC
+POIN BattleQuoteTable
+POP
+
+#define BattleQuoteGeneric(Character1,Chapter,TextPointer,EventPointer,ID) "SHORT Character1; SHORT 0x0; SHORT Chapter; SHORT ID; SHORT TextPointer; ALIGN 4; POIN EventPointer; SHORT 0x0; SHORT Character1; SHORT Chapter; SHORT ID; SHORT TextPointer; ALIGN 4; POIN EventPointer;"
+#define BattleQuoteSpecific(Character1, Character2,Chapter,TextPointer,EventPointer,ID) "SHORT Character1; SHORT Character2; SHORT Chapter; SHORT ID; SHORT TextPointer; ALIGN 4; POIN EventPointer; SHORT Character2; SHORT Character1; SHORT Chapter; SHORT ID; SHORT TextPointer; ALIGN 4; POIN EventPointer;"
+
+#define DeathQuote(Character,Chapter,EventID,TextID) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID 0 0"
+#define DeathQuote(Character,Chapter,EventID,TextID,Pointer) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID ; POIN Pointer"
+
+#include "BattleQuoteEvents.event"
+
+//Specifics always go before generics! 
+ALIGN 4
+BattleQuoteTable:
+BattleQuoteGeneric(ONeill,0,0,Ch1BossEvent,1)
+BYTE 0xFF 0xFF 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 // Terminator
+
+//EventID 2 for bosses, 0x65 for lords
+ALIGN 4
+DeathQuoteTable:
+//Bosses:
+DeathQuote(ONeill,0,2,BossDeath)
+
+//Playables:
+DeathQuote(Loordi,0,0x65,LoordiDeath)
+DeathQuote(RedMyrm,0,0,RedMyrmDeath)
+DeathQuote(GreenMyrm,0,0,GreenMyrmDeath)
+DeathQuote(Gorilla,0,0,GorillaDeath)
+DeathQuote(Pega,0,0,PegaDeath)
+DeathQuote(Cav,0,0,CavDeath)
+DeathQuote(Snoiper,0,0,SnoiperDeath)
+DeathQuote(Jagen,0,0,JagenDeath)
+DeathQuote(Armor,0,0,ArmorDeath)
+DeathQuote(Maagi,0,0,MaagiDeath)
+DeathQuote(Helari,0,0,HelariDeath)
+
+DeathQuote(0xFFFF,0,0,0) // Terminator
+

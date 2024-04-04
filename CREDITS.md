@@ -4,7 +4,9 @@ adding yourself!
 
 # Skill contributors
 
+- circleseverywhere
 - Tequila
+- Colorz
 - Rossendale
 - StanH
 - Leonarth
@@ -22,23 +24,34 @@ adding yourself!
 - Mikey Seregon
 - Vesly 
 - Dragz
+- Jopettajah
 
 # Other
 
 - 7743: various bugfixes
 - RobertFPY, Pikmin1211, and Snakey1: Str/Mag Split Finalization
 
-# Icons
+# SkillSys Graphics
 
 - Monkeybard, Black Mage
 - Blaze: Stances
 - vlak: Drives
 - Pikmin1211: Miscellaneous
 - 2WB: Miscellaneous
-- Someone: Taker, Hone, Oath, Rouse, Guts, StrongCon, RallyChaos, HoardersBane
-ShrewdPotential, EternalVanity 
-- Alice: Dancing/Heavy Blade 
+- Someone: Taker, Hone, Oath, Rouse, Guts, Strong Con, Rally Chaos, Hoarders Bane, Shrewd Potential, Eternal Vanity 
+- Alice: Dancing/Heavy Blade, Dark Bargain, Soul Sap 
 - VelvetKitsune: Initiative 
 - Zaim: Indoor March
 - Reds: Quick Riposte
 - Dragz: Divinely Inspiring
+- circleseverywhere: Skill Animations
+
+
+# External & Inline hacks
+- Zane: MMB
+- 2WB: Portrait Height Fix
+- 7743: Flag-based map bgm change, continue map bgm to battle
+
+# Music Related
+- Alusq: Custom instrument samples, NIMAP2 w/ keysplits, advanced music suite
+

@@ -11,7 +11,7 @@
 #define USE_TEST_MAP
 
 // The amount of attack speed needed to double an opponent.
-#define AS_DOUBLING_THRESHOLD 3
+#define AS_DOUBLING_THRESHOLD 4
 
 // If true, dropped items will retain their durability.
 #define DROPPED_ITEM_DURABILITY True
@@ -27,7 +27,7 @@
 // If uncommented, a full str/split will be implemented without replacing any stats
 // TODO: Define an item ID for Spirit Dust (Mag statbooster) in "Strmag/Str Mag Split/Installer.event". Energy Ring is used by default!
 // Item icon for Spirit Dust is included! Define your icon ID in "Strmag/_Master Asm Installer.event". Default is Green Note.
-//#define USE_STRMAG_SPLIT
+#define USE_STRMAG_SPLIT
 
 // If uncommented, the statscreen will have a moving background similar to FE6 and FE7.
 // Customization of graphical assets is possible in Necessary/ModularStatScreen/Background/Graphics/Graphics.event.
@@ -164,11 +164,27 @@
 //If uncommented, Narrow Font will be implemented.
 //This allows for setting narrower text in addition to standard text.
 // #define NARROW_FONT
+#ifdef NARROW_FONT
+MESSAGE NARROW_FONT is being phased out for UTF-8 encoded Narrow Font. 
+MESSAGE If you have added custom characters, you will need to add them in Root\EngineHacks\ExternalHacks\Fonts. 
+MESSAGE Please see the README.md there or ask @Vesly for help. 
+#endif 
+
+//If uncommented, UTF-8 will be implemented. 
+//This allows for adding new fonts/characters and includes NarrowFont by default. 
+#define UTF8 
+
+// Do not define NARROW_FONT and UTF8 simultaneously. 
+#ifdef UTF8 
+	#ifdef NARROW_FONT 
+		#undef NARROW_FONT 
+	#endif 
+#endif 
 
 // If uncommented, the fourth page of the stat screen will include personal information on the character.
 // This information can be edited in the "Personal Data Editor.csv" file.
 // This will automatically enable Narrow Font.
-#define ENABLE_PERSONAL_INFO
+//#define ENABLE_PERSONAL_INFO
 
 // If uncommented, the third page of the stat screen will only show weapon ranks that the unit has a rank in.
 #define ONLY_SHOW_USED_RANKS
@@ -205,9 +221,12 @@
 
 // If uncommented, the unit load buffer will be repointed.
 // The location it is repointed to is also defined here. The default location is
-// the area that stores turn count information, and WILL break turn counts.
-// #define REPOINT_UNIT_LOAD_BUFFER
-// #define NewUnitLoadBufferLoc 0x203ED40
+// the area used for debug printing.
+#define REPOINT_UNIT_LOAD_BUFFER
+#define NewUnitLoadBufferLoc 0x2026E30
+
+// If uncommented, unit branched promotion list will be expanded to 6
+//#define CLASS_CHG_EXPANSION
 
 // =================================
 // = SKILL BEHAVIOUR CONFIGURATION =
@@ -327,22 +346,44 @@
 // If false, it will only consume vulneraries from your inventory. 
 #define HOARDERS_BANE_USE_CONVOY True
 
+// If true, enemies/npcs with Canto+ will retreat to their safest tile with any remaining movement after their action. 
+#define CANTO_AI True
 
 // ================================
 // = GROWTH DISPLAY CONFIGURATION =
 // ================================
 
 //If commented, growths will not be displayed by pressing Select.
-#define PRESS_SELECT_TO_VIEW_GROWTHS
+//#define PRESS_SELECT_TO_VIEW_GROWTHS
 
 //If true, the stat colors for player units will reflect their growth in the stat.
 #define USE_STAT_COLORS True
 
+//When leveling up, the game rerolls (up to 5 times) until you gain at least this many points
+#define MIN_STAT_GAIN 0 // vanilla is 1 
+
+// If true, fixed/bracketed levels will consider your lowest level as the level inputted in the character table
+#define BRACKETING_USE_BASE_LEVEL False 
+
 //If true, Fixed Growths mode will exist.
+// Note: this takes promotion level into account, but does not take stat boosters into account 
 #define FIXED_GROWTHS_MODE False
 
-//ID of flag to use for fixed growths mode, if enabled
+//ID of flag to use for fixed growths mode, if enabled (also works if flag here is defined as 0)
 #define FIXED_GROWTHS_FLAG_ID 0xEF
+
+//If true, Stat bracketing mode will exist. This keeps your stats within X points of the average. 
+// Note: this takes promotion level into account, but does not take stat boosters into account 
+#define STAT_BRACKETING_EXISTS False 
+
+//ID of flag to use for bracketed growths mode, if enabled (also works if flag here is defined as 0)
+#define BRACKETED_GROWTHS_FLAG_ID 0xED // 0xEE is used to hide dmg numbers in battle
+
+//If using stat bracketing and your stat is below average by this many points, always gain it on levelup 
+#define FORCE_WHEN_BELOW_AVERAGE_BY_AMOUNT 3 
+
+//If using stat bracketing and your stat is above average by this many points, never gain it on levelup 
+#define PREVENT_WHEN_ABOVE_AVERAGE_BY_AMOUNT 5 
 
 //If true, passive growth boosters and metis tome will not affect growths in fixed growths mode.
 #define FIXED_GROWTHS_DONT_BOOST True

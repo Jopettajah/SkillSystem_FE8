@@ -14,6 +14,18 @@ mov r1, #5
 b Routine_Start
 mov r1, #6
 b Routine_Start
+mov r1, #7
+b Routine_Start
+mov r1, #8
+b Routine_Start
+mov r1, #9
+b Routine_Start
+mov r1, #10
+b Routine_Start
+mov r1, #11
+b Routine_Start
+mov r1, #12
+b Routine_Start
 
 Routine_Start:
 push {r4-r5,lr}

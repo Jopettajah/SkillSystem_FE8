@@ -19,7 +19,7 @@ INLINE ClassLevelUpSkillTable,Skill Pointer
 0x11 Hero,HeroSkillList|IsPointer
 0x12 Hero (F),HeroSkillList|IsPointer
 0x13 Myrmidon,MyrmidonSkillList|IsPointer
-0x14 Myrmidon (F),MyrmidonSkillList|IsPointer
+0x14 Myrmidon (F),MyrmidonFSkillList|IsPointer
 0x15 Swordmaster,SwordmasterSkillList|IsPointer
 0x16 Swordmaster (F),SwordmasterSkillList|IsPointer
 0x17 Assassin,AssassinSkillList|IsPointer

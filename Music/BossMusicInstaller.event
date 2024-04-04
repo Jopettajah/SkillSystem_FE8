@@ -1,0 +1,31 @@
+#ifdef _FE8_
+#define SetBossMusic(UnitID) "WORD UnitID 0x1B"
+#define SetCustomBossMusic(UnitID,MusicID) "WORD UnitID MusicID"
+#define BossMusicListTerminator "WORD 0xFFFFFFFF 0xFFFFFFFF"
+#define MapOverrideBossMusic(UnitID) "WORD UnitID 0xFFFFF"  //Setting music handled in Tables/Quote/BattleQuoteEvents
+
+//Boss music table 
+PUSH
+    ORG 0x72908
+    POIN BossMusicTable
+POP
+
+ALIGN 4
+BossMusicTable:
+SetCustomBossMusic(ONeill,0xFFFFF)
+MapOverrideBossMusic(EnemySoldier)
+MapOverrideBossMusic(EnemyKnight)
+MapOverrideBossMusic(EnemyMerc)
+MapOverrideBossMusic(EnemyFighter)
+MapOverrideBossMusic(EnemyArcher)
+MapOverrideBossMusic(EnemyWyvern)
+MapOverrideBossMusic(EnemyCav)
+MapOverrideBossMusic(EnemyMonk)
+MapOverrideBossMusic(EnemyMage)
+
+BossMusicListTerminator
+
+
+#else
+ERROR You are not assembling FE8 events!
+#endif
