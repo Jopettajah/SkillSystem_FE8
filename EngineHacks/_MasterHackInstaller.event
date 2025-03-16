@@ -53,6 +53,10 @@ POP
 
 ////////////////////////////////FREE SPACE OUT OF BL RANGE
 
+  #include "PersonalWallets/Installer.event"
+  #include "LimitedShopStock/Installer.event"
+  #include "C_Code.lyn.event"
+
   // Expand unit promotion list
   #include "ExternalHacks/ClassChgExpansion/ClassChgExpansion.event"
 

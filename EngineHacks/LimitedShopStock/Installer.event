@@ -1,0 +1,54 @@
+#include "Internals.event"
+
+#define StockEntry(item, quantity) "BYTE item quantity"
+#define StockListEnd "SHORT 0x0000"
+#define SetChapterShopStock(index, listAddress) "PUSH; ORG gShopStockTable + (index*4); POIN listAddress; POP"
+#define StockedItemLimit 20
+
+ALIGN 4
+gCurrentShopStocks:
+WORD 0x203AAA4 //0x202774C
+
+#define ArmoryOutOfStockText 0xDD
+
+ALIGN 4
+OutOfStockTextBase:
+WORD ArmoryOutOfStockText
+
+//Fills to fit vanilla chapter count
+gShopStockTable:
+FILL 0x4 * 0x4E
+
+ALIGN 4
+Ch2ShopStock:
+StockEntry(BraveAxe, 1)
+StockEntry(Ballista, 1)
+StockEntry(BraveBow, 1)
+StockEntry(Bolting, 1)
+StockEntry(Berserk, 1)
+StockListEnd //TERMINATOR
+
+SetChapterShopStock(0, Ch2ShopStock)
+
+//TODO: move
+// prep screen shop
+PUSH
+  ORG 0x99E64
+    POIN PrepScreenArmory
+POP
+
+ALIGN 4
+PrepScreenArmory:
+SHLI SilverSword SilverLance BraveAxe SilverAxe HandAxe Ballista BraveBow SilverBow Longbow 0x0
+
+ALIGN 4
+PrepScreenShop:
+SHLI Bolting Nosferatu Mend Berserk Elixir 0x0
+
+ALIGN 4
+gPrepScreenShop:
+POIN PrepScreenShop
+
+ALIGN 4
+MapArmory:
+SHLI SilverSword IronSword SilverLance IronLance SilverAxe IronAxe SilverBow IronBow 0x0

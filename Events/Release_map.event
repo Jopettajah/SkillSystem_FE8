@@ -178,6 +178,9 @@ ENUN
 // FIG1 Carlyle Aias 0
 // STAL 60
 // FADU 10
+
+ASMC InitShopStock|1
+
 GotoPrepScreen
 
 EndingScene:

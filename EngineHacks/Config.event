@@ -184,7 +184,7 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 // If uncommented, the fourth page of the stat screen will include personal information on the character.
 // This information can be edited in the "Personal Data Editor.csv" file.
 // This will automatically enable Narrow Font.
-#define ENABLE_PERSONAL_INFO
+//#define ENABLE_PERSONAL_INFO
 
 // If uncommented, the third page of the stat screen will only show weapon ranks that the unit has a rank in.
 #define ONLY_SHOW_USED_RANKS
@@ -246,7 +246,7 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 // #define ENABLE_GBA_LETHALITY
 
 // if set to false, only the skill will work, if set to true both the skill and the ability will work
-#define ENABLE_LEGACY_CANTO False
+#define ENABLE_LEGACY_CANTO True
 
 // if commented, enemies with Steal+ will steal as normal in vanilla (ie, the skill will be pretty much useless
 #define ENABLE_AI_STEAL_PLUS
@@ -358,10 +358,10 @@ MESSAGE Please see the README.md there or ask @Vesly for help.
 // ================================
 
 //If commented, growths will not be displayed by pressing Select.
-#define PRESS_SELECT_TO_VIEW_GROWTHS
+//#define PRESS_SELECT_TO_VIEW_GROWTHS
 
 //If true, the stat colors for player units will reflect their growth in the stat.
-#define USE_STAT_COLORS True
+#define USE_STAT_COLORS False
 
 //When leveling up, the game rerolls (up to 5 times) until you gain at least this many points
 #define MIN_STAT_GAIN 1 // vanilla is 1 

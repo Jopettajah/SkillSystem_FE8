@@ -4,6 +4,8 @@
 //PROTECT $25224
     ORG FreeSpace
 
+	#include "Definitions/Defs.event"
+	
     #include "repointedTextTable.event"
 
     //Text first for Text ID definitions
