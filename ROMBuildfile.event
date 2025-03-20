@@ -19,15 +19,17 @@
     //Engine Hacks
     #include "EngineHacks/_MasterHackInstaller.event"
     MESSAGE Used hax space ends at currentOffset
+	
+	#include "Gfx/GfxInstaller.event"
 
-	#ifdef USE_TEST_MAP
+	//#ifdef USE_TEST_MAP
     //Events
-    #include "Events/Release_map.event"
+    #include "Events/Events.event"
     #include "Events/WorldMapEvents.event"
 
     //Maps
     #include "Maps/MasterMapInstaller.event"
-    #endif // USE_TEST_MAP
+    //#endif // USE_TEST_MAP
 	
 	ASSERT (FreeSpaceEnd - currentOffset) // So that you don't overwrite vanilla tables if using default freespace
 	

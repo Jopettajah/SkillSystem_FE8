@@ -1,0 +1,96 @@
+## HarrisName
+Harris[X]
+
+## HarrisDesc
+[X]
+
+## MatchaName
+Matcha[X]
+
+## MatchaDesc
+[X]
+
+## CayenneName
+Cayenne[X]
+
+##CayenneDesc
+[X]
+
+## HannahName
+Hannah[X]
+
+## HannahDesc
+[X]
+
+## LinneaName
+Linnea[X]
+
+## LinneaDesc
+[X]
+
+## IngvildrName
+Ingvildr[X]
+
+## IngvildrDesc
+[X]
+
+## BrokkrName
+Brokkr[X]
+
+## BrokkrDesc
+[X]
+
+## IdaliaName
+Idalia[X]
+
+## IdaliaDesc
+[X]
+
+## EvanderName
+Evander[X]
+
+## EvanderDesc
+[X]
+
+## RubenName
+Ruben[X]
+
+##RubenDesc
+[X]
+
+## WyvernLordDesc
+Wyvern Lord counts as a lord,[N]
+right? Equip: Lances, axes.[X]
+
+## MasterKnightName
+Everything Kn.[X]
+
+## MasterKnightDesc
+Mounted knights skilled with each[N]
+and every weapon. Equip: Yes.[X]
+
+## BishopDesc
+The most devout of curates[N]
+and clerics. Equip: Light, staves.[X]
+
+## MageKnightDesc
+Knights trained in both anima and[N]
+light magic. Equip: Anima, light.[X]
+
+## SniperDesc
+Archers of unparalleled accuracy.[N]
+Equip: Bows.[X]
+
+## GeneralDesc
+Knights of unparalleled fortitude.[N]
+Equip: Swords, lances, axes.[X]
+
+## GigaBallistaName
+Giga Ballista[X]
+
+## KnightsProofName
+Knight's Proof[X]
+
+## KnightsProofDesc
+Promotes Prince to[N]
+Everything Knight.[X]

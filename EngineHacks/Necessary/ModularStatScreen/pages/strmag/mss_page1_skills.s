@@ -95,28 +95,30 @@ b		ShowStats3
 
 NextColumn:
 
-draw_textID_at 21, 3, textID=0x4f7 @con
-draw_con_bar_with_getter_at 24, 3
+draw_textID_at 21, 5, textID=0x4f7 @con
+draw_con_bar_with_getter_at 24, 5
 
 
-draw_textID_at 21, 5, textID=0x4f8 @aid
-draw_number_at 25, 5, 0x80189B8, 2 @aid getter
-draw_aid_icon_at 26, 5
+draw_textID_at 21, 7, textID=0x4f8 @aid
+draw_number_at 25, 7, 0x80189B8, 2 @aid getter
+draw_aid_icon_at 26, 7
 
-draw_status_text_at 21, 7
+draw_status_text_at 21, 9
 
-draw_textID_at 21, 9, textID=0x4f1 @affin
+draw_textID_at 21, 11, textID=0x4f1 @affin
 
-draw_affinity_icon_at 24, 9
+draw_affinity_icon_at 24, 11
+
+draw_gold_at 25, 13
 
 
-ldr r0,=TalkTextIDLink
-ldrh r0,[r0]
-draw_talk_text_at 21, 11
+@ldr r0,=TalkTextIDLink
+@ldrh r0,[r0]
+@draw_talk_text_at 21, 11
 
-ldr r0,=SkillsTextIDLink
-ldrh r0, [r0]
-draw_textID_at 21, 13, colour=White @skills
+@ldr r0,=SkillsTextIDLink
+@ldrh r0, [r0]
+@draw_textID_at 21, 13, colour=White @skills
 
 Nexty:
 
@@ -131,8 +133,8 @@ draw_spd_bar_at 16, 9
 draw_luck_bar_at 16, 11
 draw_def_bar_at 16, 13
 draw_res_bar_at 16, 15
-draw_textID_at 13, 17, 0x4f6 @move
-draw_move_bar_with_getter_at 16, 17
+draw_textID_at 21, 3, 0x4f6 @move
+draw_move_bar_with_getter_at 24, 3
 
 b		NextColumn
 .ltorg

@@ -47,3 +47,7 @@ adding yourself!
 - Feier: Mage Slayer, Liquid Ooze 
 - circleseverywhere: Skill Animations
 
+
+# New Stuff
+- Contro: limited shop stock
+- circleseverywhere: prologue->epilogue fix

@@ -1,0 +1,97 @@
+#include "Tools/Tool Helpers.txt"
+//this file defines the macro:
+//setMugEntry(number, data, mouth_x, mouth_y, eye_x, eye_y)
+
+//#define setMugEntryExtend(mugEntry, mugLocation, mouthX, mouthY, eyeX, eyeY, extend1X, extend1Y, extend2X, extend2Y) "PUSH; ORG PortraitTable+mugEntry*0x1C; POIN mugLocation; POIN mugLocation+0x1624; POIN mugLocation+0x1604; POIN mugLocation+0x1004; BYTE extend1X extend1Y extend2X extend2Y; BYTE mouthX mouthY eyeX eyeY; BYTE 1 0 1 0; POP"
+
+/*
+ALIGN 4
+_Mug:
+#incbin "dmp/_mug.dmp"
+#incbin "dmp/_frames.dmp"
+#incbin "dmp/_palette.dmp"
+#incbin "dmp/_minimug.dmp"
+setMugEntry(,,3,5,3,3)
+*/
+
+/*
+ALIGN 4
+Harris_Mug:
+#incbin "dmp/_mug.dmp"
+#incbin "dmp/_frames.dmp"
+#incbin "dmp/_palette.dmp"
+#incbin "dmp/_minimug.dmp"
+setMugEntry(0x02, Curtis_Mug, 4,5,4,3)
+
+ALIGN 4
+Matcha_Mug:
+#incbin "dmp/_mug.dmp"
+#incbin "dmp/_frames.dmp"
+#incbin "dmp/_palette.dmp"
+#incbin "dmp/_minimug.dmp"
+setMugEntry(0x4,Matcha_Mug,3,5,3,3)
+
+ALIGN 4
+Cayenne_Mug:
+#incbin "dmp/_mug.dmp"
+#incbin "dmp/_frames.dmp"
+#incbin "dmp/_palette.dmp"
+#incbin "dmp/_minimug.dmp"
+setMugEntry(0x5,Cayenne_Mug,3,5,3,3)
+*/
+ALIGN 4
+Hannah_Mug:
+#incbin "dmp/Hannah_mug.dmp"
+#incbin "dmp/Hannah_frames.dmp"
+#incbin "dmp/Hannah_palette.dmp"
+#incbin "dmp/Hannah_minimug.dmp"
+setMugEntry(0x6,Hannah_Mug,3,5,3,3)
+
+ALIGN 4
+Linnea_Mug:
+#incbin "dmp/lin_mug.dmp"
+#incbin "dmp/lin_frames.dmp"
+#incbin "dmp/lin_palette.dmp"
+#incbin "dmp/lin_minimug.dmp"
+setMugEntry(0x7,Linnea_Mug,3,6,3,4)
+/*
+ALIGN 4
+Ingvildr_Mug:
+#incbin "dmp/_mug.dmp"
+#incbin "dmp/_frames.dmp"
+#incbin "dmp/_palette.dmp"
+#incbin "dmp/_minimug.dmp"
+setMugEntry(0x8,Ingvildr_Mug,3,5,3,3)
+
+ALIGN 4
+Bokkr_Mug:
+#incbin "dmp/_mug.dmp"
+#incbin "dmp/_frames.dmp"
+#incbin "dmp/_palette.dmp"
+#incbin "dmp/_minimug.dmp"
+setMugEntry(0x9,Bokkr_Mug,3,5,3,3)
+*/
+ALIGN 4
+Idalia_Mug:
+#incbin "dmp/Idalia_mug.dmp"
+#incbin "dmp/Idalia_frames.dmp"
+#incbin "dmp/Idalia_palette.dmp"
+#incbin "dmp/Idalia_minimug.dmp"
+setMugEntry(0xa,Idalia_Mug,3,4,3,2)
+/*
+ALIGN 4
+Evander_Mug:
+#incbin "dmp/_mug.dmp"
+#incbin "dmp/_frames.dmp"
+#incbin "dmp/_palette.dmp"
+#incbin "dmp/_minimug.dmp"
+setMugEntry(0xc,Evander_Mug,3,5,3,3)
+
+ALIGN 4
+Ruben_Mug:
+#incbin "dmp/_mug.dmp"
+#incbin "dmp/_frames.dmp"
+#incbin "dmp/_palette.dmp"
+#incbin "dmp/_minimug.dmp"
+setMugEntry(0xe,Ruben_Mug,3,5,3,3)
+*/

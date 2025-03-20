@@ -8,8 +8,15 @@
 #define Brokkr 0x7
 #define Idalia 0x8
 #define Evander 0x9
-//#define 0xA
+#define Ruben 0xA
 
+#define MainBoss 0x7d
+#define John 0x7e
+#define Johnson 0x7f
+#define EnemyMain 0x80
 
 //Class
 #define MasterKnight Entombed
+#define Berserker_F Revenant
+#undef Prince
+#define Prince Bonewalker

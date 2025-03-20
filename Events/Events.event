@@ -1,0 +1,106 @@
+EventPointerTable(0x7, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+
+	END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+
+	END_MAIN
+
+MiscBasedEvents:
+	CauseGameOverIfLordDies
+	END_MAIN
+
+LocationBasedEvents:
+
+	END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	UNIT Harris WyvernLord Harris Level(1,Ally,False) [0,0] 0x0 0x0 0x0 0x0 [IronLance,IronAxe] NoAI
+	UNIT Matcha Cavalier_F Harris Level(12,Ally,False) [0,1] 0x0 0x0 0x0 0x0 [IronSword,IronLance] NoAI
+	UNIT Cayenne Cavalier Harris Level(12,Ally,False) [0,2] 0x0 0x0 0x0 0x0 [IronSword,IronLance] NoAI
+	UNIT Hannah MageKnight_F Harris Level(1,Ally,False) [0,3] 0x0 0x0 0x0 0x0 [Fire,Lightning] NoAI
+	UNIT Linnea Druid_F Harris Level(1,Ally,False) [0,4] 0x0 0x0 0x0 0x0 [Flux, Heal] NoAI
+	UNIT Ingvildr Sniper_F Harris Level(1,Ally,False) [0,5] 0x0 0x0 0x0 0x0 [IronBow] NoAI
+	UNIT Brokkr General Harris Level(1,Ally,False) [0,6] 0x0 0x0 0x0 0x0 [IronSword,IronLance,IronAxe] NoAI
+	UNIT Idalia Berserker_F Harris Level(1,Ally,False) [0,7] 0x0 0x0 0x0 0x0 [IronAxe] NoAI
+	UNIT Evander Prince Harris Level(8,Ally,False) [0,8] 0x0 0x0 0x0 0x0 [IronSword,KnightCrest] NoAI
+	UNIT Ruben Bishop Harris Level(1,Ally,True) [0, 9] 0x0 0x0 0x0 0x0 [Lightning, Heal] NoAI
+	UNIT
+
+EnemyUnits:
+	UNIT MainBoss MasterKnight MainBoss Level(5,Enemy,False) [1,0] 0x0 0x0 0x0 0x0 [SilverSword,Spear,Tomahawk,Aura] NoAI	
+	UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	
+	LOAD 0x1 Units1
+	ENUN
+	
+	ASMC InitShopStock|1
+	SVAL 2 10000
+	SVAL 1 Evander
+	ASMC SetGoldEvent|1
+	
+	GotoPrepScreen
+	ENDA
+	
+	//Some epilogue thing
+	PUSH
+	ORG $9ea8
+	SHORT 0 0 $e00a
+	ORG $9ed8
+	POIN EpilogueEvents
+	POP
+	
+EndingScene:
+	EpilogueEvents:
+	ASMC 0x30185 //clears map tilesets?
+	EVBIT_F 0x2
+	STAL 120
+	ASMC 0xB8175 //turn counts display
+	STAL 1
+	CALL 0xA0036C //Character Endings
+	STAL 90
+	MNTS 0x0 //return to title screen
+	ENDA

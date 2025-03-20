@@ -13,7 +13,7 @@ Set health bar display[X]
 Learned  [X]
 
 #include "statscreen_text.txt"
-
+#include "newtext.txt"
 
 
 #0xd4c LikesText
