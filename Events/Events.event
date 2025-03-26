@@ -26,7 +26,8 @@ MiscBasedEvents:
 	END_MAIN
 
 LocationBasedEvents:
-
+	Armory(MapArmory,13,3)
+	Vendor(MapVendor,21,3)
 	END_MAIN
 
 Dunno1:
@@ -46,20 +47,24 @@ Tutorial:
 	END_MAIN
 
 Units1:
-	UNIT Harris WyvernLord Harris Level(1,Ally,False) [0,0] 0x0 0x0 0x0 0x0 [IronLance,IronAxe] NoAI
-	UNIT Matcha Cavalier_F Harris Level(12,Ally,False) [0,1] 0x0 0x0 0x0 0x0 [IronSword,IronLance] NoAI
-	UNIT Cayenne Cavalier Harris Level(12,Ally,False) [0,2] 0x0 0x0 0x0 0x0 [IronSword,IronLance] NoAI
-	UNIT Hannah MageKnight_F Harris Level(1,Ally,False) [0,3] 0x0 0x0 0x0 0x0 [Fire,Lightning] NoAI
-	UNIT Linnea Druid_F Harris Level(1,Ally,False) [0,4] 0x0 0x0 0x0 0x0 [Flux, Heal] NoAI
-	UNIT Ingvildr Sniper_F Harris Level(1,Ally,False) [0,5] 0x0 0x0 0x0 0x0 [IronBow] NoAI
-	UNIT Brokkr General Harris Level(1,Ally,False) [0,6] 0x0 0x0 0x0 0x0 [IronSword,IronLance,IronAxe] NoAI
-	UNIT Idalia Berserker_F Harris Level(1,Ally,False) [0,7] 0x0 0x0 0x0 0x0 [IronAxe] NoAI
-	UNIT Evander Prince Harris Level(8,Ally,False) [0,8] 0x0 0x0 0x0 0x0 [IronSword,KnightCrest] NoAI
-	UNIT Ruben Bishop Harris Level(1,Ally,True) [0, 9] 0x0 0x0 0x0 0x0 [Lightning, Heal] NoAI
+	UNIT Harris WyvernLord Harris Level(1,Ally,False) [16,4] 0x0 0x0 0x0 0x0 [IronLance,IronAxe] NoAI
+	UNIT Matcha Cavalier_F Harris Level(12,Ally,False) [17,4] 0x0 0x0 0x0 0x0 [IronSword,IronLance] NoAI
+	UNIT Cayenne Cavalier Harris Level(12,Ally,False) [15,4] 0x0 0x0 0x0 0x0 [IronSword,IronLance] NoAI
+	UNIT Hannah MageKnight_F Harris Level(1,Ally,False) [18, 4] 0x0 0x0 0x0 0x0 [Fire,Lightning] NoAI
+	UNIT Linnea Druid_F Harris Level(1,Ally,False) [19, 3] 0x0 0x0 0x0 0x0 [Flux, Heal] NoAI
+	UNIT Ingvildr Sniper_F Harris Level(1,Ally,False) [18, 3] 0x0 0x0 0x0 0x0 [IronBow] NoAI
+	UNIT Brokkr General Harris Level(1,Ally,False) [17, 3] 0x0 0x0 0x0 0x0 [IronSword,IronLance,IronAxe] NoAI
+	UNIT Idalia Berserker_F Harris Level(1,Ally,False) [16, 3] 0x0 0x0 0x0 0x0 [IronAxe, IronBow] NoAI
+	UNIT Evander Prince Harris Level(8,Ally,False) [15, 3] 0x0 0x0 0x0 0x0 [IronSword,KnightCrest] NoAI
+	UNIT Ruben Bishop Harris Level(1,Ally,True) [14, 3] 0x0 0x0 0x0 0x0 [Lightning, Heal] NoAI
 	UNIT
 
 EnemyUnits:
-	UNIT MainBoss MasterKnight MainBoss Level(5,Enemy,False) [1,0] 0x0 0x0 0x0 0x0 [SilverSword,Spear,Tomahawk,Aura] NoAI	
+	UNIT MainBoss MasterKnight MainBoss Level(5,Enemy,False) [1,0] 0x0 0x0 0x0 0x0 [SilverSword,Spear,Tomahawk,Aura] NoAI
+	UNIT John General John Level(5,Enemy,True) [37,0] 0x0 0x0 0x0 [Tomahawk,SilverSword] AttackInRangeAI
+	UNIT EnemyElite General John Level(3,Enemy,True) [38,1] 0x0 0x0 0x0 0x0 [Spear] AttackInRangeAI
+	UNIT Johnson Sage Johnson Level(5,Enemy,False) [1,9] 0x0 0x0 0x0 0x0 [Thunder, Bolting] AttackInRangeAI
+	UNIT EnemyMain Soldier MainBoss Level(15,Enemy,True) [1,1] 0x0 0x0 0x0 0x0 [SteelLance] NoAI
 	UNIT
 
 Traps1:
@@ -71,6 +76,13 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
+
+	WEATHER 4 //Rain (5 is fire)
+
+
+	TILECHANGE 0
+
+
 	LOAD1 0x1 EnemyUnits
 	ENUN
 	
@@ -85,7 +97,9 @@ BeginningScene:
 	GotoPrepScreen
 	ENDA
 	
-	//Some epilogue thing
+	
+	
+//Some epilogue thing
 	PUSH
 	ORG $9ea8
 	SHORT 0 0 $e00a

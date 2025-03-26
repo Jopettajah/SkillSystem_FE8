@@ -55,8 +55,23 @@ Evander[X]
 ## RubenName
 Ruben[X]
 
-##RubenDesc
+## RubenDesc
 [X]
+
+## JohnName
+John[X]
+
+## JohnDesc
+General in the army of anotherPlace.[N]
+Disowned his own son for not[N]
+following in his footsteps.[X]
+
+## JohnsonName
+Johnson[X]
+
+## JohnsonDesc
+The son of John. Estranged from his[N]
+family for his choice of studying magic.[X]
 
 ## WyvernLordDesc
 Wyvern Lord counts as a lord,[N]
@@ -84,6 +99,13 @@ Equip: Bows.[X]
 ## GeneralDesc
 Knights of unparalleled fortitude.[N]
 Equip: Swords, lances, axes.[X]
+
+## PrinceName
+Prince[X]
+
+## PrinceDesc
+Crown prince of aPlace[N]
+Equip: Swords.[X]
 
 ## GigaBallistaName
 Giga Ballista[X]

@@ -9,8 +9,8 @@ Character with whom this unit[N]
 may talk on the battlefield.[X]
 
 ## SS_SkillsRText
-Special abilities that can do[N]
-many different things.[X]
+The amount of gold this[N]
+unit is holding.[X]
 
 ## SS_SkillsDefaultRText
 No skill description found.[X]
