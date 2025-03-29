@@ -51,3 +51,5 @@ adding yourself!
 # New Stuff
 - Contro: limited shop stock
 - circleseverywhere: prologue->epilogue fix
+- Alusq: advanced music istaller + extra samples
+- adazakura: faith is for the transient people midi

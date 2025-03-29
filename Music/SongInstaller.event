@@ -1,0 +1,6 @@
+SongTable(0x9,FaithIsForTheTransientPeople,MapMusicGroup)
+#include "event/FaithIsForTheTransientPeople.event"
+
+SongTable(0x34,ShakingFrontSight_000,MapMusicGroup)
+#include "event/ShakingFrontSight_000.event"
+

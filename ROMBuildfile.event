@@ -21,6 +21,8 @@
     MESSAGE Used hax space ends at currentOffset
 	
 	#include "Gfx/GfxInstaller.event"
+	
+	#include "Music/MasterMusicInstaller.event"
 
 	//#ifdef USE_TEST_MAP
     //Events
