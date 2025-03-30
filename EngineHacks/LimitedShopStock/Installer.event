@@ -9,7 +9,7 @@ ALIGN 4
 gCurrentShopStocks:
 WORD 0x203AAA4 //0x202774C
 
-#define ArmoryOutOfStockText 0xDD
+#define ArmoryOutOfStockText 0x5b
 
 ALIGN 4
 OutOfStockTextBase:
@@ -33,10 +33,29 @@ StockListEnd //TERMINATOR
 SetChapterShopStock(0, Ch2ShopStock)
 
 //TODO: move
-// prep screen shop
+//prep screen shop
 PUSH
   ORG 0x99E64
     POIN PrepScreenArmory
+	
+  //Maintain map theme in shop menu
+  ORG 0xB4C06
+  SHORT 0x46C0 0x46C0
+  ORG 0xB4C10
+  SHORT 0x46C0 0x46C0
+	
+  //Proc_ShopFadeOut
+  ORG 0xA391E8
+  WORD 0x00000013 0x00000000 //nop
+  
+  //Proc_ShopFadeIn
+  ORG 0xA391A8
+  WORD 0x00000013 0x00000000 //nop
+  
+  //Proc_Shop shop exit
+  ORG 0xA39430
+  WORD 0x00000013 0x00000000 //nop
+  
 POP
 
 ALIGN 4
