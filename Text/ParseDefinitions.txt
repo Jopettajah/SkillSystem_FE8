@@ -60,6 +60,12 @@
 [LoadSelena] = [LoadFace][0x3f][0x1]
 [LoadGerik] = [LoadFace][0x1b][0x1]
 [LoadSaleh] = [LoadFace][0x20][0x1]
+[LoadVillagerMan] = [LoadFace][0x5C][0x1]
+[LoadVillagerYoungMan] = [LoadFace][0x5D][0x1]
+[LoadVillagerBoy] = [LoadFace][0x5E][0x1]
+[LoadVillagerOldWoman] = [LoadFace][0x5F][0x1]
+[LoadVillagerWoman] = [LoadFace][0x60][0x1]
+[LoadVillagerYoungWomanA] = [LoadFace][0x61][0x1]
 
 
 

@@ -56,6 +56,7 @@ POP
   #include "C_Code.lyn.event"
   #include "PersonalWallets/Installer.event"
   #include "LimitedShopStock/Installer.event"
+  #include "NewCHAI/NewCHAI.event"
 
   // Expand unit promotion list
   #include "ExternalHacks/ClassChgExpansion/ClassChgExpansion.event"

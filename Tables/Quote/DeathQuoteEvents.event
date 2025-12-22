@@ -1,0 +1,18 @@
+ALIGN 4
+Wallbreaker1Death:
+SVAL 1 0x00040E00
+CHAI [14,16]
+ENDA
+
+ALIGN 4
+Wallbreaker2Death:
+SVAL 1 0x00040E00
+CHAI [19,16]
+ENDA
+/*
+ALIGN 4
+JohnsonDeath:
+Text(JohnsonDeathQuote)
+WEATHER 0
+ENDA
+*/

@@ -60,11 +60,11 @@ POP
 
 ALIGN 4
 PrepScreenArmory:
-SHLI BraveSword SilverSword BraveLance SilverLance Javelin BraveAxe SilverAxe HandAxe Ballista BraveBow SilverBow Longbow 0x0
+SHLI BraveSword SilverSword LightBrand BraveLance SilverLance Horseslayer Javelin BraveAxe SilverAxe Hammer HandAxe Ballista BraveBow SilverBow Longbow 0x0
 
 ALIGN 4
 PrepScreenShop:
-SHLI Bolting Thunder Aura Fenrir Nosferatu Berserk Mend Elixir 0x0
+SHLI Bolting Fimbulvetr Aura Fenrir Nosferatu Fortify Rescue Berserk Recover Elixir 0x0
 
 ALIGN 4
 gPrepScreenShop:
@@ -76,4 +76,4 @@ SHLI SilverSword IronSword SilverLance IronLance SilverAxe IronAxe SilverBow Iro
 
 ALIGN 4
 MapVendor:
-SHLI Thunder Fire Aura Lightning Fenrir Flux Heal Vulnerary 0x0
+SHLI Fimbulvetr Fire Aura Lightning Fenrir Flux Recover Heal Vulnerary 0x0

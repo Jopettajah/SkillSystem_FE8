@@ -10,12 +10,15 @@
 #define Evander 0x9
 #define Ruben 0xA
 
+#define ThiefBoss 0x7c
 #define MainBoss 0x7d
 #define John 0x7e
 #define Johnson 0x7f
 #define EnemyMain 0x80
 #define EnemyElite 0x81
 #define InfiltratorEnemy 0x82
+#define Wallbreaker1 0x83
+#define Wallbreaker2 0x84
 
 //Class
 #define MasterKnight Entombed

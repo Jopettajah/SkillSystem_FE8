@@ -79,6 +79,10 @@ Johnson[X]
 The son of John. Estranged from his[N]
 family for his choice of studying magic.[X]
 
+## JohnsonDeathQuote
+[MidLeft][LoadFace][0x0F][0x1]
+[CloseEyes] Father[Beat] I wished[Beat][A][X]
+
 ## WyvernLordDesc
 Wyvern Lord counts as a lord,[N]
 right? Equip: Lances, axes.[X]
@@ -122,3 +126,25 @@ Knight's Proof[X]
 ## KnightsProofDesc
 Promotes Prince to[N]
 Everything Knight.[X]
+
+## JohnVillageText
+[MidLeft][LoadFace][CurrentPortrait]
+[MidRight][LoadVillagerYoungWomanA]
+[X]
+
+## JohnsonVillageText
+[MidLeft][LoadFace][CurrentPortrait]
+[MidRight][LoadVillagerMan]
+If it weren't for this blasted rain we'd[N]
+have the demolisher ready to go in no time![AN]
+It feels wholly unnatural too, you know?[AN]
+Stormclouds arriving alongside enemy troops?[N]
+Smells really fishy to me.[A][X]
+
+## JohnsonText
+[MidLeft][LoadFace][0x0F][0x1]
+Why do I feel like I'm[N]
+being stared at?[A][X]
+
+## BlankText
+[X]

@@ -22,12 +22,16 @@ CharacterBasedEvents:
 	END_MAIN
 
 MiscBasedEvents:
+	AFEV 15 PostJohnson 14
 	CauseGameOverIfLordDies
 	END_MAIN
 
 LocationBasedEvents:
 	Armory(MapArmory,13,3)
 	Vendor(MapVendor,21,3)
+	Village(11,JohnsonVillage,12,3)
+	Village(12,JohnVillage,20,3)
+	Village(13,ThiefVillage,20,10)
 	END_MAIN
 
 Dunno1:
@@ -60,11 +64,36 @@ Units1:
 	UNIT
 
 EnemyUnits:
-	UNIT MainBoss MasterKnight MainBoss Level(5,Enemy,False) [1,0] 0x0 0x0 0x0 0x0 [SilverSword,Spear,Tomahawk,Aura] NoAI
-	UNIT John General John Level(5,Enemy,True) [37,0] 0x0 0x0 0x0 [Tomahawk,SilverSword] AttackInRangeAI
-	UNIT EnemyElite General John Level(3,Enemy,True) [38,1] 0x0 0x0 0x0 0x0 [Spear] AttackInRangeAI
-	UNIT Johnson Sage Johnson Level(5,Enemy,False) [1,9] 0x0 0x0 0x0 0x0 [Thunder, Bolting] AttackInRangeAI
-	UNIT EnemyMain Soldier MainBoss Level(15,Enemy,True) [1,1] 0x0 0x0 0x0 0x0 [SteelLance] NoAI
+	UNIT MainBoss MasterKnight MainBoss Level(5,Enemy,False) [17,17] 0x0 0x0 0x0 0x0 [SilverSword,Spear,Tomahawk,Fimbulvetr] AttackInRangeAI
+	UNIT EnemyElite Paladin MainBoss Level(3,Enemy,True) [16,17] 0x0 0x0 0x0 0x0 [Spear,SilverSword] AttackInRangeAI
+	UNIT EnemyElite GreatKnight MainBoss Level(1,Enemy,True) [15,17] 0x0 0x0 0x0 0x0 [SilverAxe] AttackInRangeAI
+	UNIT EnemyElite Paladin MainBoss Level(1,Enemy,True) [14,17] 0x0 0x0 0x0 0x0 [SilverSword] AttackInRangeAI
+	UNIT EnemyElite GreatKnight MainBoss Level(1,Enemy,True) [13,17] 0x0 0x0 0x0 0x0 [SilverLance] AttackInRangeAI
+	UNIT EnemyElite GreatKnight MainBoss Level(1,Enemy,True) [18,17] 0x0 0x0 0x0 0x0 [SilverAxe] AttackInRangeAI
+	UNIT EnemyElite Paladin MainBoss Level(1,Enemy,True) [19,17] 0x0 0x0 0x0 0x0 [SilverSword] AttackInRangeAI
+	UNIT EnemyElite GreatKnight MainBoss Level(1,Enemy,True) [20,17] 0x0 0x0 0x0 0x0 [SilverLance] AttackInRangeAI
+	
+	UNIT EnemyMain Archer MainBoss Level(12,Enemy,True) [17,16] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
+	UNIT EnemyMain Archer MainBoss Level(12,Enemy,True) [16,16] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
+	UNIT EnemyMain Mercenary MainBoss Level(12,Enemy,True) [15,16] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+	UNIT EnemyMain Soldier MainBoss Level(12,Enemy,True) [14,16] 0x0 0x0 0x0 0x0 [SteelLance] AttackInRangeAI //AttackWallAI
+	UNIT Wallbreaker1 Fighter MainBoss Level(12,Enemy,True) [13,16] 0x0 0x0 0x0 0x0 [SteelAxe] AttackWallAI
+	UNIT EnemyMain Mercenary MainBoss Level(12,Enemy,True) [18,16] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+	UNIT EnemyMain Soldier MainBoss Level(12,Enemy,True) [19,16] 0x0 0x0 0x0 0x0 [SteelLance] AttackInRangeAI //AttackWallAI
+	UNIT Wallbreaker2 Fighter MainBoss Level(12,Enemy,True) [20,16] 0x0 0x0 0x0 0x0 [SteelAxe] AttackWallAI
+	UNIT
+	
+JohnUnits:	
+	UNIT John General John Level(5,Enemy,True) [37,0] 0x0 0x0 0x0 [Tomahawk,SilverSword] [0x07, 0x03, 0x0, 0x20] 
+	UNIT EnemyElite General John Level(3,Enemy,True) [38,1] 0x0 0x0 0x0 0x0 [Spear] [0x07, 0x03, 0x0, 0x20] 
+	UNIT
+	
+JohnsonUnits:
+	UNIT Johnson Sage Johnson Level(5,Enemy,False) [1,9] 0x0 0x0 0x0 0x0 [Thunder, Bolting] NeverMoveAI
+	UNIT
+	
+NpcDude:
+	UNIT Natasha Civilian_2 0x0 Level(10,NPC,True) [38,0] 0x0 0x0 0x0 0x0 [0x0] DoNothing
 	UNIT
 
 Traps1:
@@ -82,8 +111,14 @@ BeginningScene:
 
 	TILECHANGE 0
 
-
+	LOAD1 0x1 JohnUnits
+	ENUN
+	LOAD1 0x1 JohnsonUnits
+	ENUN	
 	LOAD1 0x1 EnemyUnits
+	ENUN
+	
+	LOAD1 0x1 NpcDude
 	ENUN
 	
 	LOAD 0x1 Units1
@@ -97,8 +132,60 @@ BeginningScene:
 	GotoPrepScreen
 	ENDA
 	
+JohnVillage:
+	FADI 16
+	MUSI
+	SetBackground(0x0)
+	Text(JohnVillageText)
+	EndConvo
+	MUNO
 	
+	CAMERA John
+	//Text(JohnText)
+	NoFade
+	ENDA
+
+PostJohn:
+	//text
+	REMOVEUNIT Natasha
+	ENUN
+	COUNTER_INC 0
+	//textbox
+	NoFade
+	ENDA
 	
+JohnsonVillage:
+	FADI 16
+	MUSI
+	SetBackground(0x0)
+	Text(JohnsonVillageText)
+	EndConvo
+	MUNO
+	
+	CAMERA Johnson
+	Text(JohnsonText)
+	NoFade
+	ENDA
+
+PostJohnson:
+	WEATHER 0
+	STAL 30
+	COUNTER_INC 0
+	//textbox here
+	NoFade
+	ENDA
+	
+ThiefVillage:
+	//HouseEvent(ThiefVillageText,HouseBG)
+	NoFade
+	ENDA
+
+PostThief:
+	COUNTER_INC 0
+	//textbox
+	NoFade
+	ENDA
+
 //Some epilogue thing
 	PUSH
 	ORG $9ea8

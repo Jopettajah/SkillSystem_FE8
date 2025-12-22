@@ -1,1 +1,2 @@
 #include "Portrait/MugInstaller.event"
+#include "BattleAnim/AnimsDefinitions.event"

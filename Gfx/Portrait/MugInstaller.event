@@ -21,16 +21,16 @@ Harris_Mug:
 #incbin "dmp/_frames.dmp"
 #incbin "dmp/_palette.dmp"
 #incbin "dmp/_minimug.dmp"
-setMugEntry(0x02, Curtis_Mug, 4,5,4,3)
-
+setMugEntry(0x02, Harris_Mug, 4,5,4,3)
+*/
 ALIGN 4
 Matcha_Mug:
-#incbin "dmp/_mug.dmp"
-#incbin "dmp/_frames.dmp"
-#incbin "dmp/_palette.dmp"
-#incbin "dmp/_minimug.dmp"
-setMugEntry(0x4,Matcha_Mug,3,5,3,3)
-
+#incbin "dmp/Matcha3_mug.dmp"
+#incbin "dmp/Matcha3_frames.dmp"
+#incbin "dmp/Matcha3_palette.dmp"
+#incbin "dmp/Matcha3_minimug.dmp"
+setMugEntry(0x4,Matcha_Mug,3,6,3,4)
+/*
 ALIGN 4
 Cayenne_Mug:
 #incbin "dmp/_mug.dmp"
@@ -95,3 +95,19 @@ Ruben_Mug:
 #incbin "dmp/_minimug.dmp"
 setMugEntry(0xe,Ruben_Mug,3,5,3,3)
 */
+
+ALIGN 4
+Johnson_Mug:
+#incbin "dmp/JohnsonLaurentLacroix_mug.dmp"
+#incbin "dmp/JohnsonLaurentLacroix_frames.dmp"
+#incbin "dmp/JohnsonLaurentLacroix_palette.dmp"
+#incbin "dmp/JohnsonLaurentLacroix_minimug.dmp"
+setMugEntry(0xf,Johnson_Mug,3,5,3,3)
+
+ALIGN 4
+John_Mug:
+#incbin "dmp/JohnLaurentLacroix_mug.dmp"
+#incbin "dmp/JohnLaurentLacroix_frames.dmp"
+#incbin "dmp/JohnLaurentLacroix_palette.dmp"
+#incbin "dmp/JohnLaurentLacroix_minimug.dmp"
+setMugEntry(0x10,John_Mug,3,5,3,3)
