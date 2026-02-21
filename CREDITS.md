@@ -52,6 +52,7 @@ adding yourself!
 - Contro: limited shop stock
 - circleseverywhere: prologue->epilogue fix
 - Alusq: advanced music istaller + extra samples
-- adazakura: faith is for the transient people midi
+- adazakura: faith is for the transient people midi(player phase bgm)
 - LaurentLacroix: John & Johnson mugs
 - Tequila: CHAI fix
+- ReversCard: Scarlet Rain (enemy phase bgm)

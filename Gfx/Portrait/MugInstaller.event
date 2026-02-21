@@ -110,4 +110,20 @@ John_Mug:
 #incbin "dmp/JohnLaurentLacroix_frames.dmp"
 #incbin "dmp/JohnLaurentLacroix_palette.dmp"
 #incbin "dmp/JohnLaurentLacroix_minimug.dmp"
-setMugEntry(0x10,John_Mug,3,5,3,3)
+setMugEntry(0x11,John_Mug,3,5,3,3)
+
+ALIGN 4
+MK_Mug:
+#incbin "dmp/masterknight_mug.dmp"
+#incbin "dmp/masterknight_frames.dmp"
+#incbin "dmp/masterknight_palette.dmp"
+#incbin "dmp/masterknight_minimug.dmp"
+setMugEntry(0x10,MK_Mug,2,6,2,4)
+
+ALIGN 4
+Thief_Mug:
+#incbin "dmp/Thief_mug.dmp"
+#incbin "dmp/Thief_frames.dmp"
+#incbin "dmp/Thief_palette.dmp"
+#incbin "dmp/Thief_minimug.dmp"
+setMugEntry(0x12,Thief_Mug,3,5,3,3)

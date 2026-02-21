@@ -4,3 +4,9 @@ SongTable(0x9,FaithIsForTheTransientPeople,MapMusicGroup)
 SongTable(0x34,ShakingFrontSight_000,MapMusicGroup)
 #include "event/ShakingFrontSight_000.event"
 
+SongTable(0x13,ScarletRainTest_ReversCard_volfix,MapMusicGroup)
+#include "event/ScarletRainTest_ReversCard_volfix.event"
+
+SongTable(0xA,JustOneChanceFin,MapMusicGroup)
+#include "event/JustOneChanceFin.event"
+

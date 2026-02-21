@@ -1,0 +1,6 @@
+ALIGN 4
+Escapepoints:
+EscapePoint(37,17,MoveDown)
+EscapePointEnd
+
+EscapePointPointerTable(0,Escapepoints)

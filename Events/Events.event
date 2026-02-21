@@ -13,7 +13,9 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-
+	TurnEventPlayer(0,CounterInc,0,255)
+	TurnEventPlayer(0,CounterEvent,0,255)
+	TurnEventPlayer(0,InitialTurns,1)
 	END_MAIN
 
 ALIGN 32
@@ -23,6 +25,7 @@ CharacterBasedEvents:
 
 MiscBasedEvents:
 	AFEV 15 PostJohnson 14
+	AFEV 0 CounterEvent 0
 	CauseGameOverIfLordDies
 	END_MAIN
 
@@ -30,8 +33,8 @@ LocationBasedEvents:
 	Armory(MapArmory,13,3)
 	Vendor(MapVendor,21,3)
 	Village(11,JohnsonVillage,12,3)
-	Village(12,JohnVillage,20,3)
-	Village(13,ThiefVillage,20,10)
+	Village(16,JohnVillage,20,3)
+	Village(17,ThiefVillage,20,10)
 	END_MAIN
 
 Dunno1:
@@ -64,22 +67,22 @@ Units1:
 	UNIT
 
 EnemyUnits:
-	UNIT MainBoss MasterKnight MainBoss Level(5,Enemy,False) [17,17] 0x0 0x0 0x0 0x0 [SilverSword,Spear,Tomahawk,Fimbulvetr] AttackInRangeAI
-	UNIT EnemyElite Paladin MainBoss Level(3,Enemy,True) [16,17] 0x0 0x0 0x0 0x0 [Spear,SilverSword] AttackInRangeAI
-	UNIT EnemyElite GreatKnight MainBoss Level(1,Enemy,True) [15,17] 0x0 0x0 0x0 0x0 [SilverAxe] AttackInRangeAI
-	UNIT EnemyElite Paladin MainBoss Level(1,Enemy,True) [14,17] 0x0 0x0 0x0 0x0 [SilverSword] AttackInRangeAI
-	UNIT EnemyElite GreatKnight MainBoss Level(1,Enemy,True) [13,17] 0x0 0x0 0x0 0x0 [SilverLance] AttackInRangeAI
-	UNIT EnemyElite GreatKnight MainBoss Level(1,Enemy,True) [18,17] 0x0 0x0 0x0 0x0 [SilverAxe] AttackInRangeAI
-	UNIT EnemyElite Paladin MainBoss Level(1,Enemy,True) [19,17] 0x0 0x0 0x0 0x0 [SilverSword] AttackInRangeAI
-	UNIT EnemyElite GreatKnight MainBoss Level(1,Enemy,True) [20,17] 0x0 0x0 0x0 0x0 [SilverLance] AttackInRangeAI
+	UNIT MainBoss MasterKnight MainBoss Level(5,Enemy,False) [17,17] 0x0 0x0 0x0 0x0 [SilverSword,Spear,Tomahawk,Fimbulvetr] DefaultAI
+	UNIT EnemyElite Valkyrie MainBoss Level(3,Enemy,True) [16,17] 0x0 0x0 0x0 0x0 [Divine,Restore] DefaultAI
+	UNIT EnemyElite GreatKnight MainBoss Level(1,Enemy,True) [15,17] 0x0 0x0 0x0 0x0 [SilverAxe] DefaultAI
+	UNIT EnemyElite Paladin MainBoss Level(1,Enemy,True) [14,17] 0x0 0x0 0x0 0x0 [SilverSword] DefaultAI
+	UNIT EnemyElite GreatKnight MainBoss Level(1,Enemy,True) [13,17] 0x0 0x0 0x0 0x0 [SilverLance] DefaultAI
+	UNIT EnemyElite GreatKnight MainBoss Level(1,Enemy,True) [18,17] 0x0 0x0 0x0 0x0 [SilverAxe] DefaultAI
+	UNIT EnemyElite Paladin MainBoss Level(1,Enemy,True) [19,17] 0x0 0x0 0x0 0x0 [SilverSword] DefaultAI
+	UNIT EnemyElite GreatKnight MainBoss Level(1,Enemy,True) [20,17] 0x0 0x0 0x0 0x0 [SilverLance] DefaultAI
 	
-	UNIT EnemyMain Archer MainBoss Level(12,Enemy,True) [17,16] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
-	UNIT EnemyMain Archer MainBoss Level(12,Enemy,True) [16,16] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
-	UNIT EnemyMain Mercenary MainBoss Level(12,Enemy,True) [15,16] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
-	UNIT EnemyMain Soldier MainBoss Level(12,Enemy,True) [14,16] 0x0 0x0 0x0 0x0 [SteelLance] AttackInRangeAI //AttackWallAI
+	UNIT EnemyMain Archer MainBoss Level(12,Enemy,True) [17,16] 0x0 0x0 0x0 0x0 [SteelBow] DefaultAI
+	UNIT EnemyMain Archer MainBoss Level(12,Enemy,True) [16,16] 0x0 0x0 0x0 0x0 [SteelBow] DefaultAI
+	UNIT EnemyMain Mercenary MainBoss Level(12,Enemy,True) [15,16] 0x0 0x0 0x0 0x0 [SteelSword] DefaultAI
+	UNIT EnemyMain Soldier MainBoss Level(12,Enemy,True) [14,16] 0x0 0x0 0x0 0x0 [SteelLance] DefaultAI //AttackWallAI
 	UNIT Wallbreaker1 Fighter MainBoss Level(12,Enemy,True) [13,16] 0x0 0x0 0x0 0x0 [SteelAxe] AttackWallAI
-	UNIT EnemyMain Mercenary MainBoss Level(12,Enemy,True) [18,16] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
-	UNIT EnemyMain Soldier MainBoss Level(12,Enemy,True) [19,16] 0x0 0x0 0x0 0x0 [SteelLance] AttackInRangeAI //AttackWallAI
+	UNIT EnemyMain Mercenary MainBoss Level(12,Enemy,True) [18,16] 0x0 0x0 0x0 0x0 [SteelSword] DefaultAI
+	UNIT EnemyMain Soldier MainBoss Level(12,Enemy,True) [19,16] 0x0 0x0 0x0 0x0 [SteelLance] DefaultAI //AttackWallAI
 	UNIT Wallbreaker2 Fighter MainBoss Level(12,Enemy,True) [20,16] 0x0 0x0 0x0 0x0 [SteelAxe] AttackWallAI
 	UNIT
 	
@@ -92,11 +95,16 @@ JohnsonUnits:
 	UNIT Johnson Sage Johnson Level(5,Enemy,False) [1,9] 0x0 0x0 0x0 0x0 [Thunder, Bolting] NeverMoveAI
 	UNIT
 	
+ThiefBossUnit:
+	UNIT ThiefBoss Rogue ThiefBoss Level(5,Enemy,False) [30,14] 0x0 0x0 0x0 0x0 [SilverSword] LootingThiefAI
+	UNIT
+	
 NpcDude:
 	UNIT Natasha Civilian_2 0x0 Level(10,NPC,True) [38,0] 0x0 0x0 0x0 0x0 [0x0] DoNothing
 	UNIT
 
 Traps1:
+	ArrowTrap(37,17,0,255)
 	ENDTRAP
 	ALIGN 4
 
@@ -111,12 +119,13 @@ BeginningScene:
 
 	TILECHANGE 0
 
+	LOAD1 0x1 EnemyUnits
+	ENUN
 	LOAD1 0x1 JohnUnits
 	ENUN
 	LOAD1 0x1 JohnsonUnits
 	ENUN	
-	LOAD1 0x1 EnemyUnits
-	ENUN
+
 	
 	LOAD1 0x1 NpcDude
 	ENUN
@@ -141,16 +150,22 @@ JohnVillage:
 	MUNO
 	
 	CAMERA John
-	//Text(JohnText)
+	Text(JohnText)
 	NoFade
 	ENDA
 
 PostJohn:
-	//text
+	Text(PostJohnText)
+	MOVE 0 Natasha [20, 4]
+	ENUN
 	REMOVEUNIT Natasha
 	ENUN
 	COUNTER_INC 0
-	//textbox
+	CenterTutorialTextBox
+	TUTORIALTEXTBOXSTART
+	TEXTSHOW DemolisherAccelerationText
+	TEXTEND
+	REMA
 	NoFade
 	ENDA
 	
@@ -171,21 +186,94 @@ PostJohnson:
 	WEATHER 0
 	STAL 30
 	COUNTER_INC 0
-	//textbox here
+	CenterTutorialTextBox
+	TUTORIALTEXTBOXSTART
+	TEXTSHOW DemolisherAccelerationText
+	TEXTEND
 	NoFade
 	ENDA
 	
 ThiefVillage:
-	//HouseEvent(ThiefVillageText,HouseBG)
+	FADI 16
+	MUSI
+	SetBackground(0x0)
+	Text(ThiefVillageText)
+	EndConvo
+	MUNO
+	
+	LOAD1 0x1 ThiefBossUnit
+	ENUN
+	CAMERA ThiefBoss
+	STAL 6
+	MOVE_1STEP 0 ThiefBoss 2
+	Text(ThiefText)
 	NoFade
 	ENDA
 
 PostThief:
 	COUNTER_INC 0
-	//textbox
+	CenterTutorialTextBox
+	TUTORIALTEXTBOXSTART
+	TEXTSHOW DemolisherAccelerationText
+	TEXTEND
 	NoFade
 	ENDA
 
+InitialTurns:
+	CenterTutorialTextBox
+	TUTORIALTEXTBOXSTART
+	TEXTSHOW(TurnsLeftTextOne)
+	TEXTEND
+	REMA
+	NoFade
+	ENDA
+	
+CounterInc:
+	COUNTER_INC 0
+	NoFade
+	ENDA
+	
+CounterEvent:
+	CHECK_EVENTID 11
+	BNE 1 sC s0
+	CHECK_EVENTID 12
+	BNE 1 sC s0
+	
+	SVAL 1 5
+	COUNTER_CHECK 0
+	BEQ 2 s1 sC
+	
+	SVAL 1 10
+	BGE 1 s1 sC
+	ENUT 11
+	CenterTutorialTextBox
+	TUTORIALTEXTBOXSTART
+	TEXTSHOW(ReadyText)
+	TEXTEND
+	REMA
+	
+	GOTO 1
+	
+	LABEL 2
+	CenterTutorialTextBox
+	TUTORIALTEXTBOXSTART
+	TEXTSHOW(TurnsLeftTextTwo)
+	TEXTEND
+	REMA
+	ENUT 12
+	
+	LABEL 1
+	NoFade
+	ENDA
+	
+CannonFire:
+	ENUT 4
+	//MUSCFAST
+	
+	WEATHER 5
+	NoFade
+	ENDA
+	
 //Some epilogue thing
 	PUSH
 	ORG $9ea8

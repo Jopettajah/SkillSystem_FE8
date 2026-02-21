@@ -81,7 +81,21 @@ family for his choice of studying magic.[X]
 
 ## JohnsonDeathQuote
 [MidLeft][LoadFace][0x0F][0x1]
-[CloseEyes] Father[Beat] I wished[Beat][A][X]
+[CloseEyes]Father[Beat] Mother[Beat][N]
+I wished to[Beat][A][X]
+
+## VioletName
+Violet[X]
+
+## VioletDesc
+"Get in, get the goods, get out.[N]
+ How bad could it be?"[X]
+
+## ChericeName
+Cherice[X]
+
+## ChericeDesc
+[X]
 
 ## WyvernLordDesc
 Wyvern Lord counts as a lord,[N]
@@ -132,6 +146,17 @@ Everything Knight.[X]
 [MidRight][LoadVillagerYoungWomanA]
 [X]
 
+## JohnText
+[MidLeft][LoadFace][0x11][0x1]
+[MidRight][LoadVillagerYoungMan]
+[X]
+
+## PostJohnText
+[MidRight][LoadVillagerYoungMan]
+Thank you![.4] I better[N]
+get back to work![A]
+[X]
+
 ## JohnsonVillageText
 [MidLeft][LoadFace][CurrentPortrait]
 [MidRight][LoadVillagerMan]
@@ -145,6 +170,31 @@ Smells really fishy to me.[A][X]
 [MidLeft][LoadFace][0x0F][0x1]
 Why do I feel like I'm[N]
 being stared at?[A][X]
+
+## ThiefVillageText
+[MidLeft][LoadFace][CurrentPortrait]
+[MidRight][LoadVillagerOldWoman]
+[X]
+
+## ThiefText
+[X]
+
+## ReadyText
+The Demolisher is[N]
+ready to fire![A]
+[X]
+
+## TurnsLeftTextOne
+Eleven turns until[N]
+the Demolisher is ready.[A][X]
+
+## TurnsLeftTextTwo
+Five turns until[N]
+the Demolisher is ready.[A][X]
+
+## DemolisherAccelerationText
+Turns until the Demolisher[N]
+is ready is reduced by one.[A][X]
 
 ## BlankText
 [X]
