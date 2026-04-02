@@ -27,6 +27,7 @@ StockEntry(BraveAxe, 1)
 StockEntry(Ballista, 1)
 StockEntry(BraveBow, 1)
 StockEntry(Bolting, 1)
+StockEntry(Rescue, 1)
 StockEntry(Berserk, 1)
 StockListEnd //TERMINATOR
 
@@ -60,11 +61,11 @@ POP
 
 ALIGN 4
 PrepScreenArmory:
-SHLI BraveSword SilverSword LightBrand BraveLance SilverLance Horseslayer Javelin BraveAxe SilverAxe Hammer HandAxe Ballista BraveBow SilverBow Longbow 0x0
+SHLI BraveSword SilverSword Rapier LightBrand BraveLance SilverLance Horseslayer Javelin BraveAxe SilverAxe Hammer HandAxe Ballista BraveBow SilverBow Longbow 0x0
 
 ALIGN 4
 PrepScreenShop:
-SHLI Bolting Fimbulvetr Aura Fenrir Nosferatu Fortify Rescue Berserk Recover Elixir 0x0
+SHLI Fimbulvetr Thunder Bolting Aura Shine Fenrir Nosferatu Eclipse Fortify Rescue Berserk Recover Elixir 0x0
 
 ALIGN 4
 gPrepScreenShop:

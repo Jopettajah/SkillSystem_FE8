@@ -10,3 +10,6 @@ SongTable(0x13,ScarletRainTest_ReversCard_volfix,MapMusicGroup)
 SongTable(0xA,JustOneChanceFin,MapMusicGroup)
 #include "event/JustOneChanceFin.event"
 
+SongTable(0xB,BattleOverture000,MapMusicGroup)
+#include "event/BattleOverture000.event"
+

@@ -72,6 +72,11 @@ General in the army of anotherPlace.[N]
 Disowned his own son for not[N]
 following in his footsteps.[X]
 
+## JohnDeathQuote
+[MidLeft][LoadFace][0x11][0x1]
+Forgive[Beat] Your fool of[N]
+a father[Beat] [CloseEyes]Johnson[Beat][A][X]
+
 ## JohnsonName
 Johnson[X]
 

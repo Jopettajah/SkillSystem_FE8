@@ -25,6 +25,7 @@ CharacterBasedEvents:
 
 MiscBasedEvents:
 	AFEV 15 PostJohnson 14
+	AFEV 19 PostJohn 18
 	AFEV 0 CounterEvent 0
 	CauseGameOverIfLordDies
 	END_MAIN
@@ -67,36 +68,51 @@ Units1:
 	UNIT
 
 EnemyUnits:
-	UNIT MainBoss MasterKnight MainBoss Level(5,Enemy,False) [17,17] 0x0 0x0 0x0 0x0 [SilverSword,Spear,Tomahawk,Fimbulvetr] DefaultAI
-	UNIT EnemyElite Valkyrie MainBoss Level(3,Enemy,True) [16,17] 0x0 0x0 0x0 0x0 [Divine,Restore] DefaultAI
-	UNIT EnemyElite GreatKnight MainBoss Level(1,Enemy,True) [15,17] 0x0 0x0 0x0 0x0 [SilverAxe] DefaultAI
-	UNIT EnemyElite Paladin MainBoss Level(1,Enemy,True) [14,17] 0x0 0x0 0x0 0x0 [SilverSword] DefaultAI
-	UNIT EnemyElite GreatKnight MainBoss Level(1,Enemy,True) [13,17] 0x0 0x0 0x0 0x0 [SilverLance] DefaultAI
-	UNIT EnemyElite GreatKnight MainBoss Level(1,Enemy,True) [18,17] 0x0 0x0 0x0 0x0 [SilverAxe] DefaultAI
-	UNIT EnemyElite Paladin MainBoss Level(1,Enemy,True) [19,17] 0x0 0x0 0x0 0x0 [SilverSword] DefaultAI
-	UNIT EnemyElite GreatKnight MainBoss Level(1,Enemy,True) [20,17] 0x0 0x0 0x0 0x0 [SilverLance] DefaultAI
+	UNIT MainBoss MasterKnight MainBoss Level(5,Enemy,False) [17,17] 0x0 0x0 0x0 0x0 [SilverSword,Spear,Tomahawk,Fimbulvetr] PursueWithoutHeedAI
+	UNIT EnemyElite Valkyrie MainBoss Level(3,Enemy,True) [16,17] 0x0 0x0 0x0 0x0 [Divine,Restore] PursueWithoutHeedAI
+	UNIT EnemyElite GreatKnight MainBoss Level(1,Enemy,True) [15,17] 0x0 0x0 0x0 0x0 [SilverAxe] PursueWithoutHeedAI
+	UNIT EnemyElite Paladin MainBoss Level(1,Enemy,True) [14,17] 0x0 0x0 0x0 0x0 [SilverSword] PursueWithoutHeedAI
+	UNIT EnemyElite GreatKnight MainBoss Level(1,Enemy,True) [13,17] 0x0 0x0 0x0 0x0 [SilverLance] PursueWithoutHeedAI
+	UNIT EnemyElite GreatKnight MainBoss Level(1,Enemy,True) [18,17] 0x0 0x0 0x0 0x0 [SilverAxe] PursueWithoutHeedAI
+	UNIT EnemyElite Paladin MainBoss Level(1,Enemy,True) [19,17] 0x0 0x0 0x0 0x0 [SilverSword] PursueWithoutHeedAI
+	UNIT EnemyElite GreatKnight MainBoss Level(1,Enemy,True) [20,17] 0x0 0x0 0x0 0x0 [SilverLance] PursueWithoutHeedAI
 	
-	UNIT EnemyMain Archer MainBoss Level(12,Enemy,True) [17,16] 0x0 0x0 0x0 0x0 [SteelBow] DefaultAI
-	UNIT EnemyMain Archer MainBoss Level(12,Enemy,True) [16,16] 0x0 0x0 0x0 0x0 [SteelBow] DefaultAI
-	UNIT EnemyMain Mercenary MainBoss Level(12,Enemy,True) [15,16] 0x0 0x0 0x0 0x0 [SteelSword] DefaultAI
-	UNIT EnemyMain Soldier MainBoss Level(12,Enemy,True) [14,16] 0x0 0x0 0x0 0x0 [SteelLance] DefaultAI //AttackWallAI
+	UNIT EnemyMain Archer MainBoss Level(12,Enemy,True) [17,16] 0x0 0x0 0x0 0x0 [SteelBow] PursueWithoutHeedAI
+	UNIT EnemyMain Archer MainBoss Level(12,Enemy,True) [16,16] 0x0 0x0 0x0 0x0 [SteelBow] PursueWithoutHeedAI
+	UNIT EnemyMain Mercenary MainBoss Level(12,Enemy,True) [15,16] 0x0 0x0 0x0 0x0 [SteelSword] PursueWithoutHeedAI
+	UNIT EnemyMain Soldier MainBoss Level(12,Enemy,True) [14,16] 0x0 0x0 0x0 0x0 [SteelLance] PursueWithoutHeedAI //AttackWallAI
 	UNIT Wallbreaker1 Fighter MainBoss Level(12,Enemy,True) [13,16] 0x0 0x0 0x0 0x0 [SteelAxe] AttackWallAI
-	UNIT EnemyMain Mercenary MainBoss Level(12,Enemy,True) [18,16] 0x0 0x0 0x0 0x0 [SteelSword] DefaultAI
-	UNIT EnemyMain Soldier MainBoss Level(12,Enemy,True) [19,16] 0x0 0x0 0x0 0x0 [SteelLance] DefaultAI //AttackWallAI
+	UNIT EnemyMain Mercenary MainBoss Level(12,Enemy,True) [18,16] 0x0 0x0 0x0 0x0 [SteelSword] PursueWithoutHeedAI
+	UNIT EnemyMain Soldier MainBoss Level(12,Enemy,True) [19,16] 0x0 0x0 0x0 0x0 [SteelLance] PursueWithoutHeedAI //AttackWallAI
 	UNIT Wallbreaker2 Fighter MainBoss Level(12,Enemy,True) [20,16] 0x0 0x0 0x0 0x0 [SteelAxe] AttackWallAI
 	UNIT
 	
 JohnUnits:	
 	UNIT John General John Level(5,Enemy,True) [37,0] 0x0 0x0 0x0 [Tomahawk,SilverSword] [0x07, 0x03, 0x0, 0x20] 
-	UNIT EnemyElite General John Level(3,Enemy,True) [38,1] 0x0 0x0 0x0 0x0 [Spear] [0x07, 0x03, 0x0, 0x20] 
+	UNIT EnemyElite General John Level(3,Enemy,True) [38,1] 0x0 0x0 0x0 0x0 [Spear] [0x07, 0x03, 0x0, 0x20]
+	UNIT EnemyMain Knight John Level(12,Enemy,True) [36,2] 0x0 0x0 0x0 0x0 [ShortSpear] NeverMoveAI
+	UNIT EnemyElite Paladin John Level(1,Enemy,True) [38,8] 0x0 0x0 0x0 0x0 [SilverLance] ChaseOnceApproachedAI
+	UNIT EnemyMain Cavalier John Level(12,Enemy,True) [36,7] 0x0 0x0 0x0 0x0 [SteelSword] ChaseOnceApproachedAI
+	UNIT EnemyMain Cavalier John Level(12,Enemy,True) [36,9] 0x0 0x0 0x0 0x0 [SteelLance] ChaseOnceApproachedAI
 	UNIT
 	
 JohnsonUnits:
 	UNIT Johnson Sage Johnson Level(5,Enemy,False) [1,9] 0x0 0x0 0x0 0x0 [Thunder, Bolting] NeverMoveAI
+	UNIT EnemyElite Swordmaster_F Johnson Level(1,Enemy,True) [2,3] 0x0 0x0 0x0 0x0 [SilverSword] DelayedChargeAI
+	UNIT EnemyMain Fighter Johnson Level(12,Enemy,True) [3,4] 0x0 0x0 0x0 0x0 [SteelAxe] DelayedChargeAI
+	UNIT EnemyMain Mercenary Johnson Level(12,Enemy,True) [7,5] 0x0 0x0 0x0 0x0 [SteelSword] PursueWithoutHeedAI
+	UNIT EnemyMain Archer Johnson Level(12,Enemy,True) [7,6] 0x0 0x0 0x0 0x0 [SteelBow] PursueWithoutHeedAI
+	UNIT EnemyMain Mage Johnson Level(12,Enemy,True) [0,5] 0x0 0x0 0x0 0x0 [Elfire] AttackInRangeAI
+	UNIT EnemyMain Shaman Johnson Level(12,Enemy,True) [0,7] 0x0 0x0 0x0 0x0 [Nosferatu] AttackInRangeAI
 	UNIT
 	
 ThiefBossUnit:
 	UNIT ThiefBoss Rogue ThiefBoss Level(5,Enemy,False) [30,14] 0x0 0x0 0x0 0x0 [SilverSword] LootingThiefAI
+	UNIT
+	
+OtherThieves:
+	UNIT InfiltratorEnemy Thief ThiefBoss Level(12,Enemy,True) [33,14] 0x0 0x0 0x0 0x0 [KillingEdge] AttackInRangeAI
+	UNIT InfiltratorEnemy Thief ThiefBoss Level(12,Enemy,True) [31,12] 0x0 0x0 0x0 0x0 [SilverSword] AttackInRangeAI
 	UNIT
 	
 NpcDude:
@@ -114,6 +130,8 @@ Traps2:
 
 BeginningScene:
 
+	MUSCFAST 0xB
+
 	WEATHER 4 //Rain (5 is fire)
 
 
@@ -124,7 +142,9 @@ BeginningScene:
 	LOAD1 0x1 JohnUnits
 	ENUN
 	LOAD1 0x1 JohnsonUnits
-	ENUN	
+	ENUN
+	LOAD1 0x1 OtherThieves
+	ENUN
 
 	
 	LOAD1 0x1 NpcDude
@@ -149,8 +169,13 @@ JohnVillage:
 	EndConvo
 	MUNO
 	
+	CHECK_EXISTS John
+	BEQ 4 sC s0
+	
 	CAMERA John
 	Text(JohnText)
+	
+	LABEL 4
 	NoFade
 	ENDA
 
@@ -166,6 +191,7 @@ PostJohn:
 	TEXTSHOW DemolisherAccelerationText
 	TEXTEND
 	REMA
+	ENUT 16
 	NoFade
 	ENDA
 	
@@ -177,8 +203,13 @@ JohnsonVillage:
 	EndConvo
 	MUNO
 	
+	CHECK_EXISTS Johnson
+	BEQ 3 sC s0
+	
 	CAMERA Johnson
 	Text(JohnsonText)
+	
+	LABEL 3
 	NoFade
 	ENDA
 
@@ -200,7 +231,11 @@ ThiefVillage:
 	Text(ThiefVillageText)
 	EndConvo
 	MUNO
+	NoFade
+	ENDA
 	
+ThiefSpawn:
+	ENUT 17
 	LOAD1 0x1 ThiefBossUnit
 	ENUN
 	CAMERA ThiefBoss

@@ -1,0 +1,3095 @@
+//Event file generated from Sappy .s format.
+        #include "MPlayDef.event"
+
+        #define    BattleOverture000_grp  voicegroup000
+        #define    BattleOverture000_pri  0
+        #define    BattleOverture000_rev  0
+        #define    BattleOverture000_key  0
+
+        // .rodata
+        // BattleOverture000
+        ALIGN 4
+
+//****************** Track 0 (Midi-Chn.0) ******************//
+
+BattleOverture000_0:
+        BYTE   KEYSH   BattleOverture000_key+0
+// 000   ----------------------------------------
+        BYTE   TEMPO   200/2
+        BYTE           VOICE   105
+        BYTE           VOL     34
+        BYTE           PAN     c_v-38
+        BYTE   W24
+        BYTE   TEMPO   110/2
+BattleOverture000_0_LOOP:
+        BYTE   W72
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+        BYTE           N04     Bn2   v107
+        BYTE   W04
+        BYTE                   Cn3
+        BYTE   W04
+        BYTE                   Dn3
+        BYTE   W04
+        BYTE                   En3
+        BYTE   W04
+        BYTE                   Fn3
+        BYTE   W04
+        BYTE                   Fs3
+        BYTE   W04
+        BYTE           TIE     Gn3
+        BYTE   W72
+// 009   ----------------------------------------
+BattleOverture000_0_9:
+        BYTE   W72
+        BYTE           EOT     Gn3
+        BYTE           N24     Fs3   v107
+        BYTE   W24
+        BYTE   PEND
+// 010   ----------------------------------------
+BattleOverture000_0_10:
+        BYTE           N24     Dn3   v107
+        BYTE   W24
+        BYTE           N64     Fs3
+        BYTE   W64
+        BYTE           N16     Gn3
+        BYTE   W08
+        BYTE   PEND
+// 011   ----------------------------------------
+BattleOverture000_0_11:
+        BYTE   W08
+        BYTE           N16     Fs3   v107
+        BYTE   W16
+        BYTE           N64     En3
+        BYTE   W64
+        BYTE           N16     Fs3
+        BYTE   W08
+        BYTE   PEND
+// 012   ----------------------------------------
+BattleOverture000_0_12:
+        BYTE   W08
+        BYTE           N16     Gn3   v107
+        BYTE   W16
+        BYTE           TIE     Bn3
+        BYTE   W72
+        BYTE   PEND
+// 013   ----------------------------------------
+BattleOverture000_0_13:
+        BYTE   W48
+        BYTE           EOT     Bn3
+        BYTE           N24     Cn4   v107
+        BYTE   W24
+        BYTE                   An3
+        BYTE   W24
+        BYTE   PEND
+// 014   ----------------------------------------
+BattleOverture000_0_14:
+        BYTE           N24     Gn3   v107
+        BYTE   W24
+        BYTE           N48     Fs3
+        BYTE   W48
+        BYTE           N24     Gn3
+        BYTE   W24
+        BYTE   PEND
+// 015   ----------------------------------------
+BattleOverture000_0_15:
+        BYTE           N24     An3   v107
+        BYTE   W24
+        BYTE           N48
+        BYTE   W48
+        BYTE           N16     Cn4
+        BYTE   W16
+        BYTE                   Bn3
+        BYTE   W08
+        BYTE   PEND
+// 016   ----------------------------------------
+BattleOverture000_0_16:
+        BYTE   W08
+        BYTE           N16     An3   v107
+        BYTE   W16
+        BYTE           TIE     Gn3
+        BYTE   W72
+        BYTE   PEND
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_9
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_10
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_11
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_12
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_13
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_14
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_15
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_16
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_9
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_10
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_11
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_12
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_13
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_14
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_15
+// 032   ----------------------------------------
+        BYTE   W08
+        BYTE           N16     An3   v107
+        BYTE   W10
+        BYTE           VOL     33
+        BYTE   W01
+        BYTE                   32
+        BYTE   W01
+        BYTE                   29
+        BYTE   W01
+        BYTE                   28
+        BYTE   W01
+        BYTE                   27
+        BYTE   W01
+        BYTE                   23
+        BYTE   W01
+        BYTE           TIE     Bn3
+        BYTE   W12
+        BYTE           VOL     24
+        BYTE   W17
+        BYTE                   25
+        BYTE   W22
+        BYTE                   26
+        BYTE   W17
+        BYTE                   27
+        BYTE   W04
+// 033   ----------------------------------------
+        BYTE   W13
+        BYTE                   28
+        BYTE   W21
+        BYTE                   29
+        BYTE   W24
+        BYTE   W01
+        BYTE                   30
+        BYTE   W17
+        BYTE                   31
+        BYTE   W20
+// 034   ----------------------------------------
+        BYTE   W02
+        BYTE                   32
+        BYTE   W21
+        BYTE                   33
+        BYTE   W01
+        BYTE           EOT
+        BYTE           TIE
+        BYTE   W12
+        BYTE           VOL     32
+        BYTE   W22
+        BYTE                   31
+        BYTE   W21
+        BYTE                   30
+        BYTE   W17
+// 035   ----------------------------------------
+        BYTE                   29
+        BYTE   W24
+        BYTE   W01
+        BYTE                   28
+        BYTE   W22
+        BYTE                   27
+        BYTE   W17
+        BYTE                   26
+        BYTE   W17
+        BYTE                   25
+        BYTE   W15
+// 036   ----------------------------------------
+        BYTE   W06
+        BYTE                   24
+        BYTE   W17
+        BYTE                   23
+        BYTE   W01
+        BYTE           EOT
+        BYTE   W72
+// 037   ----------------------------------------
+        BYTE   W10
+        BYTE           VOL     24
+        BYTE   W01
+        BYTE                   27
+        BYTE   W60
+        BYTE   W01
+        BYTE           N48
+        BYTE   W24
+// 038   ----------------------------------------
+BattleOverture000_0_38:
+        BYTE   W24
+        BYTE           N96     En4   v107
+        BYTE   W72
+        BYTE   PEND
+// 039   ----------------------------------------
+BattleOverture000_0_39:
+        BYTE   W24
+        BYTE           N64     Fs4   v107
+        BYTE   W64
+        BYTE           N16     Dn4
+        BYTE   W08
+        BYTE   PEND
+// 040   ----------------------------------------
+BattleOverture000_0_40:
+        BYTE   W08
+        BYTE           N16     Cn4   v107
+        BYTE   W16
+        BYTE           N96     Dn4
+        BYTE   W72
+        BYTE   PEND
+// 041   ----------------------------------------
+BattleOverture000_0_41:
+        BYTE   W24
+        BYTE           N64     En4   v107
+        BYTE   W64
+        BYTE           N16     Cn4
+        BYTE   W08
+        BYTE   PEND
+// 042   ----------------------------------------
+BattleOverture000_0_42:
+        BYTE   W08
+        BYTE           N16     Bn3   v107
+        BYTE   W16
+        BYTE           N96     Cn4
+        BYTE   W72
+        BYTE   PEND
+// 043   ----------------------------------------
+BattleOverture000_0_43:
+        BYTE   W24
+        BYTE           N48     Dn4   v107
+        BYTE   W48
+        BYTE           N16     Cn4
+        BYTE   W16
+        BYTE                   Bn3
+        BYTE   W08
+        BYTE   PEND
+// 044   ----------------------------------------
+BattleOverture000_0_44:
+        BYTE   W08
+        BYTE           N16     An3   v107
+        BYTE   W16
+        BYTE           N48     Bn3
+        BYTE   W48
+        BYTE                   Fs4
+        BYTE   W24
+        BYTE   PEND
+// 045   ----------------------------------------
+BattleOverture000_0_45:
+        BYTE   W24
+        BYTE           N48     En4   v107
+        BYTE   W48
+        BYTE           N16
+        BYTE   W16
+        BYTE                   Fs4
+        BYTE   W08
+        BYTE   PEND
+// 046   ----------------------------------------
+BattleOverture000_0_46:
+        BYTE   W08
+        BYTE           N16     Gn4   v107
+        BYTE   W16
+        BYTE           N36
+        BYTE   W36
+        BYTE           N12     Cn4
+        BYTE   W12
+        BYTE           N48
+        BYTE   W24
+        BYTE   PEND
+// 047   ----------------------------------------
+BattleOverture000_0_47:
+        BYTE   W24
+        BYTE           N36     An4   v107
+        BYTE   W36
+        BYTE           N12     Dn4
+        BYTE   W12
+        BYTE           N48
+        BYTE   W24
+        BYTE   PEND
+// 048   ----------------------------------------
+BattleOverture000_0_48:
+        BYTE   W24
+        BYTE           N64     Bn4   v107
+        BYTE   W64
+        BYTE           N16     En4
+        BYTE   W08
+        BYTE   PEND
+// 049   ----------------------------------------
+BattleOverture000_0_49:
+        BYTE   W08
+        BYTE           N16     Bn4   v107
+        BYTE   W16
+        BYTE           N64     An4
+        BYTE   W64
+        BYTE           N16     Dn4
+        BYTE   W08
+        BYTE   PEND
+// 050   ----------------------------------------
+BattleOverture000_0_50:
+        BYTE   W08
+        BYTE           N16     Fs4   v107
+        BYTE   W16
+        BYTE           TIE     En4
+        BYTE   W72
+        BYTE   PEND
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE   W23
+        BYTE           EOT
+        BYTE   W01
+        BYTE           VOL     34
+        BYTE   GoTo
+         POIN2  BattleOverture000_0_LOOP
+        BYTE   W72
+// 053   ----------------------------------------
+        BYTE   W24
+        BYTE   FINE
+
+//****************** Track 1 (Midi-Chn.1) ******************//
+
+BattleOverture000_1:
+        BYTE   KEYSH   BattleOverture000_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   109
+        BYTE           VOL     39
+        BYTE           PAN     c_v-30
+        BYTE   W24
+BattleOverture000_1_LOOP:
+        BYTE           TIE     Gn3   v107
+        BYTE   W72
+// 001   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_9
+// 002   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_10
+// 003   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_11
+// 004   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_12
+// 005   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_13
+// 006   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_14
+// 007   ----------------------------------------
+BattleOverture000_1_7:
+        BYTE           N24     An3   v107
+        BYTE   W24
+        BYTE           N48
+        BYTE   W48
+        BYTE           N24     Gn3
+        BYTE   W24
+        BYTE   PEND
+// 008   ----------------------------------------
+BattleOverture000_1_8:
+        BYTE           N24     An3   v107
+        BYTE   W24
+        BYTE           TIE     Gn3
+        BYTE   W72
+        BYTE   PEND
+// 009   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_9
+// 010   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_10
+// 011   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_11
+// 012   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_12
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_13
+// 014   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_14
+// 015   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_1_7
+// 016   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_1_8
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_9
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_10
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_11
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_12
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_13
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_14
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_1_7
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_1_8
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_9
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_10
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_11
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_12
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_13
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_14
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_1_7
+// 032   ----------------------------------------
+        BYTE           N24     An3   v107
+        BYTE   W24
+        BYTE           VOL     35
+        BYTE           N72     En3
+        BYTE   W06
+        BYTE           VOL     36
+        BYTE   W18
+        BYTE                   37
+        BYTE   W24
+        BYTE   W03
+        BYTE                   38
+        BYTE   W21
+// 033   ----------------------------------------
+        BYTE                   39
+        BYTE           N24     Gn3
+        BYTE   W24
+        BYTE           N64     An3
+        BYTE   W64
+        BYTE           N16     Fs3
+        BYTE   W08
+// 034   ----------------------------------------
+BattleOverture000_1_34:
+        BYTE   W08
+        BYTE           N16     Gn3   v107
+        BYTE   W16
+        BYTE           N72     En3
+        BYTE   W72
+        BYTE   PEND
+// 035   ----------------------------------------
+BattleOverture000_1_35:
+        BYTE           N24     Bn3   v107
+        BYTE   W24
+        BYTE           N48     An3
+        BYTE   W48
+        BYTE                   Dn3
+        BYTE   W24
+        BYTE   PEND
+// 036   ----------------------------------------
+BattleOverture000_1_36:
+        BYTE   W24
+        BYTE           N64     Dn3   v107
+        BYTE   W64
+        BYTE           N16     En3
+        BYTE   W08
+        BYTE   PEND
+// 037   ----------------------------------------
+BattleOverture000_1_37:
+        BYTE   W08
+        BYTE           N16     Fs3   v107
+        BYTE   W16
+        BYTE           N48     Gn3
+        BYTE   W48
+        BYTE                   Bn3
+        BYTE   W24
+        BYTE   PEND
+// 038   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_38
+// 039   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_39
+// 040   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_40
+// 041   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_41
+// 042   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_42
+// 043   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_43
+// 044   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_44
+// 045   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_45
+// 046   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_46
+// 047   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_47
+// 048   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_48
+// 049   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_49
+// 050   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_50
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE   W23
+        BYTE           EOT     En4
+        BYTE   W01
+        BYTE   GoTo
+         POIN2  BattleOverture000_1_LOOP
+        BYTE   W72
+// 053   ----------------------------------------
+        BYTE   W24
+        BYTE   FINE
+
+//****************** Track 2 (Midi-Chn.5) ******************//
+
+BattleOverture000_2:
+        BYTE   KEYSH   BattleOverture000_key+0
+// 000   ----------------------------------------
+        BYTE           VOL     42
+        BYTE   W01
+        BYTE           VOICE   46
+        BYTE           VOL     37
+        BYTE           PAN     c_v-23
+        BYTE   W23
+BattleOverture000_2_LOOP:
+        BYTE   W72
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+        BYTE           N24     Bn2   v107
+        BYTE   W04
+        BYTE                   Cn3
+        BYTE   W04
+        BYTE                   Ds3
+        BYTE   W04
+        BYTE                   En3
+        BYTE   W04
+        BYTE                   Fs3
+        BYTE   W04
+        BYTE                   An3
+        BYTE   W04
+        BYTE           N96     En1
+        BYTE   W12
+        BYTE           N23     Bn3
+        BYTE   W12
+        BYTE                   Gn4
+        BYTE   W12
+        BYTE                   Bn3
+        BYTE   W12
+        BYTE           N36     Gn4
+        BYTE   W12
+        BYTE           N23     Bn3
+        BYTE   W12
+// 009   ----------------------------------------
+BattleOverture000_2_9:
+        BYTE           N48     En3   v107
+        BYTE   W12
+        BYTE           N23     Bn3
+        BYTE   W12
+        BYTE           N96     En1
+        BYTE   W12
+        BYTE           N23     Bn3
+        BYTE   W12
+        BYTE                   Gn4
+        BYTE   W12
+        BYTE                   Bn3
+        BYTE   W12
+        BYTE           N36     Gn4
+        BYTE   W12
+        BYTE                   Bn3
+        BYTE   W12
+        BYTE   PEND
+// 010   ----------------------------------------
+BattleOverture000_2_10:
+        BYTE           N48     Fs3   v107
+        BYTE   W12
+        BYTE           N23     An3
+        BYTE   W12
+        BYTE           N96     Cn2
+        BYTE   W12
+        BYTE           N23     An3
+        BYTE   W12
+        BYTE                   Fs4
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W12
+        BYTE           N36     Fs4
+        BYTE   W12
+        BYTE           N23     An3
+        BYTE   W12
+        BYTE   PEND
+// 011   ----------------------------------------
+BattleOverture000_2_11:
+        BYTE           N48     Dn3   v107
+        BYTE   W12
+        BYTE           N36     An3
+        BYTE   W12
+        BYTE           N96     Cn2
+        BYTE   W12
+        BYTE           N23     Gn3
+        BYTE   W12
+        BYTE                   En4
+        BYTE   W12
+        BYTE                   Gn3
+        BYTE   W12
+        BYTE           N36     En4
+        BYTE   W12
+        BYTE           N23     Gn3
+        BYTE   W12
+        BYTE   PEND
+// 012   ----------------------------------------
+BattleOverture000_2_12:
+        BYTE           N48     Cn3   v107
+        BYTE   W12
+        BYTE           N36     Gn3
+        BYTE   W12
+        BYTE           N96     An1
+        BYTE   W12
+        BYTE           N23     En3
+        BYTE   W12
+        BYTE                   Cn4
+        BYTE   W12
+        BYTE                   En3
+        BYTE   W12
+        BYTE           N36     Cn4
+        BYTE   W12
+        BYTE           N23     En3
+        BYTE   W12
+        BYTE   PEND
+// 013   ----------------------------------------
+BattleOverture000_2_13:
+        BYTE           N48     An2   v107
+        BYTE   W12
+        BYTE           N23     En3
+        BYTE   W12
+        BYTE           N96     An1
+        BYTE   W12
+        BYTE           N23     En3
+        BYTE   W12
+        BYTE                   Cn4
+        BYTE   W12
+        BYTE                   En3
+        BYTE   W12
+        BYTE           N36     Cn4
+        BYTE   W12
+        BYTE           N23     En3
+        BYTE   W12
+        BYTE   PEND
+// 014   ----------------------------------------
+BattleOverture000_2_14:
+        BYTE           N48     An2   v107
+        BYTE   W12
+        BYTE           N36     En3
+        BYTE   W12
+        BYTE           N96     Dn2
+        BYTE   W12
+        BYTE           N23     An3
+        BYTE   W12
+        BYTE                   Fs4
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W12
+        BYTE           N36     Fs4
+        BYTE   W12
+        BYTE           N23     An3
+        BYTE   W12
+        BYTE   PEND
+// 015   ----------------------------------------
+        BYTE           N48     Dn3
+        BYTE   W12
+        BYTE           N23     An3
+        BYTE   W12
+        BYTE           N96     Ds2
+        BYTE   W12
+        BYTE           N23     An3
+        BYTE   W12
+        BYTE                   Fs4
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W12
+        BYTE           N28     Fs4   v107   gtp1
+        BYTE   W12
+        BYTE           N14     An3
+        BYTE   W12
+// 016   ----------------------------------------
+        BYTE           N36     Ds3   v107   gtp3
+        BYTE   W03
+        BYTE           N12     Fs3
+        BYTE   W03
+        BYTE                   Gn3
+        BYTE   W03
+        BYTE                   An3
+        BYTE   W03
+        BYTE                   Bn3
+        BYTE   W03
+        BYTE                   Cn4
+        BYTE   W03
+        BYTE                   Ds4
+        BYTE   W03
+        BYTE                   Fs4
+        BYTE   W03
+        BYTE           N96     En1
+        BYTE   W12
+        BYTE           N23     Bn3
+        BYTE   W12
+        BYTE                   Gn4
+        BYTE   W12
+        BYTE                   Bn3
+        BYTE   W12
+        BYTE           N36     Gn4
+        BYTE   W12
+        BYTE           N23     Bn3
+        BYTE   W12
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_2_9
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_2_10
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_2_11
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_2_12
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_2_13
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_2_14
+// 023   ----------------------------------------
+BattleOverture000_2_23:
+        BYTE           N48     Dn3   v107
+        BYTE   W12
+        BYTE           N23     An3
+        BYTE   W12
+        BYTE           N96     Ds2
+        BYTE   W12
+        BYTE           N23     An3
+        BYTE   W12
+        BYTE                   Fs4
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W12
+        BYTE           N36     Fs4
+        BYTE   W12
+        BYTE           N23     An3
+        BYTE   W12
+        BYTE   PEND
+// 024   ----------------------------------------
+        BYTE           N48     Ds3
+        BYTE   W12
+        BYTE           N36     An3
+        BYTE   W12
+        BYTE           N96     En1
+        BYTE   W12
+        BYTE           N23     Bn3
+        BYTE   W12
+        BYTE                   Gn4
+        BYTE   W12
+        BYTE                   Bn3
+        BYTE   W12
+        BYTE           N36     Gn4
+        BYTE   W12
+        BYTE           N23     Bn3
+        BYTE   W12
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_2_9
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_2_10
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_2_11
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_2_12
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_2_13
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_2_14
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_2_23
+// 032   ----------------------------------------
+        BYTE           N48     Ds3   v107
+        BYTE   W12
+        BYTE           N36     An3
+        BYTE   W84
+// 033   ----------------------------------------
+        BYTE   W96
+// 034   ----------------------------------------
+        BYTE   W96
+// 035   ----------------------------------------
+        BYTE   W96
+// 036   ----------------------------------------
+        BYTE   W96
+// 037   ----------------------------------------
+        BYTE   W72
+        BYTE                   Gn2
+        BYTE   W06
+        BYTE                   Bn2
+        BYTE   W06
+        BYTE                   Dn3
+        BYTE   W06
+        BYTE                   Fs3
+        BYTE   W06
+// 038   ----------------------------------------
+        BYTE           N32     Gn3   v107   gtp3
+        BYTE   W06
+        BYTE           N23     Bn3
+        BYTE   W06
+        BYTE           N36     Dn4
+        BYTE   W06
+        BYTE                   Fs4
+        BYTE   W06
+        BYTE                   En4
+        BYTE   W06
+        BYTE           N11     Bn3
+        BYTE   W06
+        BYTE           N17     Gn3
+        BYTE   W06
+        BYTE           N32     Bn3   v107   gtp3
+        BYTE   W06
+        BYTE           N36     En3
+        BYTE   W06
+        BYTE           N11     Gn3
+        BYTE   W06
+        BYTE           N36     Bn2
+        BYTE   W06
+        BYTE           N17     Gn3
+        BYTE   W06
+        BYTE           N36     En4
+        BYTE   W06
+        BYTE           N11     Bn3
+        BYTE   W06
+        BYTE           N17     Gn3
+        BYTE   W06
+        BYTE           N36     Bn3
+        BYTE   W06
+// 039   ----------------------------------------
+BattleOverture000_2_39:
+        BYTE           N36     En3   v107
+        BYTE   W06
+        BYTE           N11     Gn3
+        BYTE   W06
+        BYTE           N36     Bn2
+        BYTE   W06
+        BYTE                   Gn3
+        BYTE   W06
+        BYTE                   Fs4
+        BYTE   W06
+        BYTE           N11     Dn4
+        BYTE   W06
+        BYTE           N17     An3
+        BYTE   W06
+        BYTE           N32     Dn4   v107   gtp3
+        BYTE   W06
+        BYTE           N36     Fs3
+        BYTE   W06
+        BYTE           N11     An3
+        BYTE   W06
+        BYTE           N36     Dn3
+        BYTE   W06
+        BYTE           N17     An3
+        BYTE   W06
+        BYTE           N36     Fs4
+        BYTE   W06
+        BYTE           N11     Dn4
+        BYTE   W06
+        BYTE           N17     An3
+        BYTE   W06
+        BYTE           N32     Dn4   v107   gtp3
+        BYTE   W06
+        BYTE   PEND
+// 040   ----------------------------------------
+        BYTE           N36     Fs3
+        BYTE   W06
+        BYTE           N11     An3
+        BYTE   W06
+        BYTE           N36     Dn3
+        BYTE   W06
+        BYTE           N17     An3
+        BYTE   W06
+        BYTE           N36     Fs4
+        BYTE   W06
+        BYTE           N11     Dn4
+        BYTE   W06
+        BYTE           N17     An3
+        BYTE   W06
+        BYTE           N32     Dn4   v107   gtp3
+        BYTE   W06
+        BYTE           N36     Fs3
+        BYTE   W06
+        BYTE           N11     An3
+        BYTE   W06
+        BYTE           N36     Dn3
+        BYTE   W06
+        BYTE           N17     An3
+        BYTE   W06
+        BYTE           N36     Fs4
+        BYTE   W06
+        BYTE           N11     Dn4
+        BYTE   W06
+        BYTE           N17     An3
+        BYTE   W06
+        BYTE           N36     Dn4
+        BYTE   W06
+// 041   ----------------------------------------
+        BYTE                   Fs3
+        BYTE   W06
+        BYTE           N11     An3
+        BYTE   W06
+        BYTE           N36     Dn3
+        BYTE   W06
+        BYTE                   An3
+        BYTE   W06
+        BYTE                   En4
+        BYTE   W06
+        BYTE           N11     Bn3
+        BYTE   W06
+        BYTE           N17     Gn3
+        BYTE   W06
+        BYTE           N32     Bn3   v107   gtp3
+        BYTE   W06
+        BYTE           N36     En3
+        BYTE   W06
+        BYTE           N11     Gn3
+        BYTE   W06
+        BYTE           N36     Bn2
+        BYTE   W06
+        BYTE           N17     Gn3
+        BYTE   W06
+        BYTE           N36     En4
+        BYTE   W06
+        BYTE           N11     Bn3
+        BYTE   W06
+        BYTE           N17     Gn3
+        BYTE   W06
+        BYTE           N32     Bn3   v107   gtp3
+        BYTE   W06
+// 042   ----------------------------------------
+        BYTE           N36     En3
+        BYTE   W06
+        BYTE           N11     Gn3
+        BYTE   W06
+        BYTE           N36     Bn2
+        BYTE   W06
+        BYTE           N17     Gn3
+        BYTE   W06
+        BYTE           N36     En4
+        BYTE   W06
+        BYTE           N11     Bn3
+        BYTE   W06
+        BYTE           N17     Gn3
+        BYTE   W06
+        BYTE           N32     Bn3   v107   gtp3
+        BYTE   W06
+        BYTE           N36     En3
+        BYTE   W06
+        BYTE           N11     Gn3
+        BYTE   W06
+        BYTE           N36     Bn2
+        BYTE   W06
+        BYTE           N17     Gn3
+        BYTE   W06
+        BYTE           N36     En4
+        BYTE   W06
+        BYTE           N11     Bn3
+        BYTE   W06
+        BYTE           N17     Gn3
+        BYTE   W06
+        BYTE           N36     Bn3
+        BYTE   W06
+// 043   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_2_39
+// 044   ----------------------------------------
+        BYTE           N36     Fs3   v107
+        BYTE   W06
+        BYTE           N11     An3
+        BYTE   W06
+        BYTE           N36     Dn3
+        BYTE   W06
+        BYTE                   An3
+        BYTE   W06
+        BYTE                   Fs4
+        BYTE   W06
+        BYTE           N11     Dn4
+        BYTE   W06
+        BYTE           N17     Bn3
+        BYTE   W06
+        BYTE           N32     Dn4   v107   gtp3
+        BYTE   W06
+        BYTE           N36     Fs3
+        BYTE   W06
+        BYTE           N11     Bn3
+        BYTE   W06
+        BYTE           N36     Dn3
+        BYTE   W06
+        BYTE           N17     Bn3
+        BYTE   W06
+        BYTE           N36     Fs4
+        BYTE   W06
+        BYTE           N11     Dn4
+        BYTE   W06
+        BYTE           N17     Bn3
+        BYTE   W06
+        BYTE           N36     Dn4
+        BYTE   W06
+// 045   ----------------------------------------
+        BYTE                   Fs3
+        BYTE   W06
+        BYTE           N11     Bn3
+        BYTE   W06
+        BYTE           N36     Dn3
+        BYTE   W06
+        BYTE           N11     Bn3
+        BYTE   W06
+        BYTE           N36     En4
+        BYTE   W06
+        BYTE           N11     Bn3
+        BYTE   W06
+        BYTE           N17     Gs3
+        BYTE   W06
+        BYTE           N32     Bn3   v107   gtp3
+        BYTE   W06
+        BYTE           N36     En3
+        BYTE   W06
+        BYTE           N11     Gs3
+        BYTE   W06
+        BYTE           N36     Bn2
+        BYTE   W06
+        BYTE           N17     Gs3
+        BYTE   W06
+        BYTE           N36     En4
+        BYTE   W06
+        BYTE           N11     Bn3
+        BYTE   W06
+        BYTE           N17     Gs3
+        BYTE   W06
+        BYTE           N36     Bn3
+        BYTE   W06
+// 046   ----------------------------------------
+        BYTE                   En3
+        BYTE   W06
+        BYTE           N11     Gs3
+        BYTE   W06
+        BYTE           N36     Bn2
+        BYTE   W06
+        BYTE                   Gs3
+        BYTE   W06
+        BYTE                   En4
+        BYTE   W06
+        BYTE           N11     Cn4
+        BYTE   W06
+        BYTE           N17     Gn3
+        BYTE   W06
+        BYTE           N32     Cn4   v107   gtp3
+        BYTE   W06
+        BYTE           N36     En3
+        BYTE   W06
+        BYTE           N11     Gn3
+        BYTE   W06
+        BYTE           N36     Cn3
+        BYTE   W06
+        BYTE           N17     Gn3
+        BYTE   W06
+        BYTE           N36     En4
+        BYTE   W06
+        BYTE           N11     Cn4
+        BYTE   W06
+        BYTE           N17     Gn3
+        BYTE   W06
+        BYTE           N36     Cn4
+        BYTE   W06
+// 047   ----------------------------------------
+        BYTE                   En3
+        BYTE   W06
+        BYTE           N11     Gn3
+        BYTE   W06
+        BYTE           N36     Cn3
+        BYTE   W06
+        BYTE                   Gn3
+        BYTE   W06
+        BYTE                   Fs4
+        BYTE   W06
+        BYTE           N11     Dn4
+        BYTE   W06
+        BYTE           N17     An3
+        BYTE   W06
+        BYTE           N32     Dn4   v107   gtp3
+        BYTE   W06
+        BYTE           N36     Fs3
+        BYTE   W06
+        BYTE           N11     An3
+        BYTE   W06
+        BYTE           N36     Dn3
+        BYTE   W06
+        BYTE           N17     An3
+        BYTE   W06
+        BYTE           N36     Fs4
+        BYTE   W06
+        BYTE           N11     Dn4
+        BYTE   W06
+        BYTE           N17     An3
+        BYTE   W06
+        BYTE           N36     Dn4
+        BYTE   W06
+// 048   ----------------------------------------
+        BYTE                   Fs3
+        BYTE   W06
+        BYTE           N11     An3
+        BYTE   W06
+        BYTE           N36     Dn3
+        BYTE   W06
+        BYTE                   An3
+        BYTE   W06
+        BYTE                   Gn4
+        BYTE   W06
+        BYTE           N11     En4
+        BYTE   W06
+        BYTE           N17     Bn3
+        BYTE   W06
+        BYTE           N32     En4   v107   gtp3
+        BYTE   W06
+        BYTE           N36     Gn3
+        BYTE   W06
+        BYTE           N11     Bn3
+        BYTE   W06
+        BYTE           N36     En3
+        BYTE   W06
+        BYTE           N17     Bn3
+        BYTE   W06
+        BYTE           N36     Gn4
+        BYTE   W06
+        BYTE           N11     En4
+        BYTE   W06
+        BYTE           N17     Bn3
+        BYTE   W06
+        BYTE           N36     En4
+        BYTE   W06
+// 049   ----------------------------------------
+        BYTE                   Gn3
+        BYTE   W06
+        BYTE           N11     Bn3
+        BYTE   W06
+        BYTE           N36     En3
+        BYTE   W06
+        BYTE                   Bn3
+        BYTE   W06
+        BYTE                   Fs4
+        BYTE   W06
+        BYTE           N11     Dn4
+        BYTE   W06
+        BYTE           N17     An3
+        BYTE   W06
+        BYTE           N32     Dn4   v107   gtp3
+        BYTE   W06
+        BYTE           N36     Fs3
+        BYTE   W06
+        BYTE           N11     An3
+        BYTE   W06
+        BYTE           N36     Dn3
+        BYTE   W06
+        BYTE           N17     An3
+        BYTE   W06
+        BYTE           N36     Fs4
+        BYTE   W06
+        BYTE           N11     Dn4
+        BYTE   W06
+        BYTE           N17     An3
+        BYTE   W06
+        BYTE           N36     Dn4
+        BYTE   W06
+// 050   ----------------------------------------
+        BYTE                   Fs3
+        BYTE   W06
+        BYTE           N11     An3
+        BYTE   W06
+        BYTE           N36     Dn3
+        BYTE   W06
+        BYTE           N17     An3
+        BYTE   W06
+        BYTE           N36     En4
+        BYTE   W06
+        BYTE           N11     Bn3
+        BYTE   W06
+        BYTE           N17     An3
+        BYTE   W06
+        BYTE                   Bn3
+        BYTE   W06
+        BYTE           N36     En3
+        BYTE   W06
+        BYTE           N11     An3
+        BYTE   W06
+        BYTE           N17     Bn3
+        BYTE   W06
+        BYTE                   An3
+        BYTE   W06
+        BYTE           N36     En4
+        BYTE   W06
+        BYTE           N11     Bn3
+        BYTE   W06
+        BYTE           N17     An3
+        BYTE   W06
+        BYTE                   Bn3
+        BYTE   W06
+// 051   ----------------------------------------
+        BYTE           N36     En3
+        BYTE   W06
+        BYTE           N11     An3
+        BYTE   W06
+        BYTE           N17     Bn3
+        BYTE   W06
+        BYTE           N36     An3
+        BYTE   W06
+        BYTE                   En4
+        BYTE   W06
+        BYTE           N11     Bn3
+        BYTE   W06
+        BYTE           N17     Gs3
+        BYTE   W06
+        BYTE                   Bn3
+        BYTE   W06
+        BYTE           N36     En3
+        BYTE   W06
+        BYTE           N11     Gs3
+        BYTE   W06
+        BYTE           N17     Bn3
+        BYTE   W06
+        BYTE                   Gs3
+        BYTE   W06
+        BYTE           N36     En4
+        BYTE   W06
+        BYTE           N11     Bn3
+        BYTE   W06
+        BYTE           N17     Gs3
+        BYTE   W06
+        BYTE                   Bn3
+        BYTE   W06
+// 052   ----------------------------------------
+        BYTE           N23     En3
+        BYTE   W06
+        BYTE           N11     Gs3
+        BYTE   W06
+        BYTE                   Bn3
+        BYTE   W06
+        BYTE           N05     Gs3
+        BYTE   W06
+        BYTE   GoTo
+         POIN2  BattleOverture000_2_LOOP
+        BYTE   W72
+// 053   ----------------------------------------
+        BYTE   W24
+        BYTE   FINE
+
+//****************** Track 3 (Midi-Chn.6) ******************//
+
+BattleOverture000_3:
+        BYTE   KEYSH   BattleOverture000_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   52
+        BYTE   W01
+        BYTE           VOL     33
+        BYTE   W01
+        BYTE           PAN     c_v+30
+        BYTE   W22
+BattleOverture000_3_LOOP:
+        BYTE   W72
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+BattleOverture000_3_2:
+        BYTE   W24
+        BYTE   W02
+        BYTE           VOL     26
+        BYTE           PAN     c_v-24
+        BYTE   W68
+        BYTE   W02
+        BYTE   PEND
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+        BYTE   W24
+        BYTE           TIE     En3   v107
+        BYTE           TIE     Bn3
+        BYTE   W72
+// 009   ----------------------------------------
+        BYTE   W72
+        BYTE           EOT     En3
+        BYTE                   Bn3
+        BYTE           N48     Dn3
+        BYTE           N48     Fs3
+        BYTE   W24
+// 010   ----------------------------------------
+BattleOverture000_3_10:
+        BYTE   W24
+        BYTE           N96     Dn3   v107
+        BYTE           N96     Fs3
+        BYTE   W72
+        BYTE   PEND
+// 011   ----------------------------------------
+        BYTE   W24
+        BYTE           N72     Gn2
+        BYTE           N72     Cn3
+        BYTE   W72
+// 012   ----------------------------------------
+        BYTE           N24     Gn2
+        BYTE           N24     Bn2
+        BYTE   W24
+        BYTE           TIE     Cn3
+        BYTE           TIE     En3
+        BYTE   W72
+// 013   ----------------------------------------
+        BYTE   W72
+        BYTE           EOT     Cn3
+        BYTE                   En3
+        BYTE           N48
+        BYTE           N48     Gn3
+        BYTE   W24
+// 014   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_3_10
+// 015   ----------------------------------------
+        BYTE   W24
+        BYTE           N48     Ds3   v107
+        BYTE           N48     Fs3
+        BYTE   W48
+        BYTE           N24
+        BYTE           N24     Bn3
+        BYTE   W24
+// 016   ----------------------------------------
+        BYTE                   Fs3
+        BYTE           N24     An3
+        BYTE   W96
+// 017   ----------------------------------------
+        BYTE   W96
+// 018   ----------------------------------------
+        BYTE   W96
+// 019   ----------------------------------------
+        BYTE   W96
+// 020   ----------------------------------------
+        BYTE   W96
+// 021   ----------------------------------------
+        BYTE   W96
+// 022   ----------------------------------------
+        BYTE   W24
+        BYTE   W01
+        BYTE           VOL     33
+        BYTE   W01
+        BYTE           PAN     c_v+30
+        BYTE   W68
+        BYTE   W02
+// 023   ----------------------------------------
+        BYTE   W96
+// 024   ----------------------------------------
+        BYTE   W24
+        BYTE           N48     Gn2   v080
+        BYTE           N48     Bn2
+        BYTE   W48
+        BYTE           VOL     34
+        BYTE           N96     En3
+        BYTE           N96     Gn3
+        BYTE   W24
+// 025   ----------------------------------------
+        BYTE   W72
+        BYTE           N24     Fs3
+        BYTE           N24     An3
+        BYTE   W24
+// 026   ----------------------------------------
+        BYTE                   An3
+        BYTE           N24     Dn4
+        BYTE   W24
+        BYTE           N36     An3
+        BYTE           N36     Dn4
+        BYTE   W36
+        BYTE           N11     Fs3
+        BYTE           N11     An3
+        BYTE   W12
+        BYTE           N16     Fs3
+        BYTE           N16     An3
+        BYTE   W16
+        BYTE                   En3
+        BYTE           N16     Gn3
+        BYTE   W08
+// 027   ----------------------------------------
+        BYTE   W08
+        BYTE                   Fs3
+        BYTE           N16     An3
+        BYTE   W16
+        BYTE           N48     En3
+        BYTE           N48     Gn3
+        BYTE   W48
+        BYTE           N16     En3
+        BYTE           N16     Gn3
+        BYTE   W16
+        BYTE                   Fs3
+        BYTE           N16     An3
+        BYTE   W08
+// 028   ----------------------------------------
+        BYTE   W08
+        BYTE                   Gn3
+        BYTE           N16     Bn3
+        BYTE   W16
+        BYTE           N96     Gn3
+        BYTE           N96     Bn3
+        BYTE   W72
+// 029   ----------------------------------------
+        BYTE   W24
+        BYTE           N24     Gn3
+        BYTE           N24     Bn3
+        BYTE   W24
+        BYTE                   An3
+        BYTE           N24     Cn4
+        BYTE   W24
+        BYTE                   An3
+        BYTE           N24     Dn4
+        BYTE   W24
+// 030   ----------------------------------------
+        BYTE                   An3
+        BYTE           N24     Cn4
+        BYTE   W24
+        BYTE           N48     Fs3
+        BYTE           N48     An3
+        BYTE   W48
+        BYTE           N24     Gn3
+        BYTE           N24     Bn3
+        BYTE   W24
+// 031   ----------------------------------------
+        BYTE                   An3
+        BYTE           N24     Cn4
+        BYTE   W24
+        BYTE           N48     An3
+        BYTE           N48     Cn4
+        BYTE   W48
+        BYTE           N16     An3
+        BYTE           N16     Cn4
+        BYTE   W16
+        BYTE                   Ds3
+        BYTE           N16     Gn3
+        BYTE   W08
+// 032   ----------------------------------------
+        BYTE   W08
+        BYTE                   Ds3
+        BYTE           N16     Fs3
+        BYTE   W16
+        BYTE           N96     En3
+        BYTE           N96     Gn3
+        BYTE   W12
+        BYTE           VOL     33
+        BYTE   W15
+        BYTE                   32
+        BYTE   W12
+        BYTE                   31
+        BYTE   W18
+        BYTE                   30
+        BYTE   W12
+        BYTE                   29
+        BYTE   W03
+// 033   ----------------------------------------
+        BYTE   W12
+        BYTE                   28
+        BYTE   W09
+        BYTE                   27
+        BYTE   W72
+        BYTE   W03
+// 034   ----------------------------------------
+        BYTE   W96
+// 035   ----------------------------------------
+        BYTE   W96
+// 036   ----------------------------------------
+        BYTE   W96
+// 037   ----------------------------------------
+        BYTE   W96
+// 038   ----------------------------------------
+        BYTE   W96
+// 039   ----------------------------------------
+        BYTE   W96
+// 040   ----------------------------------------
+        BYTE   W96
+// 041   ----------------------------------------
+        BYTE   W96
+// 042   ----------------------------------------
+        BYTE   W96
+// 043   ----------------------------------------
+        BYTE   W96
+// 044   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_3_2
+// 045   ----------------------------------------
+        BYTE   W72
+        BYTE           N16     Cn4   v107
+        BYTE           N16     En4
+        BYTE   W16
+        BYTE                   Dn4
+        BYTE           N16     Fs4
+        BYTE   W08
+// 046   ----------------------------------------
+        BYTE   W08
+        BYTE                   En4
+        BYTE           N16     Gn4
+        BYTE   W16
+        BYTE           N36     En4
+        BYTE           N36     Gn4
+        BYTE   W36
+        BYTE           N12     Gn3
+        BYTE           N12     Cn4
+        BYTE   W12
+        BYTE           N48     Gn3
+        BYTE           N48     Cn4
+        BYTE   W24
+// 047   ----------------------------------------
+        BYTE   W24
+        BYTE           N36     Fs4
+        BYTE           N36     An4
+        BYTE   W36
+        BYTE           N12     An3
+        BYTE           N12     Dn4
+        BYTE   W12
+        BYTE           N48     An3
+        BYTE           N48     Dn4
+        BYTE   W24
+// 048   ----------------------------------------
+        BYTE   W24
+        BYTE           N64     Gn4
+        BYTE           N64     Bn4
+        BYTE   W64
+        BYTE           N16     Bn3
+        BYTE           N16     En4
+        BYTE   W08
+// 049   ----------------------------------------
+        BYTE   W08
+        BYTE                   Gn4
+        BYTE           N16     Bn4
+        BYTE   W16
+        BYTE           N64     Fs4
+        BYTE           N64     An4
+        BYTE   W64
+        BYTE           N16     An3
+        BYTE           N16     Dn4
+        BYTE   W08
+// 050   ----------------------------------------
+        BYTE   W08
+        BYTE                   Dn4
+        BYTE           N16     Fs4
+        BYTE   W16
+        BYTE           TIE     An3
+        BYTE           TIE     En4
+        BYTE   W72
+// 051   ----------------------------------------
+        BYTE   W24
+        BYTE           N92     Gs3   v107   gtp3
+        BYTE   W01
+        BYTE           EOT     An3
+        BYTE   W68
+        BYTE   W03
+// 052   ----------------------------------------
+        BYTE   W23
+        BYTE                   En4
+        BYTE   W01
+        BYTE           VOL     33
+        BYTE           PAN     c_v+30
+        BYTE   GoTo
+         POIN2  BattleOverture000_3_LOOP
+        BYTE   W72
+// 053   ----------------------------------------
+        BYTE   W24
+        BYTE   FINE
+
+//****************** Track 4 (Midi-Chn.7) ******************//
+
+BattleOverture000_4:
+        BYTE   KEYSH   BattleOverture000_key+0
+// 000   ----------------------------------------
+        BYTE   W02
+        BYTE           VOICE   68
+        BYTE           VOL     27
+        BYTE   W22
+BattleOverture000_4_LOOP:
+        BYTE           VOL     26
+        BYTE   W72
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+        BYTE   W96
+// 009   ----------------------------------------
+        BYTE   W96
+// 010   ----------------------------------------
+        BYTE   W96
+// 011   ----------------------------------------
+        BYTE   W96
+// 012   ----------------------------------------
+        BYTE   W96
+// 013   ----------------------------------------
+        BYTE   W96
+// 014   ----------------------------------------
+        BYTE   W96
+// 015   ----------------------------------------
+        BYTE   W96
+// 016   ----------------------------------------
+        BYTE   W96
+// 017   ----------------------------------------
+        BYTE   W96
+// 018   ----------------------------------------
+        BYTE   W96
+// 019   ----------------------------------------
+        BYTE   W96
+// 020   ----------------------------------------
+        BYTE   W96
+// 021   ----------------------------------------
+        BYTE   W96
+// 022   ----------------------------------------
+        BYTE   W96
+// 023   ----------------------------------------
+        BYTE   W96
+// 024   ----------------------------------------
+        BYTE   W24
+        BYTE                   24
+        BYTE           N48     Bn2   v101
+        BYTE   W48
+        BYTE           N96     Gn3
+        BYTE   W24
+// 025   ----------------------------------------
+        BYTE   W72
+        BYTE           N24     An3
+        BYTE   W24
+// 026   ----------------------------------------
+        BYTE                   Dn4
+        BYTE   W24
+        BYTE           N36
+        BYTE   W36
+        BYTE           N12     An3
+        BYTE   W12
+        BYTE           N16
+        BYTE   W16
+        BYTE                   Gn3
+        BYTE   W08
+// 027   ----------------------------------------
+        BYTE   W08
+        BYTE                   An3
+        BYTE   W16
+        BYTE           N48     Gn3
+        BYTE   W48
+        BYTE           N16
+        BYTE   W16
+        BYTE                   An3
+        BYTE   W08
+// 028   ----------------------------------------
+        BYTE   W08
+        BYTE                   Bn3
+        BYTE   W16
+        BYTE           N96
+        BYTE   W72
+// 029   ----------------------------------------
+        BYTE   W24
+        BYTE           N24
+        BYTE   W24
+        BYTE                   Cn4
+        BYTE   W24
+        BYTE                   Dn4
+        BYTE   W24
+// 030   ----------------------------------------
+        BYTE                   Cn4
+        BYTE   W24
+        BYTE           N48     An3
+        BYTE   W48
+        BYTE           N24     Bn3
+        BYTE   W24
+// 031   ----------------------------------------
+        BYTE                   Cn4
+        BYTE   W24
+        BYTE           N48
+        BYTE   W48
+        BYTE           N16
+        BYTE   W16
+        BYTE                   Bn3
+        BYTE   W08
+// 032   ----------------------------------------
+        BYTE   W08
+        BYTE                   An3
+        BYTE   W16
+        BYTE           VOL     21
+        BYTE           N72     En3
+        BYTE   W09
+        BYTE           VOL     22
+        BYTE   W15
+        BYTE                   23
+        BYTE   W12
+        BYTE                   24
+        BYTE   W15
+        BYTE                   25
+        BYTE   W15
+        BYTE                   26
+        BYTE   W06
+// 033   ----------------------------------------
+        BYTE           N24     Gn3
+        BYTE   W24
+        BYTE           N64     An3
+        BYTE   W64
+        BYTE           N16     Fs3
+        BYTE   W08
+// 034   ----------------------------------------
+        BYTE   W08
+        BYTE                   Gn3
+        BYTE   W16
+        BYTE           N72     En3
+        BYTE   W72
+// 035   ----------------------------------------
+        BYTE           N24     Bn3
+        BYTE   W24
+        BYTE           N48     An3
+        BYTE   W48
+        BYTE                   Dn3
+        BYTE   W24
+// 036   ----------------------------------------
+        BYTE   W24
+        BYTE           N64
+        BYTE   W64
+        BYTE           N16     En3
+        BYTE   W08
+// 037   ----------------------------------------
+        BYTE   W08
+        BYTE                   Fs3
+        BYTE   W16
+        BYTE           N48     Gn3
+        BYTE   W48
+        BYTE                   Bn3
+        BYTE   W24
+// 038   ----------------------------------------
+        BYTE   W24
+        BYTE           N96     En4
+        BYTE   W72
+// 039   ----------------------------------------
+        BYTE   W24
+        BYTE           N64     Fs4
+        BYTE   W64
+        BYTE           N16     Dn4
+        BYTE   W08
+// 040   ----------------------------------------
+        BYTE   W08
+        BYTE                   Cn4
+        BYTE   W16
+        BYTE           N96     Dn4
+        BYTE   W72
+// 041   ----------------------------------------
+        BYTE   W24
+        BYTE           N64     En4
+        BYTE   W64
+        BYTE           N16     Cn4
+        BYTE   W08
+// 042   ----------------------------------------
+        BYTE   W08
+        BYTE                   Bn3
+        BYTE   W16
+        BYTE           N96     Cn4
+        BYTE   W72
+// 043   ----------------------------------------
+        BYTE   W24
+        BYTE           N48     Dn4
+        BYTE   W48
+        BYTE           N16     Cn4
+        BYTE   W16
+        BYTE                   Bn3
+        BYTE   W08
+// 044   ----------------------------------------
+        BYTE   W08
+        BYTE                   An3
+        BYTE   W16
+        BYTE           N48     Bn3
+        BYTE   W48
+        BYTE                   Fs4
+        BYTE   W24
+// 045   ----------------------------------------
+        BYTE   W24
+        BYTE                   En4
+        BYTE   W48
+        BYTE           N16
+        BYTE   W16
+        BYTE                   Fs4
+        BYTE   W08
+// 046   ----------------------------------------
+        BYTE   W08
+        BYTE                   Gn4
+        BYTE   W16
+        BYTE           N36
+        BYTE   W36
+        BYTE           N12     Cn4
+        BYTE   W12
+        BYTE           N48
+        BYTE   W24
+// 047   ----------------------------------------
+        BYTE   W24
+        BYTE           N36     An4
+        BYTE   W36
+        BYTE           N12     Dn4
+        BYTE   W12
+        BYTE           N48
+        BYTE   W24
+// 048   ----------------------------------------
+        BYTE   W24
+        BYTE           N64     Bn4
+        BYTE   W64
+        BYTE           N16     En4
+        BYTE   W08
+// 049   ----------------------------------------
+        BYTE   W08
+        BYTE                   Bn4
+        BYTE   W16
+        BYTE           N64     An4
+        BYTE   W64
+        BYTE           N16     Dn4
+        BYTE   W08
+// 050   ----------------------------------------
+        BYTE   W08
+        BYTE                   Fs4
+        BYTE   W16
+        BYTE           TIE     En4
+        BYTE   W72
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE   W23
+        BYTE           EOT
+        BYTE   W01
+        BYTE   GoTo
+         POIN2  BattleOverture000_4_LOOP
+        BYTE   W72
+// 053   ----------------------------------------
+        BYTE   W24
+        BYTE   FINE
+
+//***************** Track 5 (Midi-Chn.10) ******************//
+
+BattleOverture000_5:
+        BYTE   KEYSH   BattleOverture000_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   96
+        BYTE           VOL     48
+        BYTE           PAN     c_v+31
+        BYTE   W03
+        BYTE           VOL     42
+        BYTE   W21
+BattleOverture000_5_LOOP:
+        BYTE           TIE     Gn3   v107
+        BYTE   W72
+// 001   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_9
+// 002   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_10
+// 003   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_11
+// 004   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_12
+// 005   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_13
+// 006   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_14
+// 007   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_1_7
+// 008   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_1_8
+// 009   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_9
+// 010   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_10
+// 011   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_11
+// 012   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_12
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_13
+// 014   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_14
+// 015   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_1_7
+// 016   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_1_8
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_9
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_10
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_11
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_12
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_13
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_14
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_1_7
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_1_8
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_9
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_10
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_11
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_12
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_13
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_14
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_1_7
+// 032   ----------------------------------------
+        BYTE           N24     An3   v107
+        BYTE   W24
+        BYTE           VOL     33
+        BYTE           N72     En3
+        BYTE   W09
+        BYTE           VOL     34
+        BYTE   W09
+        BYTE                   35
+        BYTE   W06
+        BYTE                   36
+        BYTE   W12
+        BYTE                   37
+        BYTE   W12
+        BYTE                   38
+        BYTE   W06
+        BYTE                   39
+        BYTE   W12
+        BYTE                   40
+        BYTE   W06
+// 033   ----------------------------------------
+        BYTE           N24     Gn3
+        BYTE   W06
+        BYTE           VOL     41
+        BYTE   W09
+        BYTE                   42
+        BYTE   W09
+        BYTE                   41
+        BYTE           N64     An3
+        BYTE   W64
+        BYTE           N16     Fs3
+        BYTE   W08
+// 034   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_1_34
+// 035   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_1_35
+// 036   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_1_36
+// 037   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_1_37
+// 038   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_38
+// 039   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_39
+// 040   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_40
+// 041   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_41
+// 042   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_42
+// 043   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_43
+// 044   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_44
+// 045   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_45
+// 046   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_46
+// 047   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_47
+// 048   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_48
+// 049   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_49
+// 050   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_0_50
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE   W23
+        BYTE           EOT     En4
+        BYTE   W01
+        BYTE           VOL     42
+        BYTE   GoTo
+         POIN2  BattleOverture000_5_LOOP
+        BYTE   W72
+// 053   ----------------------------------------
+        BYTE   W24
+        BYTE   FINE
+
+//***************** Track 6 (Midi-Chn.11) ******************//
+
+BattleOverture000_6:
+        BYTE   KEYSH   BattleOverture000_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   123
+        BYTE           VOL     36
+        BYTE   W03
+        BYTE                   32
+        BYTE   W21
+BattleOverture000_6_LOOP:
+        BYTE           N23     Cn1   v113
+        BYTE   W01
+        BYTE                   Cs1
+        BYTE   W23
+        BYTE           N11     Dn1
+        BYTE   W01
+        BYTE                   Ds1
+        BYTE   W11
+        BYTE                   En1
+        BYTE   W01
+        BYTE                   Fn1
+        BYTE   W11
+        BYTE           N23     Cn1
+        BYTE   W01
+        BYTE                   Cs1
+        BYTE   W23
+// 001   ----------------------------------------
+BattleOverture000_6_1:
+        BYTE           N11     Dn1   v113
+        BYTE   W01
+        BYTE                   Ds1
+        BYTE   W11
+        BYTE                   En1
+        BYTE   W01
+        BYTE                   Fn1
+        BYTE   W11
+        BYTE           N23     Cn1
+        BYTE   W01
+        BYTE                   Cs1
+        BYTE   W23
+        BYTE           N11     Dn1
+        BYTE   W01
+        BYTE                   Ds1
+        BYTE   W11
+        BYTE                   En1
+        BYTE   W01
+        BYTE                   Fn1
+        BYTE   W11
+        BYTE           N23     Cn1
+        BYTE   W01
+        BYTE                   Cs1
+        BYTE   W23
+        BYTE   PEND
+// 002   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 003   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 004   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 005   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 006   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 007   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 008   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 009   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 010   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 011   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 012   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 014   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 015   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 016   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 032   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 033   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 034   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 035   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 036   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 037   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 038   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 039   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 040   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 041   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 042   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 043   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 044   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 045   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 046   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 047   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 048   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 049   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 050   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 051   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_6_1
+// 052   ----------------------------------------
+        BYTE           N11     Dn1   v113
+        BYTE   W01
+        BYTE                   Ds1
+        BYTE   W11
+        BYTE                   En1
+        BYTE   W01
+        BYTE           N10     Fn1
+        BYTE   W11
+        BYTE   GoTo
+         POIN2  BattleOverture000_6_LOOP
+        BYTE   W72
+// 053   ----------------------------------------
+        BYTE   W24
+        BYTE   FINE
+
+//***************** Track 7 (Midi-Chn.12) ******************//
+
+BattleOverture000_7:
+        BYTE   KEYSH   BattleOverture000_key+0
+// 000   ----------------------------------------
+        BYTE           VOL     53
+        BYTE   W03
+        BYTE           VOICE   56
+        BYTE           PAN     c_v+12
+        BYTE   W21
+BattleOverture000_7_LOOP:
+        BYTE   W72
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+        BYTE   W96
+// 009   ----------------------------------------
+        BYTE   W96
+// 010   ----------------------------------------
+        BYTE   W96
+// 011   ----------------------------------------
+        BYTE   W96
+// 012   ----------------------------------------
+        BYTE   W96
+// 013   ----------------------------------------
+        BYTE   W96
+// 014   ----------------------------------------
+        BYTE   W96
+// 015   ----------------------------------------
+        BYTE   W96
+// 016   ----------------------------------------
+        BYTE   W12
+        BYTE           N04     Bn2   v123
+        BYTE   W06
+        BYTE                   Bn2
+        BYTE   W06
+        BYTE           N84     Gn3
+        BYTE   W72
+// 017   ----------------------------------------
+BattleOverture000_7_17:
+        BYTE   W12
+        BYTE           N04     Gn3   v123
+        BYTE   W06
+        BYTE                   Gn3
+        BYTE   W06
+        BYTE           N48
+        BYTE   W48
+        BYTE           N24     Fs3
+        BYTE   W24
+        BYTE   PEND
+// 018   ----------------------------------------
+BattleOverture000_7_18:
+        BYTE           N24     Dn3   v123
+        BYTE   W24
+        BYTE           N64     Fs3
+        BYTE   W64
+        BYTE           N16     Gn3
+        BYTE   W08
+        BYTE   PEND
+// 019   ----------------------------------------
+BattleOverture000_7_19:
+        BYTE   W08
+        BYTE           N16     Fs3   v123
+        BYTE   W16
+        BYTE           N64     En3
+        BYTE   W64
+        BYTE           N16     Fs3
+        BYTE   W08
+        BYTE   PEND
+// 020   ----------------------------------------
+BattleOverture000_7_20:
+        BYTE   W08
+        BYTE           N16     Gn3   v123
+        BYTE   W16
+        BYTE           N84     Bn3
+        BYTE   W72
+        BYTE   PEND
+// 021   ----------------------------------------
+BattleOverture000_7_21:
+        BYTE   W12
+        BYTE           N04     Bn3   v123
+        BYTE   W06
+        BYTE                   Bn3
+        BYTE   W06
+        BYTE           N24
+        BYTE   W24
+        BYTE                   Cn4
+        BYTE   W24
+        BYTE                   An3
+        BYTE   W24
+        BYTE   PEND
+// 022   ----------------------------------------
+BattleOverture000_7_22:
+        BYTE           N24     Gn3   v123
+        BYTE   W24
+        BYTE           N48     Fs3
+        BYTE   W48
+        BYTE           N24     Gn3
+        BYTE   W24
+        BYTE   PEND
+// 023   ----------------------------------------
+BattleOverture000_7_23:
+        BYTE           N24     An3   v123
+        BYTE   W24
+        BYTE           N48
+        BYTE   W48
+        BYTE           N16     Cn4
+        BYTE   W16
+        BYTE                   Bn3
+        BYTE   W08
+        BYTE   PEND
+// 024   ----------------------------------------
+        BYTE   W08
+        BYTE                   An3
+        BYTE   W16
+        BYTE           N84     Gn3
+        BYTE   W72
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_7_17
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_7_18
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_7_19
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_7_20
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_7_21
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_7_22
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_7_23
+// 032   ----------------------------------------
+        BYTE   W08
+        BYTE           N16     An3   v123
+        BYTE   W88
+// 033   ----------------------------------------
+        BYTE   W96
+// 034   ----------------------------------------
+        BYTE   W96
+// 035   ----------------------------------------
+        BYTE   W96
+// 036   ----------------------------------------
+        BYTE   W96
+// 037   ----------------------------------------
+        BYTE   W96
+// 038   ----------------------------------------
+        BYTE   W96
+// 039   ----------------------------------------
+        BYTE   W96
+// 040   ----------------------------------------
+        BYTE   W96
+// 041   ----------------------------------------
+        BYTE   W96
+// 042   ----------------------------------------
+        BYTE   W96
+// 043   ----------------------------------------
+        BYTE   W96
+// 044   ----------------------------------------
+        BYTE   W96
+// 045   ----------------------------------------
+        BYTE   W96
+// 046   ----------------------------------------
+        BYTE   W96
+// 047   ----------------------------------------
+        BYTE   W96
+// 048   ----------------------------------------
+        BYTE   W96
+// 049   ----------------------------------------
+        BYTE   W96
+// 050   ----------------------------------------
+        BYTE   W96
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE   W24
+        BYTE   GoTo
+         POIN2  BattleOverture000_7_LOOP
+        BYTE   W72
+// 053   ----------------------------------------
+        BYTE   W24
+        BYTE   FINE
+
+//***************** Track 8 (Midi-Chn.13) ******************//
+
+BattleOverture000_8:
+        BYTE   KEYSH   BattleOverture000_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   16
+        BYTE           VOL     38
+        BYTE   W04
+        BYTE                   34
+        BYTE           PAN     c_v-18
+        BYTE   W20
+BattleOverture000_8_LOOP:
+        BYTE   W72
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+        BYTE   W24
+        BYTE           VOL     28
+        BYTE           TIE     Gn3   v107
+        BYTE           TIE     Bn3
+        BYTE   W72
+// 009   ----------------------------------------
+BattleOverture000_8_9:
+        BYTE   W72
+        BYTE           EOT     Gn3
+        BYTE                   Bn3
+        BYTE           N48     An3   v107
+        BYTE           N48     Dn4
+        BYTE   W24
+        BYTE   PEND
+// 010   ----------------------------------------
+BattleOverture000_8_10:
+        BYTE   W24
+        BYTE           N96     An3   v107
+        BYTE           N96     Dn4
+        BYTE   W72
+        BYTE   PEND
+// 011   ----------------------------------------
+BattleOverture000_8_11:
+        BYTE   W24
+        BYTE           N72     Gn3   v107
+        BYTE           N72     Cn4
+        BYTE   W72
+        BYTE   PEND
+// 012   ----------------------------------------
+BattleOverture000_8_12:
+        BYTE           N24     Gn3   v107
+        BYTE           N24     Bn3
+        BYTE   W24
+        BYTE           TIE     Gn3
+        BYTE           TIE     Cn4
+        BYTE   W72
+        BYTE   PEND
+// 013   ----------------------------------------
+BattleOverture000_8_13:
+        BYTE   W72
+        BYTE           EOT     Gn3
+        BYTE                   Cn4
+        BYTE           N48     Cn4   v107
+        BYTE           N48     En4
+        BYTE   W24
+        BYTE   PEND
+// 014   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_8_10
+// 015   ----------------------------------------
+BattleOverture000_8_15:
+        BYTE   W24
+        BYTE           N48     Bn3   v107
+        BYTE           N48     Ds4
+        BYTE   W48
+        BYTE           N24
+        BYTE           N24     Gn4
+        BYTE   W24
+        BYTE   PEND
+// 016   ----------------------------------------
+BattleOverture000_8_16:
+        BYTE           N24     Ds4   v107
+        BYTE           N24     Fs4
+        BYTE   W24
+        BYTE           TIE     Gn3
+        BYTE           TIE     Bn3
+        BYTE   W72
+        BYTE   PEND
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_8_9
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_8_10
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_8_11
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_8_12
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_8_13
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_8_10
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_8_15
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_8_16
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_8_9
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_8_10
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_8_11
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_8_12
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_8_13
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_8_10
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_8_15
+// 032   ----------------------------------------
+        BYTE           N24     Ds4   v107
+        BYTE           N24     Fs4
+        BYTE   W96
+// 033   ----------------------------------------
+        BYTE   W96
+// 034   ----------------------------------------
+        BYTE   W96
+// 035   ----------------------------------------
+        BYTE   W96
+// 036   ----------------------------------------
+        BYTE   W96
+// 037   ----------------------------------------
+        BYTE   W96
+// 038   ----------------------------------------
+        BYTE   W96
+// 039   ----------------------------------------
+        BYTE   W96
+// 040   ----------------------------------------
+        BYTE   W96
+// 041   ----------------------------------------
+        BYTE   W96
+// 042   ----------------------------------------
+        BYTE   W96
+// 043   ----------------------------------------
+        BYTE   W96
+// 044   ----------------------------------------
+        BYTE   W96
+// 045   ----------------------------------------
+        BYTE   W96
+// 046   ----------------------------------------
+        BYTE   W24
+        BYTE           VOL     32
+        BYTE           N36     Gn3
+        BYTE           N36     Gn4
+        BYTE   W36
+        BYTE           N04     Gn3
+        BYTE           N04     Gn4
+        BYTE   W06
+        BYTE                   Gn3
+        BYTE           N04     Gn4
+        BYTE   W06
+        BYTE           N48     Gn3
+        BYTE           N48     Gn4
+        BYTE   W24
+// 047   ----------------------------------------
+BattleOverture000_8_47:
+        BYTE   W24
+        BYTE           N36     An3   v107
+        BYTE           N36     An4
+        BYTE   W36
+        BYTE           N04     An3
+        BYTE           N04     An4
+        BYTE   W06
+        BYTE                   An3
+        BYTE           N04     An4
+        BYTE   W06
+        BYTE           N48     An3
+        BYTE           N48     An4
+        BYTE   W24
+        BYTE   PEND
+// 048   ----------------------------------------
+        BYTE   W24
+        BYTE           N36     Bn3
+        BYTE           N36     Bn4
+        BYTE   W36
+        BYTE           N04     Bn3
+        BYTE           N04     Bn4
+        BYTE   W06
+        BYTE                   Bn3
+        BYTE           N04     Bn4
+        BYTE   W06
+        BYTE           N48     Bn3
+        BYTE           N48     Bn4
+        BYTE   W24
+// 049   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_8_47
+// 050   ----------------------------------------
+        BYTE   W24
+        BYTE           N96     An3   v107
+        BYTE           N96     An4
+        BYTE   W72
+// 051   ----------------------------------------
+        BYTE   W24
+        BYTE           N92     Gs3   v107   gtp3
+        BYTE                   Gs4
+        BYTE   W72
+// 052   ----------------------------------------
+        BYTE   W24
+        BYTE           VOL     34
+        BYTE   GoTo
+         POIN2  BattleOverture000_8_LOOP
+        BYTE   W72
+// 053   ----------------------------------------
+        BYTE   W24
+        BYTE   FINE
+
+//***************** Track 9 (Midi-Chn.15) ******************//
+
+BattleOverture000_9:
+        BYTE   KEYSH   BattleOverture000_key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   123
+        BYTE           VOL     36
+        BYTE   W02
+        BYTE                   32
+        BYTE   W22
+BattleOverture000_9_LOOP:
+        BYTE           N92     Fn2   v105   gtp3
+        BYTE   W72
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+        BYTE   W24
+        BYTE                   Fn2   v115
+        BYTE   W72
+// 009   ----------------------------------------
+        BYTE   W96
+// 010   ----------------------------------------
+        BYTE   W96
+// 011   ----------------------------------------
+        BYTE   W96
+// 012   ----------------------------------------
+        BYTE   W96
+// 013   ----------------------------------------
+        BYTE   W96
+// 014   ----------------------------------------
+        BYTE   W96
+// 015   ----------------------------------------
+        BYTE   W96
+// 016   ----------------------------------------
+        BYTE   W24
+        BYTE           N11     En1   v094
+        BYTE           N96     Fn2   v115
+        BYTE   W12
+        BYTE           N06     Ds1   v080
+        BYTE   W06
+        BYTE                   Ds1
+        BYTE   W06
+        BYTE                   En1   v094
+        BYTE   W12
+        BYTE                   Ds1   v080
+        BYTE   W06
+        BYTE                   Ds1
+        BYTE   W06
+        BYTE                   En1   v094
+        BYTE   W12
+        BYTE                   Ds1   v080
+        BYTE   W12
+// 017   ----------------------------------------
+BattleOverture000_9_17:
+        BYTE           N03     Ds1   v080
+        BYTE   W03
+        BYTE                   Ds1
+        BYTE   W03
+        BYTE                   Ds1
+        BYTE   W03
+        BYTE                   Ds1
+        BYTE   W03
+        BYTE           N05     En1   v094
+        BYTE   W06
+        BYTE                   Ds1   v080
+        BYTE   W06
+        BYTE           N06     En1   v094
+        BYTE   W06
+        BYTE                   Ds1   v080
+        BYTE   W06
+        BYTE                   En1   v094
+        BYTE   W06
+        BYTE                   Ds1   v080
+        BYTE   W06
+        BYTE                   Ds1
+        BYTE   W06
+        BYTE                   Ds1
+        BYTE   W06
+        BYTE                   En1   v094
+        BYTE   W12
+        BYTE                   Ds1   v080
+        BYTE   W06
+        BYTE                   Ds1
+        BYTE   W06
+        BYTE                   En1   v094
+        BYTE   W12
+        BYTE   PEND
+// 018   ----------------------------------------
+BattleOverture000_9_18:
+        BYTE           N06     Ds1   v080
+        BYTE   W12
+        BYTE           N05     En1   v094
+        BYTE   W06
+        BYTE                   Ds1   v080
+        BYTE   W06
+        BYTE           N11     En1   v094
+        BYTE   W12
+        BYTE           N06     Ds1   v080
+        BYTE   W06
+        BYTE                   Ds1
+        BYTE   W06
+        BYTE                   En1   v094
+        BYTE   W12
+        BYTE                   Ds1   v080
+        BYTE   W06
+        BYTE                   Ds1
+        BYTE   W06
+        BYTE                   En1   v094
+        BYTE   W12
+        BYTE                   Ds1   v080
+        BYTE   W12
+        BYTE   PEND
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_9_17
+// 020   ----------------------------------------
+BattleOverture000_9_20:
+        BYTE           N06     Ds1   v080
+        BYTE   W12
+        BYTE           N05     En1   v094
+        BYTE   W06
+        BYTE                   Ds1   v080
+        BYTE   W06
+        BYTE           N11     En1   v094
+        BYTE           N96     Fn2   v115
+        BYTE   W12
+        BYTE           N06     Ds1   v080
+        BYTE   W06
+        BYTE                   Ds1
+        BYTE   W06
+        BYTE                   En1   v094
+        BYTE   W12
+        BYTE                   Ds1   v080
+        BYTE   W06
+        BYTE                   Ds1
+        BYTE   W06
+        BYTE                   En1   v094
+        BYTE   W12
+        BYTE                   Ds1   v080
+        BYTE   W12
+        BYTE   PEND
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_9_17
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_9_18
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_9_17
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_9_20
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_9_17
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_9_18
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_9_17
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_9_20
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_9_17
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_9_18
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_9_17
+// 032   ----------------------------------------
+        BYTE           N06     Ds1   v080
+        BYTE   W12
+        BYTE           N05     En1   v094
+        BYTE   W06
+        BYTE                   Ds1   v080
+        BYTE   W06
+        BYTE           N96     Fn2   v115
+        BYTE   W72
+// 033   ----------------------------------------
+        BYTE   W96
+// 034   ----------------------------------------
+        BYTE   W96
+// 035   ----------------------------------------
+        BYTE   W96
+// 036   ----------------------------------------
+BattleOverture000_9_36:
+        BYTE   W24
+        BYTE           N96     Fn2   v115
+        BYTE   W72
+        BYTE   PEND
+// 037   ----------------------------------------
+        BYTE   W96
+// 038   ----------------------------------------
+        BYTE   W96
+// 039   ----------------------------------------
+        BYTE   W96
+// 040   ----------------------------------------
+        BYTE   W96
+// 041   ----------------------------------------
+        BYTE   W96
+// 042   ----------------------------------------
+        BYTE   W96
+// 043   ----------------------------------------
+        BYTE   W96
+// 044   ----------------------------------------
+        BYTE   W96
+// 045   ----------------------------------------
+        BYTE   W96
+// 046   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_9_36
+// 047   ----------------------------------------
+        BYTE   W96
+// 048   ----------------------------------------
+        BYTE   W96
+// 049   ----------------------------------------
+        BYTE   W96
+// 050   ----------------------------------------
+        BYTE   PATT
+         POIN2  BattleOverture000_9_36
+// 051   ----------------------------------------
+        BYTE   W96
+// 052   ----------------------------------------
+        BYTE   W24
+        BYTE   GoTo
+         POIN2  BattleOverture000_9_LOOP
+        BYTE   W72
+// 053   ----------------------------------------
+        BYTE   W24
+        BYTE   FINE
+
+
+//********************** End of Song ***********************//
+
+        ALIGN 4
+BattleOverture000:
+        BYTE   10                      // Num Tracks
+        BYTE   0                       // Unknown
+        BYTE   BattleOverture000_pri   // Priority
+        BYTE   BattleOverture000_rev   // Reverb
+
+        POIN2   BattleOverture000_grp  
+
+        POIN2   BattleOverture000_0
+        POIN2   BattleOverture000_1
+        POIN2   BattleOverture000_2
+        POIN2   BattleOverture000_3
+        POIN2   BattleOverture000_4
+        POIN2   BattleOverture000_5
+        POIN2   BattleOverture000_6
+        POIN2   BattleOverture000_7
+        POIN2   BattleOverture000_8
+        POIN2   BattleOverture000_9
+
+        

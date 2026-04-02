@@ -25,3 +25,11 @@
 #define Berserker_F Revenant
 //#undef Prince
 //#define Prince Bonewalker
+
+//AI
+#define DelayedChargeAI [0x00, 0x12, 0x04]
+
+#define WepStatboostEntry(HpBoost, PowBoost, SklBoost, SpdBoost, DefBoost, ResBoost, LukBoost, MoveBoost, ConBoost, MagBoost) "BYTE HpBoost PowBoost SklBoost SpdBoost DefBoost ResBoost LukBoost MoveBoost ConBoost MagBoost 0 0"
+
+GigaBallistaStatboost:
+WepStatboostEntry(0,0,0,0,0,0,0,-1,0,0)

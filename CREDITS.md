@@ -56,3 +56,4 @@ adding yourself!
 - LaurentLacroix: John & Johnson mugs
 - Tequila: CHAI fix
 - ReversCard: Scarlet Rain (enemy phase bgm)
+- Dragz: remove shop music
