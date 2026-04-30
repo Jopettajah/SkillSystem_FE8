@@ -107,7 +107,7 @@ Wyvern Lord counts as a lord,[N]
 right? Equip: Lances, axes.[X]
 
 ## MasterKnightName
-Everything Kn.[X]
+Master Kn.[X]
 
 ## MasterKnightDesc
 Mounted knights skilled with each[N]
@@ -144,7 +144,10 @@ Knight's Proof[X]
 
 ## KnightsProofDesc
 Promotes Prince to[N]
-Everything Knight.[X]
+Master Knight.[X]
+
+## DualFlashName
+Dual Flash[X]
 
 ## JohnVillageText
 [MidLeft][LoadFace][CurrentPortrait]

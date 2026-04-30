@@ -97,3 +97,28 @@ SetCustomBossMusic(MainBoss,0x1C)
 BossMusicListTerminator
 
 #include "Quote/QuoteTables.event"
+#include "Promotion/PromoItemClassLists.event"
+
+PUSH
+ORG $CC7D0
+POIN NewPromoBranchTable
+ORG $CC824
+POIN NewPromoBranchTable 
+ORG $CC860
+POIN NewPromoBranchTable 
+ORG $CC8A4
+POIN NewPromoBranchTable 
+ORG $CC8EC
+POIN NewPromoBranchTable 
+ORG $CCE8C 
+POIN NewPromoBranchTable
+ORG $CDB74
+POIN NewPromoBranchTable
+POP
+
+NewPromoBranchTable:
+FILL (256*2)
+
+#define SetPromoBranch(baseClass,class1,class2) "PUSH; ORG (NewPromoBranchTable+(baseClass*2)); BYTE class1 class2; POP"
+
+SetPromoBranch(Prince,MasterKnight,0x0)

@@ -23,11 +23,17 @@
 //Class
 #define MasterKnight Entombed
 #define Berserker_F Revenant
-//#undef Prince
-//#define Prince Bonewalker
+#define MageArmor Bonewalker
 
 //AI
-#define DelayedChargeAI [0x00, 0x12, 0x04]
+#define DelayedChargeAI [0x07, 0x12, 0x04]
+
+#undef	PursueWithoutHeedAI
+#define PursueWithoutHeedAI [0x07, 0x0, 0x04]
+#undef 	ChaseOnceApproachedAI
+#define ChaseOnceApproachedAI [0x07,0x06, 0x04]
+#undef AttackInRangeAI
+#define AttackInRangeAI [0x07,0x03, 0x4]
 
 #define WepStatboostEntry(HpBoost, PowBoost, SklBoost, SpdBoost, DefBoost, ResBoost, LukBoost, MoveBoost, ConBoost, MagBoost) "BYTE HpBoost PowBoost SklBoost SpdBoost DefBoost ResBoost LukBoost MoveBoost ConBoost MagBoost 0 0"
 

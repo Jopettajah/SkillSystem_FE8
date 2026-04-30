@@ -94,6 +94,11 @@ JohnUnits:
 	UNIT EnemyElite Paladin John Level(1,Enemy,True) [38,8] 0x0 0x0 0x0 0x0 [SilverLance] ChaseOnceApproachedAI
 	UNIT EnemyMain Cavalier John Level(12,Enemy,True) [36,7] 0x0 0x0 0x0 0x0 [SteelSword] ChaseOnceApproachedAI
 	UNIT EnemyMain Cavalier John Level(12,Enemy,True) [36,9] 0x0 0x0 0x0 0x0 [SteelLance] ChaseOnceApproachedAI
+	UNIT EnemyMain Cavalier John Level(12,Enemy,True) [29,4] 0x0 0x0 0x0 0x0 [SteelSword] PursueWithoutHeedAI
+	UNIT EnemyMain Soldier John Level(12,Enemy,True) [30,5] 0x0 0x0 0x0 0x0 [SteelLance] PursueWithoutHeedAI
+	UNIT EnemyMain PegasusKnight John Level(12,Enemy,True) [30,0] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT EnemyMain Fighter John Level(12,Enemy,True) [31,1] 0x0 0x0 0x0 0x0 [SteelAxe] ChaseOnceApproachedAI
+	UNIT EnemyMain Archer John Level(12,Enemy,True) [36,1] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
 	UNIT
 	
 JohnsonUnits:
@@ -104,6 +109,12 @@ JohnsonUnits:
 	UNIT EnemyMain Archer Johnson Level(12,Enemy,True) [7,6] 0x0 0x0 0x0 0x0 [SteelBow] PursueWithoutHeedAI
 	UNIT EnemyMain Mage Johnson Level(12,Enemy,True) [0,5] 0x0 0x0 0x0 0x0 [Elfire] AttackInRangeAI
 	UNIT EnemyMain Shaman Johnson Level(12,Enemy,True) [0,7] 0x0 0x0 0x0 0x0 [Nosferatu] AttackInRangeAI
+	UNIT EnemyMain PegasusKnight Johnson Level(12,Enemy,True) [1,12] 0x0 0x0 0x0 0x0 [IronLance] ChaseOnceApproachedAI
+	UNIT EnemyMain PegasusKnight Johnson Level(12,Enemy,True) [4,12] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+	UNIT EnemyMain MageArmor Johnson Level(12,Enemy,True) [0,9] 0x0 0x0 0x0 0x0 [Flux] NeverMoveAI
+	UNIT EnemyMain MageArmor Johnson Level(12,Enemy,True) [2,9] 0x0 0x0 0x0 0x0 [Flux] NeverMoveAI
+	UNIT EnemyMain MageArmor Johnson Level(12,Enemy,True) [1,8] 0x0 0x0 0x0 0x0 [Elfire] NeverMoveAI
+	UNIT EnemyMain MageArmor Johnson Level(12,Enemy,True) [1,10] 0x0 0x0 0x0 0x0 [Elfire] NeverMoveAI
 	UNIT
 	
 ThiefBossUnit:
