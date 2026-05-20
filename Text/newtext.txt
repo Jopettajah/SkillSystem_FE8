@@ -4,6 +4,9 @@ Sorry,[.] that's out of stock.[.6][X]
 ## OutOfStockVendor
 Sorry,[.] we don't have more of those.[.6][X]
 
+## BlankText
+[X]
+
 ## HarrisName
 Harris[X]
 
@@ -95,6 +98,11 @@ Violet[X]
 ## VioletDesc
 "Get in, get the goods, get out.[N]
  How bad could it be?"[X]
+ 
+## VioletDeathQuote
+[MidLeft][LoadFace][0x12][0x1]
+Not[Beat] fast enough[Beat][A]
+[X]
 
 ## ChericeName
 Cherice[X]
@@ -192,6 +200,11 @@ The Demolisher is[N]
 ready to fire![A]
 [X]
 
+## ReadyText2
+The shot will be centered on Cherice.[N]
+Don't get caught in the blast![A]
+[X]
+
 ## TurnsLeftTextOne
 Eleven turns until[N]
 the Demolisher is ready.[A][X]
@@ -204,5 +217,8 @@ the Demolisher is ready.[A][X]
 Turns until the Demolisher[N]
 is ready is reduced by one.[A][X]
 
-## BlankText
-[X]
+## FireText
+ Fire![X]
+ 
+##FireDesc
+Blast the enemy away![X]

@@ -73,12 +73,15 @@ PUSH
 
 POP
 
+
 ALIGN 4         //Insert new commands where you want them to appear in the menu
 UnitMenuTable:
   //Use the macro MenuCommand(name,description,colour,usability,effect)
   //Color options: NormalText, GrayText, BlueText, OrangeText, GreenText (flashes), BlackText
   //MenuCommand(DualAtkTxtID,DualAtkDescId,0,DualAtkCheck,DualAtkSelected) 
+ 
   
+  MenuCommand(FireText,FireDesc,OrangeText,CannonUsability,CannonEffect)
   
   MenuCommand(0x67A, 0x6CC, BlueText, $22FDC, $23020)
   // UM_Seize

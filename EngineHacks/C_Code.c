@@ -3,6 +3,7 @@
 
 
 extern u16* gPrepScreenShop;
+extern const u16 CannonFire;
 
 u16 GetItemPurchasePrice(struct Unit* unit, int item)
 {
@@ -15,6 +16,28 @@ u16 GetItemPurchasePrice(struct Unit* unit, int item)
         return (cost / 2);
     else
         return cost;
+}
+
+
+u8 CannonUsability(const struct MenuItemDef* def, int number){
+
+    if (CheckEventId(11)) {
+        if (!(CheckEventId(4))) {
+            
+            return MENU_ENABLED;
+        }
+    }
+
+    return MENU_NOTSHOWN;
+}
+
+u8 CannonEffect(struct MenuProc* menu, struct MenuItemProc* menuItem) {
+
+    ClearBg0Bg1();
+    CallMapEventEngine(&CannonFire, 0x1);
+
+    return MENU_ACT_SKIPCURSOR | MENU_ACT_END | MENU_ACT_SND6A;
+
 }
 
 bool8 HasConvoyAccess(void) {
@@ -32,7 +55,7 @@ void sub_8099328(struct PrepItemScreenProc* proc, u16* tm, struct Unit* unit) {
 
     ClearText(&gPrepItemTexts[25]);
     Text_InsertDrawString(&gPrepItemTexts[25], 0, !proc->hasConvoyAccess ? TEXT_COLOR_SYSTEM_GRAY : TEXT_COLOR_SYSTEM_WHITE, GetStringFromIndex(0x594)); // TODO: msgid "Trade"
-    Text_InsertDrawString(&gPrepItemTexts[25], 32, PrepGetUnitAmount() < 2 ? TEXT_COLOR_SYSTEM_GRAY : TEXT_COLOR_SYSTEM_WHITE, GetStringFromIndex(0x595)); // TODO: msgid "List"
+    Text_InsertDrawString(&gPrepItemTexts[25], 32, !proc->hasConvoyAccess ? TEXT_COLOR_SYSTEM_GRAY : TEXT_COLOR_SYSTEM_WHITE, GetStringFromIndex(0x595)); // TODO: msgid "List"
 
     PutText(&gPrepItemTexts[25], tm + TILEMAP_INDEX(0, 1));
 
@@ -99,14 +122,14 @@ void sub_80996E8(struct PrepItemScreenProc* proc) {
                 break;
 
             case 1:
-                if (PrepGetUnitAmount() < 2) {
+                //if (PrepGetUnitAmount() < 2) {
                     PlaySoundEffect(SONG_6C);
-                }
+                /* }
                 else {
                     Proc_Goto(proc, 8);
                     PlaySoundEffect(SONG_SE_SYS_WINDOW_SELECT1);
                 }
-
+                */
                 break;
 
             case 2:

@@ -14,6 +14,7 @@
 #define SmallCross 9
 #define SmallX 11 
 #define SmallLine 14 
+#define LargeDiamond 20
 
 
 
@@ -112,9 +113,6 @@ POIN RangeTemplateTable_SmallHorizontalLine
 POIN RangeTemplateTable_SmallVerticalLine
 
 
-
-
-
 ALIGN 16; POIN RangeTemplateTable_Smile1 //15 
 POIN RangeTemplateTable_Smile2
 POIN RangeTemplateTable_Smile3
@@ -139,6 +137,12 @@ ALIGN 16; POIN RangeTemplateTable_LargeCone1 //19
 POIN RangeTemplateTable_LargeCone2
 POIN RangeTemplateTable_LargeCone3
 POIN RangeTemplateTable_LargeCone4
+
+ALIGN 16; POIN RangeTemplateTable_LargeDiamond // 20
+POIN RangeTemplateTable_LargeDiamond
+POIN RangeTemplateTable_LargeDiamond
+POIN RangeTemplateTable_LargeDiamond
+POIN RangeTemplateTable_LargeDiamond
 
 WORD 0 0 0 0 // Terminator 
 
@@ -305,7 +309,6 @@ BYTE 0 0 1 1 0 0
 BYTE 0 0 1 1 0 0
 BYTE 0 0 1 1 0 0
 BYTE 0 0 1 1 0 0
-
 
 
 
@@ -623,7 +626,19 @@ BYTE 0 1 1 1 0
 BYTE 0 0 1 0 0
 BYTE 0 0 1 0 0
 
-
+ALIGN 4
+RangeTemplateTable_LargeDiamond:
+BYTE 9 9 // Size (1-indexed, so this is a 5x5y array) 
+BYTE 4 4 // Center (0-indexed, so [2,2] is the center)
+BYTE 0 0 0 0 1 0 0 0 0
+BYTE 0 0 0 1 1 1 0 0 0
+BYTE 0 0 1 1 1 1 1 0 0
+BYTE 0 1 1 1 1 1 1 1 0
+BYTE 1 1 1 1 1 1 1 1 1
+BYTE 0 1 1 1 1 1 1 1 0
+BYTE 0 0 1 1 1 1 1 0 0
+BYTE 0 0 0 1 1 1 0 0 0
+BYTE 0 0 0 0 1 0 0 0 0
 
 
 

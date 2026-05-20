@@ -13,6 +13,7 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+	//TurnEventPlayer(0,CannonFire,0,255)
 	TurnEventPlayer(0,CounterInc,0,255)
 	TurnEventPlayer(0,CounterEvent,0,255)
 	TurnEventPlayer(0,InitialTurns,1)
@@ -26,14 +27,18 @@ CharacterBasedEvents:
 MiscBasedEvents:
 	AFEV 15 PostJohnson 14
 	AFEV 19 PostJohn 18
+	AFEV 22 PostThief 21
 	AFEV 0 CounterEvent 0
 	CauseGameOverIfLordDies
+	AREA 20 ThiefSpawn [28,8] [34,15]
+	//AFEV 23 CannonFire 11
+	AREA 11 DummyEvent [17,1] [17,1]
 	END_MAIN
 
 LocationBasedEvents:
 	Armory(MapArmory,13,3)
 	Vendor(MapVendor,21,3)
-	Village(11,JohnsonVillage,12,3)
+	Village(24,JohnsonVillage,12,3)
 	Village(16,JohnVillage,20,3)
 	Village(17,ThiefVillage,20,10)
 	END_MAIN
@@ -99,6 +104,7 @@ JohnUnits:
 	UNIT EnemyMain PegasusKnight John Level(12,Enemy,True) [30,0] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 	UNIT EnemyMain Fighter John Level(12,Enemy,True) [31,1] 0x0 0x0 0x0 0x0 [SteelAxe] ChaseOnceApproachedAI
 	UNIT EnemyMain Archer John Level(12,Enemy,True) [36,1] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
+	UNIT EnemyMain Mercenary John Level(12,Enemy,True) [34,5] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
 	UNIT
 	
 JohnsonUnits:
@@ -170,6 +176,10 @@ BeginningScene:
 	ASMC SetGoldEvent|1
 	
 	GotoPrepScreen
+	ENDA
+
+DummyEvent:
+	NoFade
 	ENDA
 	
 JohnVillage:
@@ -282,8 +292,6 @@ CounterInc:
 CounterEvent:
 	CHECK_EVENTID 11
 	BNE 1 sC s0
-	CHECK_EVENTID 12
-	BNE 1 sC s0
 	
 	SVAL 1 5
 	COUNTER_CHECK 0
@@ -298,9 +306,22 @@ CounterEvent:
 	TEXTEND
 	REMA
 	
+	CAMERA MainBoss
+	CURSOR_FLASHING MainBoss
+	STAL 90
+	REMOVE_CURSORS
+	CenterTutorialTextBox
+	TUTORIALTEXTBOXSTART
+	TEXTSHOW(ReadyText2)
+	TEXTEND
+	REMA
+	
 	GOTO 1
 	
 	LABEL 2
+	CHECK_EVENTID 12
+	BNE 1 sC s0
+	
 	CenterTutorialTextBox
 	TUTORIALTEXTBOXSTART
 	TEXTSHOW(TurnsLeftTextTwo)
@@ -313,10 +334,42 @@ CounterEvent:
 	ENDA
 	
 CannonFire:
-	ENUT 4
-	//MUSCFAST
+
+	/*CHECK_EVENTID 11
+	BEQ 5 sC s0
+	CHECK_EVENTID 4
+	BNE 5 sC s0*/
+
+	CAMERA [16,2]
 	
+	ENUT 4
+	MUSCFAST 0x5D //empty track
+		
+	SOUN 0xF8 //elfire hit
+	STAL 120
+	
+	CAMERA MainBoss
+	SOUN 0x137 //ballista fall
+	STAL 60
+	
+	SOUN 0xAB //village destroyed
+	EARTHQUAKE 1 1
 	WEATHER 5
+	
+	SVAL s1 (-1) // Unit 
+	SVAL s6 4 // AoE ID 
+	SVAL s7 0 // Rotation
+	CHECK_COORDS MainBoss
+	//SCOORD sB [17, 17] // Coords
+	SADD sB sC s0
+	ASMC AoE_ASMC
+	
+	STAL 60
+	EARTHQUAKE_END
+
+	MUSCFAST 0xA
+	
+	LABEL 5
 	NoFade
 	ENDA
 	

@@ -48,7 +48,7 @@ Select an area to Heal. Press L/R to Rotate.[X]
 
 // These are the submenu options that appear:
 ALIGN 4
-AoEMenuCommandsList: // Specific Commands. Probably want new names for them. 
+AoEMenuCommandsList:/* // Specific Commands. Probably want new names for them. 
 MenuCommandID(UM_AoESlash, 		UM_AoEDesc, NormalText, 0, AoE_SpecificUsability|1, AoE_SpecificEffect|1, AoE_SpecificHover|1, HideMoveRangeGraphicsWrapper|1)
 MenuCommandID(UM_AoECleave, 		UM_AoEDesc, NormalText, 1, AoE_SpecificUsability|1, AoE_SpecificEffect|1, AoE_SpecificHover|1, HideMoveRangeGraphicsWrapper|1)
 MenuCommandID(UM_AoEImpale, UM_AoEDesc, NormalText, 2, AoE_SpecificUsability|1, AoE_SpecificEffect|1, AoE_SpecificHover|1, HideMoveRangeGraphicsWrapper|1)
@@ -65,7 +65,7 @@ MenuCommandID(UM_AoEFortify, UM_AoEDesc, NormalText, 12, AoE_SpecificUsability|1
 MenuCommandID(UM_AoEExcalibur, UM_AoEDesc, NormalText, 13, AoE_SpecificUsability|1, AoE_SpecificEffect|1, AoE_SpecificHover|1, HideMoveRangeGraphicsWrapper|1)
 MenuCommandID(UM_AoEElfire, UM_AoEDesc, NormalText, 14, AoE_SpecificUsability|1, AoE_SpecificEffect|1, AoE_SpecificHover|1, HideMoveRangeGraphicsWrapper|1)
 MenuCommandID(UM_AoEThunder, UM_AoEDesc, NormalText, 15, AoE_SpecificUsability|1, AoE_SpecificEffect|1, AoE_SpecificHover|1, HideMoveRangeGraphicsWrapper|1)
-MenuCommandID(UM_AoEFimbulvetr, UM_AoEDesc, NormalText, 16, AoE_SpecificUsability|1, AoE_SpecificEffect|1, AoE_SpecificHover|1, HideMoveRangeGraphicsWrapper|1)
+MenuCommandID(UM_AoEFimbulvetr, UM_AoEDesc, NormalText, 16, AoE_SpecificUsability|1, AoE_SpecificEffect|1, AoE_SpecificHover|1, HideMoveRangeGraphicsWrapper|1)*/
 UM_Separator 
 
 // ASMC Usage:
@@ -242,18 +242,18 @@ BYTE Bow 0 // Weapon Type and WEXP to use this.
 BYTE 2 // Amount of weapon uses to deplete. 
 BYTE UseWepMt|UseWepEffectiveness|UseWepRange // Config2 
 
-// Next entry 
+// Next entry (4)
 BYTE 0 0 0 0
 BYTE 0 0 0 0 // Usable by anyone carrying a sword they can wield 
-BYTE 0 FriendlyFireBool|DepleteItemBool|MagBasedBool|HitResBool
-BYTE 0 0 // mt, randMt 
+BYTE 0 FriendlyFireBool|FixedDamageBool
+BYTE 25 0 // mt, randMt 
 BYTE 0 0 // Attack range 
-BYTE SmallTriangle AnimaAnimEventID // Index of RangeMask, Animation
-BYTE 75 0 // DamagePercent, Status 
+BYTE LargeDiamond AnimaAnimEventID // Index of RangeMask, Animation
+BYTE 100 0 // DamagePercent, Status 
 BYTE 0 0 // DebuffID, EventIndex 
 BYTE AnimaMagic 0 // Weapon Type and WEXP to use this. 
-BYTE 2 // Amount of weapon uses to deplete. 
-BYTE UseWepMt|UseWepEffectiveness|UseWepRange // Config2 
+BYTE 0 // Amount of weapon uses to deplete. 
+BYTE 0 // Config2 
 
 
 // Next entry 
@@ -531,7 +531,7 @@ ALIGN 4
 AoE_AnimaAnimEvent:
 SVAL r1 FireAnimID
 ASMC Draw_ASMC|1
-ASMC AoE_GrantExp|1
+//ASMC AoE_GrantExp|1
 NoFade
 ENDA
 

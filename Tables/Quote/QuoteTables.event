@@ -33,6 +33,7 @@ DeathQuoteEvent(Wallbreaker1, 0, 0, 0, Wallbreaker1Death)
 DeathQuoteEvent(Wallbreaker2, 0, 0, 0, Wallbreaker2Death)
 DeathQuoteEvent(Johnson, 0, 14, JohnsonDeathQuote)
 DeathQuoteEvent(John, 0, 18, JohnDeathQuote)
+DeathQuoteEvent(ThiefBoss, 0, 21, VioletDeathQuote)
 
 //Playables:
 
